@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/azurepricedetails/!svn/ver/2/AzurePriceDetails/src/com/sysfore/azurepricedetails/model
+END
+BillingPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/azurepricedetails/!svn/ver/104/AzurePriceDetails/src/com/sysfore/azurepricedetails/model/BillingPojo.java
+END
+Subscription.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/azurepricedetails/!svn/ver/72/AzurePriceDetails/src/com/sysfore/azurepricedetails/model/Subscription.java
+END
+CalculationPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/azurepricedetails/!svn/ver/76/AzurePriceDetails/src/com/sysfore/azurepricedetails/model/CalculationPojo.java
+END
+LoginMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/azurepricedetails/!svn/ver/72/AzurePriceDetails/src/com/sysfore/azurepricedetails/model/LoginMaster.java
+END
+ServicePojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/azurepricedetails/!svn/ver/72/AzurePriceDetails/src/com/sysfore/azurepricedetails/model/ServicePojo.java
+END
+ProcessLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/azurepricedetails/!svn/ver/72/AzurePriceDetails/src/com/sysfore/azurepricedetails/model/ProcessLog.java
+END
+AddNewRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/azurepricedetails/!svn/ver/72/AzurePriceDetails/src/com/sysfore/azurepricedetails/model/AddNewRole.java
+END
+ResultPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/azurepricedetails/!svn/ver/95/AzurePriceDetails/src/com/sysfore/azurepricedetails/model/ResultPojo.java
+END

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/button_bg1"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="100" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="30"
+        android:gravity="center"
+        android:text="@string/product"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="12"
+        android:gravity="center"
+        android:text="@string/Tariff"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="18"
+        android:gravity="center"
+        android:text="@string/Unit"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:text="@string/consumed"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:text="@string/total"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size" />
+
+</LinearLayout>

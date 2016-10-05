@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sysfore.azure"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sysfore.azure.LoginActivity"
+            android:theme="@style/MyTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sysfore.azure.Home"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.Registration"
+            android:label="@string/register_signup"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.ForgotPassword"
+            android:label="@string/forgot_password"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.SubscriptionActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.NewRole"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.ResourceSummary"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.CpuUsage"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.VmUsage"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.SignUpActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.AccountSettingsActivity"
+            android:label="@string/account_settings"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.AccountSettingActivity"
+            android:label="@string/account_settings"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.GeneralSettingsActivity"
+            android:label="@string/general_settings"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.NewRoleActivity"
+            android:label="@string/add_newrole"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.ResourceDetailsActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.ResourceUsageDetailsActivity"
+            android:label="@string/resource_usage"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.Dashbaord"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.Resource"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.Pricemenu"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.PriceDetails"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.MachineMonitorActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.sysfore.azure.SubscriptionList"
+            android:theme="@style/MyTheme" />
+
+        <service android:name="com.sysfore.azure.WebService" />
+
+        <activity android:name=".Filepicker" >
+        </activity>
+    </application>
+
+</manifest>

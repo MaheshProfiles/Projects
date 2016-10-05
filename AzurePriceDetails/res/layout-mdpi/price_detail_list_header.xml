@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100" >
+
+    <TextView
+        android:id="@+id/ComponentTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="75"
+        android:layout_margin="5dp"
+        android:text="@string/grandtotal"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/componentname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:layout_margin="5dp"
+        android:text="@string/component"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size" />
+
+</LinearLayout>

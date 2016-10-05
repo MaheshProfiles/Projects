@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/home"/>
+  
+    <item
+        android:id="@+id/action_resource"
+        android:orderInCategory="99"
+        android:showAsAction="ifRoom"
+        android:title="@string/resource_details"/>
+    <item
+        android:id="@+id/action_cpustorage"
+        android:orderInCategory="99"
+        android:showAsAction="ifRoom"
+        android:title="@string/cpu_usage"/>
+    <item
+        android:id="@+id/action_networkout"
+        android:orderInCategory="99"
+        android:showAsAction="ifRoom"
+        android:title="@string/network_out"/>
+    <item
+        android:id="@+id/action_signup"
+        android:orderInCategory="99"
+        android:showAsAction="ifRoom"
+        android:title="@string/sign_up"/>
+    
+      <item
+        android:id="@+id/account_settings"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/account_settings"/>
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/logout"/>
+    
+
+</menu>

@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/subscriptionmenu"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView"
+        android:title="@string/newsubscription"/>
+    <item
+        android:id="@+id/switchsubscription"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView"
+        android:title="@string/switchsubscription"/>
+    <item
+        android:id="@+id/action_resource"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView"
+        android:title="@string/resource_details"/>
+    <item
+        android:id="@+id/monitormachine"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView"
+        android:title="@string/monitormachine"/>
+    <item
+        android:id="@+id/pricemenu"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView"
+        android:title="@string/pricemenu"/>
+    <item
+        android:id="@+id/account_settings"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView"
+        android:title="@string/account_settings"/>
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView"
+        android:title="@string/logout"/>
+
+</menu>

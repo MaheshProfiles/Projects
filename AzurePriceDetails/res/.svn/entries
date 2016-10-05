@@ -1,0 +1,133 @@
+10
+
+dir
+48
+http://192.168.10.3/svn/azurepricedetails/AzurePriceDetails/res
+http://192.168.10.3/svn/azurepricedetails
+
+
+
+2014-11-14T11:26:35.281524Z
+44
+afroze
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+53eec4e8-ee18-48a9-bd08-eceae78c84e5
+
+anim
+dir
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+drawable-large-mdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-sw600dp-mdpi
+dir
+
+drawable-sw720dp-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+drawable-xlarge-mdpi
+dir
+
+drawable-xxhdpi
+dir
+
+layout
+dir
+
+layout-land
+dir
+
+layout-land-ldpi
+dir
+
+layout-land-mdpi
+dir
+
+layout-large-land-mdpi
+dir
+
+layout-large-mdpi
+dir
+
+layout-ldpi
+dir
+
+layout-mdpi
+dir
+
+layout-small-land-ldpi
+dir
+
+layout-small-ldpi
+dir
+
+layout-sw600dp
+dir
+
+layout-sw600dp-land
+dir
+
+layout-sw720dp
+dir
+
+layout-sw720dp-land
+dir
+
+menu
+dir
+
+values
+dir
+
+values-large
+dir
+
+values-normal
+dir
+
+values-sw600dp
+dir
+
+values-sw600dp-land
+dir
+
+values-sw720dp
+dir
+
+values-sw720dp-land
+dir
+
+values-v11
+dir
+
+values-v14
+dir
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="100" >
+
+    <TextView
+        android:id="@+id/tvmachinename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:text="@string/machinename"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/tvmachinestatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="35"
+        android:text="@string/status"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size" />
+
+    <CheckBox
+        android:id="@+id/checkmachinestatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:textColor="#000000" />
+
+</LinearLayout>

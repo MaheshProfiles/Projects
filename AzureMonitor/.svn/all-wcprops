@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/android/!svn/ver/1195/AzureMonitor
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/android/!svn/ver/1204/AzureMonitor/AndroidManifest.xml
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/android/!svn/ver/831/AzureMonitor/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/android/!svn/ver/577/AzureMonitor/.project
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/android/!svn/ver/578/AzureMonitor/.classpath
+END

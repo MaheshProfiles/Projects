@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/android/!svn/ver/1060/AzureMonitor/src/com/sysfore/azure/model
+END
+BillingPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/927/AzureMonitor/src/com/sysfore/azure/model/BillingPojo.java
+END
+VMService.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/android/!svn/ver/906/AzureMonitor/src/com/sysfore/azure/model/VMService.java
+END
+HostedService.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/android/!svn/ver/964/AzureMonitor/src/com/sysfore/azure/model/HostedService.java
+END
+Subscription.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/android/!svn/ver/1051/AzureMonitor/src/com/sysfore/azure/model/Subscription.java
+END
+CalculationPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/android/!svn/ver/927/AzureMonitor/src/com/sysfore/azure/model/CalculationPojo.java
+END
+RowItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/android/!svn/ver/906/AzureMonitor/src/com/sysfore/azure/model/RowItem.java
+END
+LoginMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/android/!svn/ver/1197/AzureMonitor/src/com/sysfore/azure/model/LoginMaster.java
+END
+RegistrationMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/android/!svn/ver/854/AzureMonitor/src/com/sysfore/azure/model/RegistrationMaster.java
+END
+ServicePojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/927/AzureMonitor/src/com/sysfore/azure/model/ServicePojo.java
+END
+ProcessLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/1060/AzureMonitor/src/com/sysfore/azure/model/ProcessLog.java
+END
+AddNewRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/android/!svn/ver/906/AzureMonitor/src/com/sysfore/azure/model/AddNewRole.java
+END
+ResourceUsageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/android/!svn/ver/906/AzureMonitor/src/com/sysfore/azure/model/ResourceUsageService.java
+END
+ResultPojo.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/1051/AzureMonitor/src/com/sysfore/azure/model/ResultPojo.java
+END

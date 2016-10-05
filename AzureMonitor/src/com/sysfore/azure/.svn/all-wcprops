@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/android/!svn/ver/1195/AzureMonitor/src/com/sysfore/azure
+END
+Dashbaord.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/android/!svn/ver/1203/AzureMonitor/src/com/sysfore/azure/Dashbaord.java
+END
+MonitorMachineStatusFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/android/!svn/ver/1179/AzureMonitor/src/com/sysfore/azure/MonitorMachineStatusFragment.java
+END
+SubscriptionFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/android/!svn/ver/1150/AzureMonitor/src/com/sysfore/azure/SubscriptionFragment.java
+END
+Pricemenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/android/!svn/ver/1191/AzureMonitor/src/com/sysfore/azure/Pricemenu.java
+END
+ResourceVmUsageDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/android/!svn/ver/1095/AzureMonitor/src/com/sysfore/azure/ResourceVmUsageDetails.java
+END
+DeleteAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/android/!svn/ver/1177/AzureMonitor/src/com/sysfore/azure/DeleteAdapter.java
+END
+WebService.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/android/!svn/ver/1191/AzureMonitor/src/com/sysfore/azure/WebService.java
+END
+ForgotPassword.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/android/!svn/ver/1208/AzureMonitor/src/com/sysfore/azure/ForgotPassword.java
+END
+CustomAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/android/!svn/ver/909/AzureMonitor/src/com/sysfore/azure/CustomAdapter.java
+END
+NavDrawerListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/android/!svn/ver/1054/AzureMonitor/src/com/sysfore/azure/NavDrawerListAdapter.java
+END
+CoresAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/android/!svn/ver/938/AzureMonitor/src/com/sysfore/azure/CoresAdapter.java
+END
+PriceDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/android/!svn/ver/1177/AzureMonitor/src/com/sysfore/azure/PriceDetails.java
+END
+Registration.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/android/!svn/ver/1197/AzureMonitor/src/com/sysfore/azure/Registration.java
+END
+LoginActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/android/!svn/ver/1191/AzureMonitor/src/com/sysfore/azure/LoginActivity.java
+END
+AccountSettingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/android/!svn/ver/1177/AzureMonitor/src/com/sysfore/azure/AccountSettingActivity.java
+END
+QustomDialogBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/android/!svn/ver/1150/AzureMonitor/src/com/sysfore/azure/QustomDialogBuilder.java
+END
+Resource.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/android/!svn/ver/1159/AzureMonitor/src/com/sysfore/azure/Resource.java
+END
+SubscriptionActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/android/!svn/ver/1156/AzureMonitor/src/com/sysfore/azure/SubscriptionActivity.java
+END
+ProgressHUD.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/android/!svn/ver/909/AzureMonitor/src/com/sysfore/azure/ProgressHUD.java
+END
+Filepicker.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/android/!svn/ver/861/AzureMonitor/src/com/sysfore/azure/Filepicker.java
+END
+NavDrawerItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/android/!svn/ver/673/AzureMonitor/src/com/sysfore/azure/NavDrawerItem.java
+END
+PriceAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/android/!svn/ver/952/AzureMonitor/src/com/sysfore/azure/PriceAdapter.java
+END
+StorageAccountCreatedFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/android/!svn/ver/1075/AzureMonitor/src/com/sysfore/azure/StorageAccountCreatedFragment.java
+END
+CoresCreatedFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/android/!svn/ver/1019/AzureMonitor/src/com/sysfore/azure/CoresCreatedFragment.java
+END
+MachineMonitorActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/android/!svn/ver/1159/AzureMonitor/src/com/sysfore/azure/MachineMonitorActivity.java
+END
+MonitorMachineAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/android/!svn/ver/1019/AzureMonitor/src/com/sysfore/azure/MonitorMachineAdapter.java
+END
+AccountSettingsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/android/!svn/ver/1150/AzureMonitor/src/com/sysfore/azure/AccountSettingsActivity.java
+END
+SubscriptionList.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/1096/AzureMonitor/src/com/sysfore/azure/SubscriptionList.java
+END
+CloudServiceCreatedFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/android/!svn/ver/1075/AzureMonitor/src/com/sysfore/azure/CloudServiceCreatedFragment.java
+END
+MyAsyncTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/android/!svn/ver/1093/AzureMonitor/src/com/sysfore/azure/MyAsyncTask.java
+END
+AccountSettingFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/android/!svn/ver/909/AzureMonitor/src/com/sysfore/azure/AccountSettingFragment.java
+END
+SubscriptionAdpter.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/android/!svn/ver/1054/AzureMonitor/src/com/sysfore/azure/SubscriptionAdpter.java
+END

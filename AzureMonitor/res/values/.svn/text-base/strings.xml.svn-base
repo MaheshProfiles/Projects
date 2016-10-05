@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SysAzure</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sign_in">Sign in to SysAzure</string>
+    <string name="register_signup">Register in SysAzure</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="registeration">New to SysAzure? <u> Register Here</u></string>
+    <string name="signupdetail">Already has account! <u> Login Here</u></string>
+    <string name="username">Username</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="Token">Token</string>
+    <string name="enrollment">Enrollmen-ID</string>
+    <string name="answers">Answer</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="submit">Submit</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="powerd_sysfore">Powered by Sysfore</string>
+    <string name="subscription_name">Subscription Name</string>
+    <string name="subscription_id">Subscription ID</string>
+    <string name="certificate_key">Certificate Key</string>
+    <string name="select_role">Select role</string>
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="clear">Clear</string>
+    <string name="resource">Resources</string>
+   
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="app_label">Azure Application</string>
+    <string name="resource_usage">Resource Usage Details</string>
+    <string name="res_usage">Resource Usage </string>
+    <string name="account_settings">Account Settings</string>
+    <string name="add_newrole">Add a new Role</string>
+    <string name="general_settings">General Settings</string>
+    <string name="resource_summary">Resource Summary</string>
+    <string name="action_websearch">Web search</string>
+    <string name="action_resource_details">Resource Details</string>
+    <string name="resource_type">Resource Type</string>
+    <string name="resourcetype">Resource</string>
+    <string name="count">Count</string>
+    <string name="vm_usage">VM Usage Details</string>
+    <string name="vm_text">VM 1</string>
+    <string name="type">Type</string>
+    <string name="cpu_usage">CPU Usage</string>
+    <string name="network_in">Network In</string>
+    <string name="network_out">Network Out</string>
+    <string name="cpu_usage_details">CPU Usage Details</string>
+    <string name="cpu_min_usage">Min Usage </string>
+    <string name="cpu_max_usage">Max Usage </string>
+    <string name="cpu_avg_usage">Avg Usage </string>
+    <string name="network_min_inflow">Min Inflow </string>
+    <string name="network_max_inflow">Max Inflow </string>
+    <string name="network_avg_inflow">Avg Inflow </string>
+    <string name="network_min_outflow">Min Outflow </string>
+    <string name="network_max_outflow">Max Outflow </string>
+    <string name="network_avg_outflow">Avg Outflow </string>
+    <string name="role_name">Role Name</string>
+    <string name="widget_list">Widget List</string>
+    <string name="account_information">Account Information</string>
+    <string name="vm_details">VM Details</string>
+    <string name="vm_usage_details">VM Usage Details</string>
+    <string name="usage_details">Usage Details</string>
+    <string name="save">Save</string>
+    <string name="update">update</string>
+    <string name="sign_up_to_azure_application">Sign Up to Azure Application</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="valid_email_id">Valid Email ID</string>
+    <string name="answer">Answer</string>
+    <string name="sign_up_tp_azure_application">Sign Up tp Azure Application</string>
+    <string name="valid_mail_id">Valid Mail ID</string>
+    <string name="select_security_question">Select Security Question</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="online_off_line">Online / Off Line</string>
+    <string name="notification_on_off">Notification On / Off</string>
+    <string name="alerts_and_notification_s">Alerts and Notification\'s</string>
+    <string name="action_confirmation">Action Confirmation</string>
+    <string name="role_change">Role Change</string>
+    <string name="delete_the_account">Delete the account</string>
+    <string name="schedule_sync">Schedule Sync</string>
+    <string name="resource2">Resource Usage Details</string>
+    <string name="cores_created">Cores</string>
+    <string name="cloud_services_created">Cloud Services</string>
+    <string name="monitor_machine_selected">Montior Machine selected</string>
+    <string name="storage_acc_created">Storage Account</string>
+    <string name="resource_details">Resource Details</string>
+    <string name="vm_name">VM Name</string>
+    <string name="region">Region</string>
+    <string name="status">Status</string>
+    <string name="signup">Sign Up</string>
+    <string name="alerts_and_notification_apos_s">Alerts and Notification&amp;apos;s</string>
+    <string name="account_expiry">Account Expiry</string>
+    <string name="usage">Usage</string>
+    <string name="used_space">Used Space</string>
+    <string name="amount">Amount</string>
+    <string name="cpu">CPU</string>
+    <string name="confirm_before_deletion">Confirm Before Deletion</string>
+    <string name="confirm_before_modification">Confirm Before Modification</string>
+    <string name="confirm_before_addin_an_entry">Confirm Before Adding an entry</string>
+    <string name="total">Total</string>
+    <string name="created">Created</string>
+    <string name="balance">Balance</string>
+    <string name="description">Description</string>
+    <string name="info">info</string>
+    <string name="splash">splash</string>
+    <string name="changepassword">Change Password</string>
+    <string name="setofflinemode">Set Offline Mode</string>
+    <string name="setalert">Set Alert and Notification</string>
+    <string name="subcritiondetail">Subscription Details</string>
+    <string name="newsubscription">New Subscription</string>
+     <string name="switchsubscription">Switch Subscription</string>
+    <string name="oldpassword">Old Passward</string>
+    <string name="newpassword">New Password</string>
+    <string name="confirmpassword">Confirm New Password</string>
+    <string name="newrole">New Role Name</string>
+     <string name="dialoguetext">Update Pricesheet</string>
+    <string name="running_cores">0</string>
+    <string name="slash">/</string>
+    <string name="total_cores">00</string>
+    <string name="running1">Running</string>
+    <string name="running">Running/</string>
+    <string name="progress">Inprogress</string>
+    <string name="Stopped">Stopped</string>
+    <string name="totalrunning">Capacity</string>
+    <string name="machine1">Machine1</string>
+    <string name="machine2">Machine2</string>
+    <string name="machine3">Machine3</string>
+    <string name="monitormachine">VM Monitored</string>
+    <string name="name">Name</string>
+    <string name="pricemenu">Price Menu</string>
+      <string name="pricedetails">Price Details</string>
+    <string name="pricesheet">Browse Price Sheet</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="staticmonth">06</string>
+    <string name="staticyear">2013</string>
+    <string name="product">Product</string>
+    <string name="Tariff">Tariff</string>
+    <string name="Unit">Unit</string>
+    <string name="consumed">Consumed</string>
+    <string name="Total">Total</string>
+    <string name="grandtotal">Grand Total:</string>
+    <string name="amount1">20,9879.00</string>
+    <string name="filename">Filename</string>
+    <string name="commit">Monitor</string>
+     <string name="machinename">Machine</string>
+      <string name="forceprocess">Forced process</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Subscription Details</item>
+        <item>Account1</item>
+        <item>Account2</item>
+        <item>Add new contact</item>
+        <item>Create role</item>
+        <item>Account setting</item>
+        <item>Change role</item>
+        <item>Remove account</item>
+        <item>Logout</item>
+    </string-array>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_rdrawer_items">
+        <item>Help</item>
+        <item>How To Add Account</item>
+        <item>How to Remove Account</item>
+        <item>Contact Us</item>
+        <item>Rate Us</item>
+        <item>Feedback</item>
+    </string-array>
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+   
+       
+    
+      
+      
+      
+    </array>
+
+    <string-array name="options">
+        <item>Select Your Security Question</item>
+        <item>Which is your favorite sport?</item>
+        <item>Which is your favorite place?</item>
+        <item>Which is your favorite color?</item>
+        <item>Who was your childhood hero?</item>
+        <item>Who was your childhood hero?</item>
+        <item>What was your childhood nickname?</item>
+        <item>When is your youngest brothers birthday?</item>
+    </string-array>
+    <string-array name="versions">
+        <item>Select</item>
+        <item>EA</item>
+        <item>Pay-As-You-Go</item>
+        <item>Half Yearly</item>
+        <item>Trial</item>
+    </string-array>
+    <string-array name="titles">
+        <item>Change Password</item>
+        <item>Role Change</item>
+        <item>Set offline Mode</item>
+        <item>Set Alert and Notifications</item>
+        <item>Delete the Account</item>
+    </string-array>
+
+    <array name="icons">
+        <item>@drawable/security_lock_focused</item>
+     
+        <item>@drawable/ic_menu_delete</item>
+    </array>
+     
+        <string name="vm_monitor">VM Monitor</string>
+     
+        <string name="monitored_vm">Monitored VM</string>
+
+</resources>

@@ -1,0 +1,106 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/thick_ab_style</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="thick_ab_style" parent="android:Widget.Holo.ActionBar">
+        <item name="android:height">100dp</item>
+        <item name="android:background">@color/default_background_color</item>
+        <item name="android:selectableItemBackground">@android:color/holo_blue_dark</item>
+    </style>
+
+    <style name="snap_textstyle">
+        <item name="android:fontFamily">roboto-light</item>
+    </style>
+
+    <style name="keypad_bttn_style" parent="@style/snap_textstyle">
+        <item name="android:textColor">@drawable/keypad_textcolor_selector</item>
+        <item name="android:background">@drawable/keypad_bttn_selector</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="keypad_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@drawable/edititem_textcolor_selector</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:background">@drawable/listitem_bg_selector</item>
+    </style>
+
+    <style name="category_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@drawable/textcolor_selector</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/store_category_bgselector</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxWidth">@dimen/store_category_width</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="productname_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">#2f2f2f</item>
+        <item name="android:background">#e6f4f4f4</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="actionbar_headertextstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">#39a0ff</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="dashboard_summary_itenary_heading" parent="@style/snap_textstyle">
+        <item name="android:textColor">#8e8e8e</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="dashboard_summary_itenary_text" parent="@style/snap_textstyle">
+        <item name="android:textColor">#484747</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    
+        
+    <style name="update_product_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@color/product_textcolor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lines">2</item>
+    </style>
+    
+     <style name="new_distributor_edittext_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@color/new_distributor_edittext_colour</item>
+        <item name="android:textColorHint">@color/new_distributor_edittext_hint_colour</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingTop">@dimen/new_distributor_margin</item>
+        <item name="android:paddingBottom">@dimen/new_distributor_margin</item>
+    </style>
+    <style name="new_sp_edittext_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@color/product_textcolor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingTop">@dimen/new_distributor_margin</item>
+        <item name="android:paddingBottom">@dimen/new_distributor_margin</item>
+    </style>
+    
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" >
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/search_edittext"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/clear_search_text_button"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/clear_search_text_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_cancel_red_small" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/search_layout">
+
+        <TextView
+            android:id="@+id/actionbar_header"
+            style="@style/actionbar_headertextstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/app_name" />
+        
+        <TextView
+            android:id="@+id/app_version_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actionbar_header"
+            android:layout_marginTop="5dp"
+            android:text="@string/app_build_version"/>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentEnd="true">
+        
+        <ImageView
+            android:id="@+id/printer_connected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/printer_not_connected" />
+
+        <ImageView
+            android:id="@+id/weighing_machine_connected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weighing_scale_not_connected" />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

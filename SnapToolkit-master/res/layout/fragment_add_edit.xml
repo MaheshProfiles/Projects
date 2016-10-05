@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addprod_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+	<LinearLayout 
+	    android:id="@+id/add_edit_top_layout"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <LinearLayout
+        android:id="@+id/distributor_info_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/company_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="left" >
+
+            <ImageView
+                android:id="@+id/new_product_imageview"
+                android:layout_width="@dimen/new_productimage_width"
+                android:layout_height="@dimen/inventory_update_item_height"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/large_padding"
+                android:background="@drawable/product_border_shapedark"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_camera" />
+
+            <ImageView
+                android:id="@+id/brand_imageview"
+                android:layout_width="@dimen/new_productimage_width"
+                android:layout_height="@dimen/inventory_update_item_height"
+                android:layout_below="@+id/new_product_imageview"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/product_border_shapedark"
+                android:scaleType="centerInside"
+                android:src="@drawable/gallery"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/remove_imageview_layout"
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/large_padding" >
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/remove_imageview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:src="@drawable/alertdialog_cancel_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/new_productname_edittext"
+            style="@style/new_distributor_edittext_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/large_padding"
+            android:layout_weight="25"
+            android:hint="@string/product_name_hint"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="200"
+            android:nextFocusDown="@+id/new_productcode_edittext" />
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/new_productcode_edittext"
+            style="@style/new_distributor_edittext_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:hint="@string/auto_filled_code_hint"
+            android:imeOptions="actionNext"
+            android:maxLength="25"
+            android:nextFocusDown="@+id/new_productmrp_edittext"
+            android:singleLine="true" />
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/new_productmrp_edittext"
+            style="@style/new_distributor_edittext_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:hint="@string/mrp_hint"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLength="7"
+            android:nextFocusDown="@+id/new_productqty_edittext" />
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/new_productqty_edittext"
+            style="@style/new_distributor_edittext_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:hint="@string/stock_qty_hint"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLength="7" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/new_productpp_edittext"
+            style="@style/new_distributor_edittext_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/large_padding"
+            android:layout_weight="25"
+            android:hint="@string/purchase_price_hint"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLength="7" />
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/new_productsp_edittext"
+            style="@style/new_distributor_edittext_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="0dp"
+             android:textColorHint="@color/bill1_hint_color"
+            android:layout_weight="25"
+            android:hint="@string/selling_price_1_hint"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLength="7" />
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/new_productsp1_edittext"
+            style="@style/new_distributor_edittext_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:textColorHint="@color/bill2_hint_color"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:hint="@string/selling_price_2_hint"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLength="7" />
+
+       <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/new_productsp2_edittext"
+            style="@style/new_distributor_edittext_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+             android:textColorHint="@color/bill3_hint_color"
+            android:hint="@string/selling_price_3_hint"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLength="7" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <Spinner
+            android:id="@+id/new_prodcategory_spinner"
+            style="@style/update_product_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/large_padding"
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:id="@+id/new_prodsubcategory_spinner"
+            style="@style/update_product_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
+
+         <Spinner
+            android:id="@+id/new_product_vat_spinner"
+            style="@style/update_product_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:text="@string/vat_rate" />
+
+        <Spinner
+            android:id="@+id/new_produnittype_spinner"
+            style="@style/update_product_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:spinnerMode="dialog"
+            android:text="@string/unit_type" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/distributor_clear_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="49"
+            android:background="@null"
+            android:drawableTop="@drawable/distributor_clear_selector"
+            android:text="@string/clear" />
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/divider_color" />
+
+        <Button
+            android:id="@+id/addprod_next_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="49"
+            android:background="@null"
+            android:drawableTop="@drawable/distributor_save_selector"
+            android:text="@string/save" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/company_relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/add_company_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:background="@drawable/white_bg_color"
+            android:orientation="horizontal" >
+
+            <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+                android:id="@+id/new_companyname_edittext"
+                style="@style/update_product_textstyle"
+                android:layout_width="@dimen/new_productname_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:hint="Company Name" />
+
+            <View
+                android:id="@+id/text_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/def_button_height"
+                android:layout_toRightOf="@id/new_companyname_edittext"
+                android:background="@color/divider_color" />
+
+            <ImageButton
+                android:id="@+id/new_company_done_button"
+                style="@style/update_product_textstyle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text_divider"
+                android:background="@null"
+                android:src="@drawable/add_company_bgselector" />
+
+            <View
+                android:id="@+id/done_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/def_button_height"
+                android:layout_toRightOf="@id/new_company_done_button"
+                android:background="@color/divider_color" />
+
+            <ImageButton
+                android:id="@+id/new_company_delete_button"
+                style="@style/update_product_textstyle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/done_divider"
+                android:background="@null"
+                android:src="@drawable/delete_imgselector" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/new_company_cancel_button"
+            style="@style/update_product_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_padding"
+            android:layout_toLeftOf="@+id/company_next_button"
+            android:background="@null"
+            android:src="@drawable/distributor_clear_selector" />
+
+        <ImageButton
+            android:id="@+id/company_next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/medium_padding"
+            android:background="@null"
+            android:src="@drawable/arrow_next_selector" />
+
+        <ImageButton
+            android:id="@+id/company_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/medium_padding"
+            android:background="@null"
+            android:rotation="180"
+            android:src="@drawable/arrow_back_selector" />
+
+        <ListView
+            android:id="@+id/selected_company_listview"
+            android:layout_width="@dimen/distributorlist_columnwidth"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/add_company_linearlayout"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:divider="@color/transparent_color"
+            android:dividerHeight="@dimen/medium_padding" >
+        </ListView>
+
+        <com.jess.ui.TwoWayGridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/company_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/add_company_linearlayout"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:layout_toRightOf="@id/selected_company_listview"
+            app:columnWidth="@dimen/distributorlist_columnwidth"
+            app:gravity="left"
+            app:horizontalSpacing="@dimen/medium_padding"
+            app:numColumns="auto_fit"
+            app:numRows="7"
+            app:rowHeight="@dimen/distributorlist_rowheight"
+            app:scrollDirectionLandscape="horizontal"
+            app:scrollDirectionPortrait="horizontal"
+            app:stretchMode="none"
+            app:verticalSpacing="@dimen/small_padding" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/brands_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/add_brand_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:background="@drawable/white_bg_color"
+            android:gravity="left|bottom"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/new_brand_imageview"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/product_border_shapedark"
+                android:padding="@dimen/small_padding"
+                android:scaleType="fitEnd"
+                android:src="@drawable/icon_camera" />
+
+            <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+                android:id="@+id/new_brandname_edittext"
+                style="@style/update_product_textstyle"
+                android:layout_width="@dimen/new_productname_width"
+                android:layout_height="match_parent"
+                android:hint="Brand Name" />
+
+            <Spinner
+                android:id="@+id/company_select_spinner"
+                android:layout_width="@dimen/new_productname_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:spinnerMode="dialog" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider_color" />
+
+            <ImageButton
+                android:id="@+id/new_brand_done_button"
+                style="@style/update_product_textstyle"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/add_company_bgselector" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider_color" />
+
+            <ImageButton
+                android:id="@+id/new_brand_delete_button"
+                style="@style/update_product_textstyle"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/delete_imgselector" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/medium_padding"
+            android:background="@null"
+            android:src="@drawable/tick_imgselector" />
+
+        <ImageButton
+            android:id="@+id/new_brand_cancel_button"
+            style="@style/update_product_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_padding"
+            android:layout_toLeftOf="@id/add_button"
+            android:background="@null"
+            android:src="@drawable/distributor_clear_selector" />
+
+        <ImageButton
+            android:id="@+id/brands_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/medium_padding"
+            android:background="@null"
+            android:rotation="180"
+            android:src="@drawable/arrow_back_selector" />
+
+        <com.jess.ui.TwoWayGridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/brand_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/add_brand_linearlayout"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/large_padding"
+            app:columnWidth="@dimen/brand_distributor_width"
+            app:gravity="left"
+            app:horizontalSpacing="@dimen/medium_padding"
+            app:numColumns="auto_fit"
+            app:numRows="3"
+            app:rowHeight="@dimen/brand_distributor_height"
+            app:scrollDirectionLandscape="horizontal"
+            app:scrollDirectionPortrait="horizontal"
+            app:stretchMode="none"
+            app:verticalSpacing="@dimen/medium_padding" />
+    </RelativeLayout>
+    </LinearLayout> 
+    <LinearLayout 
+        android:id="@+id/add_edit_product_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+	      <Button 
+            android:id="@+id/scan_barcode_btn"
+            android:layout_height="45dp"
+            android:layout_width="210dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/add_existing_products"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            />
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/existing_productcode_edittext"
+            style="@style/new_distributor_edittext_textstyle"
+            android:layout_width="@dimen/new_distributor_edittext_width"
+            android:layout_height="60dp"
+            android:hint="@string/scan_existing_product"
+            android:imeOptions="actionNext"
+            android:maxLength="25"
+            android:nextFocusDown="@+id/new_productmrp_edittext"
+            android:singleLine="true"
+            android:visibility="gone" />        
+    </LinearLayout>  
+</LinearLayout>

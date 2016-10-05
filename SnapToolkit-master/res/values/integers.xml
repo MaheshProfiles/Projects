@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_characters_numberinput">7</integer>
+    <integer name="discount1">2</integer>
+    <integer name="discount2">4</integer>
+    <integer name="discount3">6</integer>
+    <integer name="button0">0</integer>
+    <integer name="button1">1</integer>
+    <integer name="button2">2</integer>
+    <integer name="button3">3</integer>
+    <integer name="button4">4</integer>
+    <integer name="button5">5</integer>
+    <integer name="button6">6</integer>
+    <integer name="button7">7</integer>
+    <integer name="button8">8</integer>
+    <integer name="button9">9</integer>
+    <integer name="button_dot">88</integer>
+    <integer name="button_enter">89</integer>
+    <integer name="phone_maxdigits">10</integer>
+</resources>

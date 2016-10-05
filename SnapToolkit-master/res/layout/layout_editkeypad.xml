@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:tag="@integer/button7"
+                android:text="@string/keypad_7" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:layout_marginLeft="@dimen/keypad_bttn_horizontalspacing"
+                android:tag="@integer/button8"
+                android:text="@string/keypad_8" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:layout_marginLeft="@dimen/keypad_bttn_horizontalspacing"
+                android:tag="@integer/button9"
+                android:text="@string/keypad_9" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keypad_bttn_verticalspacing"
+            android:background="@android:color/white" >
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:tag="@integer/button4"
+                android:text="@string/keypad_4" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:layout_marginLeft="@dimen/keypad_bttn_horizontalspacing"
+                android:tag="@integer/button5"
+                android:text="@string/keypad_5" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:layout_marginLeft="@dimen/keypad_bttn_horizontalspacing"
+                android:tag="@integer/button6"
+                android:text="@string/keypad_6" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keypad_bttn_verticalspacing"
+            android:background="@android:color/white" >
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:tag="@integer/button1"
+                android:text="@string/keypad_1" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:layout_marginLeft="@dimen/keypad_bttn_horizontalspacing"
+                android:tag="@integer/button2"
+                android:text="@string/keypad_2" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:layout_marginLeft="@dimen/keypad_bttn_horizontalspacing"
+                android:tag="@integer/button3"
+                android:text="@string/keypad_3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keypad_bttn_verticalspacing"
+            android:background="@android:color/white" >
+
+            <Button
+                android:id="@+id/button0"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:tag="@integer/button0"
+                android:text="@string/keypad_0" />
+
+            <Button
+                android:id="@+id/buttondot"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:layout_marginLeft="@dimen/keypad_bttn_horizontalspacing"
+                android:tag="@integer/button_dot"
+                android:text="@string/keypad_dot" />
+
+            <Button
+                android:id="@+id/buttonenter"
+                style="@style/keypad_bttn_style"
+                android:layout_width="@dimen/editkeypad_bttn_width"
+                android:layout_height="@dimen/editkeypad_bttn_height"
+                android:layout_marginLeft="@dimen/keypad_bttn_horizontalspacing"
+                android:tag="@integer/button_enter"
+                android:text="@string/done" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

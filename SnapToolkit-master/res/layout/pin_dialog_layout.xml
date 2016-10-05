@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="376dp"
+    android:layout_height="230dp"
+    android:background="@drawable/confirmation_pop_up_bg"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/alert_error_textview"
+        style="@style/snap_textstyle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="@dimen/medium_padding"
+        android:paddingRight="@dimen/medium_padding"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp" 
+        android:text="@string/wrong_pin"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/alert_message_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pin_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="@string/enter_pin"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/pin_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="15dp"
+            android:inputType="numberPassword"
+            android:ems="10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/alert_message_Layout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/alert_message_Layout"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/positiveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.49"
+            android:background="@null"
+            android:src="@drawable/alertdialog_doneselector" >
+        </ImageButton>
+         <View
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.005"
+            android:background="@color/divider_color" />
+
+        <ImageButton
+            android:id="@+id/negativeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.49"
+            android:background="@null"
+            android:src="@drawable/alertdialog_cancel_selector" >
+        </ImageButton>
+    </LinearLayout>
+
+</RelativeLayout>

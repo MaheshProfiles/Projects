@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jeevan.Activities.Persondetails">
+    <ImageView
+        android:id="@+id/prfl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/carpenter1" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:Mahesh"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@+id/prfl"/>
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:mahesh123@gmail.com"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/name"/>
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile:9738514840"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/email" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About:sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/mobile"/>
+    <ImageButton
+        android:id="@+id/img1"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_weight="1"
+        android:src="@drawable/phone1"
+        android:layout_marginTop="44dp"
+        android:layout_alignTop="@+id/prfl"
+        android:layout_toRightOf="@+id/name"
+        android:layout_toEndOf="@+id/name" />
+
+    <ImageButton
+        android:id="@+id/img2"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_weight="1"
+        android:paddingRight="10dp"
+        android:src="@drawable/messg1"
+        android:layout_alignTop="@+id/img1"
+        android:layout_toRightOf="@+id/img1"
+        android:layout_toEndOf="@+id/img1"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp" />
+
+</RelativeLayout>

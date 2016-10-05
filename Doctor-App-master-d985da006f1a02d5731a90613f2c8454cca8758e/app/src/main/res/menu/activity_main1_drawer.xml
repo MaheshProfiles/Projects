@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_calendar"
+            android:title="Calendar" />
+        <item
+            android:id="@+id/nav_patient_history"
+            android:title="Patient History" />
+
+        <item
+            android:id="@+id/nav_cross_ref"
+            android:title="Cross-reference" />
+
+        <item
+            android:id="@+id/nav_upload_presc"
+            android:title="Upload Prescription" />
+
+        <item
+            android:id="@+id/nav_partner_setup"
+            android:title="Partner Setup" />
+
+        <item
+            android:id="@+id/nav_price_setup"
+            android:title="Price Setup" />
+
+
+        <item
+            android:id="@+id/nav_account_settings"
+            android:title="Account Settings" />
+
+        <item
+            android:id="@+id/nav_change_password"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/nav_sign_out"
+            android:title="Sign Out" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/distributor_list_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/small_padding"
+    android:paddingLeft="@dimen/small_padding"
+    android:gravity="center"
+    android:layout_marginTop="-50dp"
+    android:descendantFocusability="beforeDescendants" >
+
+    <ImageView
+        android:id="@+id/company_filter_image"
+        android:layout_width="@dimen/companyfilter_imagewidth"
+        android:layout_height="@dimen/companyfilter_imageheight"
+        android:gravity="center" />
+    
+    <TextView 
+        android:id="@+id/company_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/small_padding"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bttn_alphabets_normal"
+        android:visibility="visible"/>
+
+</RelativeLayout>

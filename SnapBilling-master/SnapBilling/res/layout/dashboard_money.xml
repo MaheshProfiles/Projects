@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboard_alerts_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/resolution_filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/small_padding"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/day_button"
+            style="@style/filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/charts_dayfilter_radio_selector"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/week_button"
+            style="@style/filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/charts_weekfilter_radio_selector" />
+
+        <RadioButton
+            android:id="@+id/month_button"
+            style="@style/filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/charts_monthfilter_radio_selector" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/money_visibility_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/resolution_filters"
+        android:layout_marginTop="@dimen/medium_padding" >
+
+        <ImageView
+            android:id="@+id/bills_made_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/small_padding"
+            android:src="@drawable/icon_credit" />
+
+        <TextView
+            android:id="@+id/storevisibility_textview"
+            style="@style/dashboard_summary_itenary_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/tiny_padding"
+            android:layout_toRightOf="@+id/bills_made_icon"
+            android:text="@string/store_visibility" />
+
+        <TextView
+            android:id="@+id/storevisibility_value_textview"
+            style="@style/dashboard_summary_itenary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storevisibility_textview"
+            android:layout_margin="@dimen/tiny_padding"
+            android:layout_toRightOf="@+id/bills_made_icon" />
+    </RelativeLayout>
+
+<!--     <RelativeLayout -->
+<!--         android:id="@+id/money_forgottenprod_relativelayout" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_below="@id/money_visibility_relativelayout" -->
+<!--         android:layout_marginTop="@dimen/medium_padding" > -->
+
+<!--         <ImageView -->
+<!--             android:id="@+id/bills_made_icon" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_margin="@dimen/small_padding" -->
+<!--             android:src="@drawable/icon_credit" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/store_forgottenproducts_textview" -->
+<!--             style="@style/dashboard_summary_itenary_heading" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentTop="true" -->
+<!--             android:layout_margin="@dimen/tiny_padding" -->
+<!--             android:layout_toRightOf="@+id/bills_made_icon" -->
+<!--             android:text="@string/forgotten_products" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/store_forgottenproducts_value_textview" -->
+<!--             style="@style/dashboard_summary_itenary_text" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_below="@+id/store_forgottenproducts_textview" -->
+<!--             android:layout_margin="@dimen/tiny_padding" -->
+<!--             android:layout_toRightOf="@+id/bills_made_icon" /> -->
+<!--     </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/money_offers_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/money_visibility_relativelayout"
+        android:layout_marginTop="@dimen/medium_padding" >
+
+        <ImageView
+            android:id="@id/bills_made_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/small_padding"
+            android:src="@drawable/icon_credit" />
+
+        <TextView
+            android:id="@+id/store_offers_textview"
+            style="@style/dashboard_summary_itenary_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/tiny_padding"
+            android:layout_toRightOf="@+id/bills_made_icon"
+            android:text="@string/offers" />
+
+        <TextView
+            android:id="@+id/store_offers_value_textview"
+            style="@style/dashboard_summary_itenary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/store_offers_textview"
+            android:layout_margin="@dimen/tiny_padding"
+            android:layout_toRightOf="@+id/bills_made_icon" />
+    </RelativeLayout>
+
+<!--     <RelativeLayout -->
+<!--         android:id="@+id/money_suggestedprod_relativelayout" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_below="@id/money_offers_relativelayout" -->
+<!--         android:layout_marginTop="@dimen/medium_padding" > -->
+
+<!--         <ImageView -->
+<!--             android:id="@+id/bills_made_icon" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_margin="@dimen/small_padding" -->
+<!--             android:src="@drawable/icon_credit" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/store_suggestions_textview" -->
+<!--             style="@style/dashboard_summary_itenary_heading" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentTop="true" -->
+<!--             android:layout_margin="@dimen/tiny_padding" -->
+<!--             android:layout_toRightOf="@+id/bills_made_icon" -->
+<!--             android:text="@string/suggested_products" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/store_suggestions_value_textview" -->
+<!--             style="@style/dashboard_summary_itenary_text" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_below="@+id/store_suggestions_textview" -->
+<!--             android:layout_margin="@dimen/tiny_padding" -->
+<!--             android:layout_toRightOf="@+id/bills_made_icon" /> -->
+<!--     </RelativeLayout> -->
+
+</RelativeLayout>

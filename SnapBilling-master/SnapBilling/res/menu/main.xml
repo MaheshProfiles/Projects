@@ -1,0 +1,61 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/customer_payment_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="@string/customer_payment"/>
+    <item
+        android:id="@+id/billhistory_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="@string/bills"/>
+    <item
+        android:id="@+id/dashboard_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="never"
+        android:visible="false"
+        android:title="@string/dashboard"/>
+    <item
+        android:id="@+id/dualdisplay_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="@string/dualdisp_mode"
+        android:visible="false"/>
+    <!--  <item
+        android:id="@+id/help_videos_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="@string/help_videos"/>-->
+     <item
+        android:id="@+id/new_settings_fragment"
+        android:icon="@drawable/icon_monitor"
+        android:showAsAction="collapseActionView"
+        android:title="@string/settings"/>
+    <item
+        android:id="@+id/sync_summary_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="Sync Summary"/>
+    <item
+        android:id="@+id/vat_summary_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="VAT Report"/>
+    <item
+        android:id="@+id/campaign_menuitem"
+        android:icon="@drawable/icon_monitor"
+        android:showAsAction="collapseActionView"
+        android:title="@string/menu_visibility"/>
+    <item
+        android:id="@+id/my_screen_menuitem"
+        android:icon="@drawable/icon_monitor"
+        android:showAsAction="collapseActionView"
+        android:title="@string/menu_my_screen"/>
+    
+     <item
+        android:id="@+id/inventory_update"
+        android:icon="@drawable/icon_monitor"
+        android:showAsAction="collapseActionView"
+        android:title="@string/menu_inventory_update"/>
+</menu>

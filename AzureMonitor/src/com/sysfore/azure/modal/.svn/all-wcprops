@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/android/!svn/ver/928/AzureMonitor/src/com/sysfore/azure/modal
+END
+VMServiceParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/android/!svn/ver/858/AzureMonitor/src/com/sysfore/azure/modal/VMServiceParser.java
+END
+HostedServiceParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/android/!svn/ver/858/AzureMonitor/src/com/sysfore/azure/modal/HostedServiceParser.java
+END
+DataProcess.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/928/AzureMonitor/src/com/sysfore/azure/modal/DataProcess.java
+END
+GMailSender.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/android/!svn/ver/1208/AzureMonitor/src/com/sysfore/azure/modal/GMailSender.java
+END
+ResourceUsageServiceParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/android/!svn/ver/833/AzureMonitor/src/com/sysfore/azure/modal/ResourceUsageServiceParser.java
+END
+AzureUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/android/!svn/ver/1208/AzureMonitor/src/com/sysfore/azure/modal/AzureUtil.java
+END

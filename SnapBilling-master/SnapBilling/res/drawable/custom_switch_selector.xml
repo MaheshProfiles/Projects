@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:dither="true" android:shape="rectangle" android:useLevel="false" android:visible="true">
+            <gradient android:angle="270" android:endColor="@color/switch_on" android:startColor="@color/switch_on" />
+            <corners android:radius="30dp" />
+            <size android:height="30dp" android:width="30dp" />
+            <stroke android:width="4dp" android:color="@color/switch_on" />
+        </shape>
+    </item>
+    <item android:state_checked="false">
+        <shape android:dither="true" android:shape="rectangle" android:useLevel="false" android:visible="true">
+            <gradient android:angle="270" android:endColor="@color/switch_off" android:startColor="@color/switch_off" />
+            <corners android:radius="30dp" />
+            <size android:height="30dp" android:width="30dp" />
+            <stroke android:width="4dp" android:color="@color/switch_off" />
+        </shape>
+   </item>
+</selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="SimpleDateFormat" severity="ignore">
+        <ignore path="src/com/sysfore/azurepricedetails/SubscriptionActivity.java" />
+    </issue>
+    <issue id="UseValueOf">
+        <ignore path="src/com/sysfore/azurepricedetails/PriceDetails.java" />
+    </issue>
+</lint>

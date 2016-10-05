@@ -1,0 +1,127 @@
+package com.sysfore.azurepricedetails;
+
+import java.util.List;
+
+import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnCancelListener;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.sysfore.azurepricedetails.modal.GMailSender;
+import com.sysfore.azurepricedetails.model.LoginMaster;
+import com.sysfore.azurepricedetails.sqlite.helper.DatabaseHelper;
+
+public class ForgotPassword extends Activity {
+
+	EditText username, email;
+	Button submit;
+	String mailid;
+	GMailSender mailsender;
+	DatabaseHelper db;
+	String password;
+	long passcount;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.forgot_password);
+		email = (EditText) findViewById(R.id.forgot_security_answer);
+		db = new DatabaseHelper(this);
+		username = (EditText) findViewById(R.id.forgot_security_question);
+		submit = (Button) findViewById(R.id.submit);
+		submit.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				mailid = email.getText().toString();
+				Log.d("MAilID+++++++++++", mailid);
+				List<LoginMaster> pass = db.getpassword(username.getText()
+						.toString(), mailid);
+				for (int i = 0; i < pass.size(); i++) {
+					password = pass.get(i).getPassword();
+				}
+				passcount = db.getforgotpasswordCount(username.getText()
+						.toString(), mailid);
+				if (passcount > 0) {
+					new sendmailgmail().execute();
+					Toast.makeText(
+							getApplicationContext(),
+							"A Recovery Email is sent to you,See it for more details",
+							Toast.LENGTH_SHORT).show();
+				} else {
+					Toast.makeText(
+							getApplicationContext(),
+							"Username or Mail-id Not Matching.Please Try Correctly",
+							Toast.LENGTH_SHORT).show();
+				}
+
+			}
+		});
+
+	}
+
+	/**
+	 * Send password in background via gmail
+	 */
+	public class sendmailgmail extends AsyncTask<Void, String, Void> implements
+			OnCancelListener {
+
+		@Override
+		public void onCancel(DialogInterface dialog) {
+			// TODO Auto-generated method stub
+
+		}
+
+		@Override
+		protected void onPostExecute(Void result) {
+			// TODO Auto-generated method stub
+			super.onPostExecute(result);
+			Intent reset = new Intent(ForgotPassword.this, LoginActivity.class);
+			startActivity(reset);
+		}
+
+		@Override
+		protected Void doInBackground(Void... params) {
+			// TODO Auto-generated method stub
+			mailsender = new GMailSender("maheshandroid20@gmail.com", "mahesh20A");
+			String[] toArr = { mailid };
+			mailsender.set_to(toArr);
+			mailsender.set_from("maheshandroid20@gmail.com");
+			mailsender.set_subject("Reset Your Password.");
+			mailsender.setBody("Hello,"+"\n"
+					+ "\nThe Account has been sent with the password." + "\n"
+					+ "\n" + "Please check below." + "\n" + "\n"
+					+ "The Password is: " + password + "\n" + "\n"
+					+ "Thank You For Using Azure Service");
+			try {
+
+				if (mailsender.send()) {
+					Log.d("Email was sent successfully.",
+							"Email was sent successfully.");
+					// Toast.makeText(getApplicationContext(),
+					// "Email was sent successfully.", Toast.LENGTH_LONG)
+					// .show();
+				} else {
+					Log.d("Email was not sent.", "Email was not sent.");
+					// Toast.makeText(getApplicationContext(),
+					// "Email was not sent.", Toast.LENGTH_LONG).show();
+				}
+			} catch (Exception e) {
+
+				Log.e("MailApp", "Could not send email", e);
+			}
+			return null;
+		}
+	}
+
+}

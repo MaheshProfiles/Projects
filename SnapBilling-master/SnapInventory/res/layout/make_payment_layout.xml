@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_transparent_color"
+    android:clickable="true" >
+
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="227dp"
+        >
+    
+    <TextView
+        android:id="@+id/add_payment_date_textView"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:hint="Enter Date"
+        style="@style/update_product_textstyle" 
+        />
+
+    <TextView
+        android:id="@+id/payment_to_make_textView"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/add_payment_date_textView"
+        android:layout_toRightOf="@+id/add_payment_date_textView"
+        android:background="@android:color/white"
+        android:hint="Enter Amount"
+        style="@style/update_product_textstyle"
+        />
+
+    <Spinner
+        android:id="@+id/add_payment_mode_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/add_payment_date_textView"
+        android:layout_toRightOf="@+id/payment_to_make_textView"
+        style="@style/update_product_textstyle"
+        android:entries="@array/payment_mode" 
+        />
+
+    <TextView
+        android:id="@+id/payment_cheque_no_textView"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/add_payment_date_textView"
+        android:layout_toRightOf="@+id/add_payment_mode_spinner"
+        android:background="@android:color/white"
+        android:hint="Enter Cheque No"
+        android:visibility="gone" 
+        style="@style/update_product_textstyle"
+        />
+
+    <Button
+        android:id="@+id/update_payment_made_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/add_payment_date_textView"
+        android:layout_toRightOf="@+id/payment_cheque_no_textView"
+        android:text="@string/done"
+        android:background="@drawable/summary_done_button_selector"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/delete_payment_made_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/add_payment_date_textView"
+        android:layout_toRightOf="@+id/update_payment_made_button"
+        android:text="@string/delete"
+        android:background="@drawable/summary_delete_btn_selector"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        />
+    
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/active_shopping_cart_bgcolor" />
+
+    <stroke
+        android:width="3dip"
+        android:color="@color/border_gray_bgcolor"/>
+
+    <corners android:radius="30dp" />
+
+    <padding
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp" />
+
+</shape>

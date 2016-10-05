@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:descendantFocusability="beforeDescendants"
+    android:background="@color/default_background_color" >
+
+    <RelativeLayout
+        android:id="@+id/category_filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/category_listview"
+            android:layout_width="358dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:background="@drawable/categories_list_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" >
+        </ListView>
+
+        <View
+            android:id="@+id/categorylistview_divider"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_toRightOf="@id/category_listview"
+            android:background="#d3d3d3d3" />
+
+        <com.jess.ui.TwoWayGridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/subcategory_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_toRightOf="@id/categorylistview_divider"
+            android:scrollbars="none"
+            app:columnWidth="254dp"
+            app:horizontalSpacing="@dimen/small_padding"
+            app:numColumns="auto_fit"
+            app:numRows="8"
+            app:rowHeight="70dp"
+            app:scrollDirectionLandscape="horizontal"
+            app:scrollDirectionPortrait="vertical"
+            app:stretchMode="none"
+            app:verticalSpacing="@dimen/small_padding" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/brand_filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/select_all_textview"
+            style="@style/snap_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:text="@string/select_all" />
+
+        <ImageButton
+            android:id="@+id/select_all_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_toLeftOf="@id/select_all_textview"
+            android:background="@null"
+            android:src="@drawable/brand_selection_selector" />
+
+        <com.jess.ui.TwoWayGridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/brand_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/select_all_button"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:scrollbars="none"
+            app:columnWidth="@dimen/store_productimage_width"
+            app:horizontalSpacing="@dimen/medium_padding"
+            app:numColumns="auto_fit"
+            app:numRows="3"
+            app:rowHeight="@dimen/store_productimage_height"
+            app:scrollDirectionLandscape="horizontal"
+            app:scrollDirectionPortrait="vertical"
+            app:stretchMode="none"
+            app:verticalSpacing="@dimen/medium_padding" />
+    </RelativeLayout>
+
+</RelativeLayout>

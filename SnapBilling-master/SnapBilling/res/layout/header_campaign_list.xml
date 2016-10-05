@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+    android:layout_height="@dimen/inventory_header_height"
+    android:background="@drawable/productheader_border_shape"
+    android:orientation="horizontal" >
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_header_product_width"
+        android:layout_height="match_parent"
+        android:text="@string/campaignName"
+        android:textSize="28sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:text="@string/campaignCode" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_mrp_header_width"
+        android:layout_height="match_parent"
+        android:text="@string/campaignType" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:text="@string/companyName" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:text="@string/startDate" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:text="@string/endDate" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    
+
+</LinearLayout>

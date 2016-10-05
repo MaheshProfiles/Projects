@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboard_charts_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/chart_filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/small_padding"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/revenue_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="@dimen/dashboard_chart_fitler_bttnwidth"
+            android:layout_height="@dimen/def_button_height"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/revenue" />
+
+        <RadioButton
+            android:id="@+id/basketvalue_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="@dimen/dashboard_chart_fitler_bttnwidth"
+            android:layout_height="@dimen/def_button_height"
+            android:gravity="center"
+            android:text="@string/basket_value" />
+
+        <RadioButton
+            android:id="@+id/customerfootfall_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="@dimen/dashboard_chart_fitler_bttnwidth"
+            android:layout_height="@dimen/def_button_height"
+            android:gravity="center"
+            android:text="@string/customer_footfall" />
+
+        <RadioButton
+            android:id="@+id/returned_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="@dimen/dashboard_chart_fitler_bttnwidth"
+            android:layout_height="@dimen/def_button_height"
+            android:gravity="center"
+            android:text="@string/returned_products" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/chart_resolution_filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/small_padding"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/day_button"
+            style="@style/filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/charts_dayfilter_radio_selector"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/week_button"
+            style="@style/filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/charts_weekfilter_radio_selector" />
+
+        <RadioButton
+            android:id="@+id/month_button"
+            style="@style/filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/charts_monthfilter_radio_selector" />
+    </RadioGroup>
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/charts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chart_resolution_filters"
+        android:layout_marginBottom="@dimen/medium_padding"
+        android:layout_marginLeft="@dimen/large_padding"
+        android:layout_marginRight="@dimen/large_padding"
+        android:layout_marginTop="@dimen/medium_padding"
+        app:columnWidth="@dimen/dashboard_bar_width"
+        app:gravity="center"
+        app:numColumns="auto_fit"
+        app:numRows="1"
+        app:rowHeight="@dimen/dashboard_chart_height"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="vertical"
+        app:stretchMode="none"
+        app:verticalSpacing="@dimen/small_padding" />
+
+    <TextView
+        android:id="@+id/alert_textview"
+        style="@style/snap_textstyle"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/chart_filters"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:drawableTop="@drawable/alerts_trendselector"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background_color"
+    android:paddingLeft="@dimen/medium_padding"
+    android:paddingRight="@dimen/medium_padding" >
+
+    <include
+        android:id="@+id/bill_layout"
+        android:layout_width="422dp"
+        android:layout_height="@dimen/billmonitor_bill_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_bill" />
+
+    <!-- <RelativeLayout
+        android:id="@+id/search_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/bill_layout"
+        android:gravity="center|top" >
+
+        <TextView
+            android:id="@+id/barcode_search_textview"
+            android:layout_width="@dimen/billmonitor_bill_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/barcode_search_normal"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:hint="Search with barcode"
+            android:inputType="none"
+            android:paddingLeft="60dp"
+            android:singleLine="true"
+            android:textColorHint="@android:color/black"
+            android:textIsSelectable="true"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/clear_barcode_product_button"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/barcode_search_textview"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:background="@null"
+            android:paddingBottom="@dimen/small_padding"
+            android:paddingLeft="@dimen/small_padding"
+            android:src="@drawable/cancel_imgselector" />
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/product_name_search_edittext"
+            android:layout_width="@dimen/billmonitor_search_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_toRightOf="@+id/barcode_search_textview"
+            android:background="@drawable/product_search_normal"
+            android:hint="@string/search_product_hint"
+            android:imeOptions="actionDone"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:singleLine="true"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/clear_name_product_button"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/product_name_search_edittext"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:background="@null"
+            android:paddingBottom="@dimen/small_padding"
+            android:paddingLeft="@dimen/small_padding"
+            android:src="@drawable/cancel_imgselector" />
+    </RelativeLayout> -->
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/checkout_offers_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_toRightOf="@id/bill_layout"
+        android:visibility="gone"
+        app:columnWidth="@dimen/store_columnwidth"
+        app:gravity="center"
+        app:horizontalSpacing="@dimen/medium_padding"
+        app:numColumns="auto_fit"
+        app:numRows="@integer/virtual_store_rows"
+        app:rowHeight="@dimen/store_rowheight"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="vertical"
+        app:stretchMode="none"
+        app:verticalSpacing="@dimen/small_padding" />
+
+    <RelativeLayout
+        android:id="@+id/quickadd_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_toRightOf="@id/bill_layout"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/quickadd_generic_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/quickadd_food_relativelayout"
+                android:layout_width="@dimen/store_productimage_width"
+                android:layout_height="@dimen/store_productimage_height"
+                android:background="@drawable/product_bordercolor_selector"
+                android:padding="1dp"
+                android:tag="@string/quickadd_food_tag" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="@android:color/white"
+                    android:paddingBottom="@dimen/large_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/quickadd_food_selector" />
+
+                <TextView
+                    style="@style/quickadd_textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/small_padding"
+                    android:gravity="center"
+                    android:text="@string/food" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quickadd_homecare_relativelayout"
+                android:layout_width="@dimen/store_productimage_width"
+                android:layout_height="@dimen/store_productimage_height"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:background="@drawable/product_bordercolor_selector"
+                android:padding="1dp"
+                android:tag="@string/quickadd_homecare_tag" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="@android:color/white"
+                    android:paddingBottom="@dimen/large_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/quickadd_homecare_selector" />
+
+                <TextView
+                    style="@style/quickadd_textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/small_padding"
+                    android:gravity="center"
+                    android:text="@string/home_care" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quickadd_kitchen_relativelayout"
+                android:layout_width="@dimen/store_productimage_width"
+                android:layout_height="@dimen/store_productimage_height"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:background="@drawable/product_bordercolor_selector"
+                android:padding="1dp"
+                android:tag="@string/quickadd_kitchen_tag" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="@android:color/white"
+                    android:paddingBottom="@dimen/large_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/quickadd_kitchen_selector" />
+
+                <TextView
+                    style="@style/quickadd_textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/small_padding"
+                    android:gravity="center"
+                    android:text="@string/kitchen" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quickadd_bathroom_relativelayout"
+                android:layout_width="@dimen/store_productimage_width"
+                android:layout_height="@dimen/store_productimage_height"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:background="@drawable/product_bordercolor_selector"
+                android:padding="1dp"
+                android:tag="@string/quickadd_bathroom_tag" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="@android:color/white"
+                    android:paddingBottom="@dimen/large_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/quickadd_bathroom_selector" />
+
+                <TextView
+                    style="@style/quickadd_textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/small_padding"
+                    android:gravity="center"
+                    android:text="@string/bathroom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quickadd_others_relativelayout"
+                android:layout_width="@dimen/store_productimage_width"
+                android:layout_height="@dimen/store_productimage_height"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:background="@drawable/product_bordercolor_selector"
+                android:padding="1dp"
+                android:tag="@string/quickadd_others_tag" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="@android:color/white"
+                    android:paddingBottom="@dimen/large_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/quickadd_others_selector" />
+
+                <TextView
+                    style="@style/quickadd_textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/small_padding"
+                    android:gravity="center"
+                    android:text="@string/others" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.jess.ui.TwoWayGridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/quickadd_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/quickadd_generic_linearlayout"
+            android:layout_marginTop="@dimen/medium_padding"
+            app:columnWidth="148dp"
+            app:gravity="center"
+            app:horizontalSpacing="@dimen/medium_padding"
+            app:numColumns="5"
+            app:numRows="auto_fit"
+            app:rowHeight="143dp"
+            app:scrollDirectionLandscape="vertical"
+            app:scrollDirectionPortrait="vertical"
+            app:stretchMode="none"
+            app:verticalSpacing="@dimen/small_padding" />
+
+        <include
+            android:id="@+id/quickadd_products_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/layout_quickadd_product"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/complete_bill_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/bill_layout"
+        layout="@layout/layout_complete_bill"
+        android:visibility="visible" />
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/checkout_suggested_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_toRightOf="@id/complete_bill_layout"
+        android:visibility="gone"
+        app:columnWidth="@dimen/store_columnwidth"
+        app:gravity="center"
+        app:horizontalSpacing="@dimen/medium_padding"
+        app:numColumns="auto_fit"
+        app:numRows="@integer/virtual_store_rows"
+        app:rowHeight="@dimen/store_rowheight"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="vertical"
+        app:stretchMode="none"
+        app:verticalSpacing="@dimen/small_padding" />
+
+    <ImageView
+        android:id="@+id/customer_suggestions_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/medium_padding"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_toRightOf="@id/complete_bill_layout"
+        android:src="@drawable/products_blur" />
+
+    <LinearLayout
+        android:id="@+id/customersearch_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_color"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/customersearch_listviewlayout"
+            android:layout_width="@dimen/billmonitor_bill_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/customer_search_height"
+            android:orientation="vertical"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" >
+
+            <View
+                style="@style/customer_dividerstyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <ListView
+                android:id="@+id/customer_search_result_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:divider="@color/bill_border_color"
+                android:dividerHeight="1dp" />
+
+            <View
+                style="@style/customer_dividerstyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/product_search_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:layout_toRightOf="@id/bill_layout"
+        android:visibility="gone"
+        app:columnWidth="@dimen/store_columnwidth"
+        app:gravity="center"
+        app:horizontalSpacing="@dimen/medium_padding"
+        app:numColumns="auto_fit"
+        app:numRows="@integer/virtual_store_rows"
+        app:rowHeight="@dimen/store_search_rowheight"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="vertical"
+        app:stretchMode="none"
+        app:verticalSpacing="@dimen/small_padding" />
+
+    <include
+        android:id="@+id/add_customer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/addedit_customer_layout"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/delete_return_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_deletereturn"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/overlay_framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/weight_framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/weight_left_margin"
+        android:visibility="gone" >
+    </FrameLayout>
+
+</RelativeLayout>

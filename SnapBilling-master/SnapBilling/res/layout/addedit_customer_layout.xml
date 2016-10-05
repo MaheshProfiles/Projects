@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/add_customer_relativelayout"
+        android:layout_width="@dimen/customer_addedit_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/customer_search_height"
+        android:background="@drawable/addcustomer_border_shape"
+        android:clickable="true"
+        android:padding="@dimen/medium_padding" >
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/customer_number_edittext"
+            style="@style/customer_search_textstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:hint="@string/customer_number_hint"
+            android:maxLength="10"
+            android:nextFocusDown="@+id/customer_name_edittext" />
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/customer_name_edittext"
+            style="@style/customer_search_textstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="27"
+            android:layout_below="@id/customer_number_edittext"
+            android:hint="@string/customer_name_hint"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/customer_address_edittext" />
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/customer_address_edittext"
+            style="@style/customer_search_textstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="40"
+            android:imeOptions="actionDone"
+            android:layout_below="@id/customer_name_edittext"
+            android:hint="@string/customer_address_hint"
+            android:inputType="textPostalAddress"
+            android:nextFocusDown="@+id/customer_creditlimit_edittext" />
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/customer_creditlimit_edittext"
+            style="@style/customer_search_textstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_address_edittext"
+            android:hint="@string/credit_limit"
+            android:visibility="gone"
+            android:maxLength="12"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/customer_add_buttonstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/customer_creditlimit_edittext"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/save_button"
+            style="@style/customer_add_buttonstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_creditlimit_edittext"
+            android:layout_marginRight="@dimen/small_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:layout_toLeftOf="@id/cancel_button"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/edit_button"
+            style="@style/customer_add_buttonstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_creditlimit_edittext"
+            android:layout_marginRight="@dimen/small_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:layout_toLeftOf="@id/cancel_button"
+            android:text="@string/save"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

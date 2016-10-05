@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/store_subcategory_width"
+    android:layout_height="@dimen/store_subcategory_height" >
+
+    <TextView
+        android:id="@+id/category_textview"
+        style="@style/stock_subcategory_textstyle"
+        android:layout_width="@dimen/store_subcategory_width"
+        android:layout_height="@dimen/store_subcategory_height" />
+
+</LinearLayout>

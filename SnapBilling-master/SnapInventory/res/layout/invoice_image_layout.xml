@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_transparent_color"
+    android:clickable="true" >
+
+    <ImageView
+        android:id="@+id/invoice_image_view"
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="300dp" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_toRightOf="@+id/invoice_image_view"
+        android:background="@drawable/bttn_menu_bg" >
+
+        <Button
+            android:id="@+id/invoice_image_done_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/invoice_image_done_button_selector" />
+
+        <Button
+            android:id="@+id/invoice_image_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/invoice_image_done_button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:background="@drawable/invoice_image_delete_button_selector" />
+
+        <Button
+            android:id="@+id/invoice_image_recapture_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/invoice_image_delete_button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:background="@drawable/invoice_image_recapture_button_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

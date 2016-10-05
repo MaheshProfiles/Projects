@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboard_alerts_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/chart_filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/small_padding"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/lowstock_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/lowstock" />
+
+        <RadioButton
+            android:id="@+id/outofstock_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/outstock" />
+
+        <RadioButton
+            android:id="@+id/slowstock_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/slowstock" />
+
+        <RadioButton
+            android:id="@+id/expiringstock_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/expiringstock"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/expiredstock_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/expiredstock"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/charts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chart_filters"
+        android:layout_margin="@dimen/medium_padding"
+        android:divider="@null" >
+    </ListView>
+
+</RelativeLayout>

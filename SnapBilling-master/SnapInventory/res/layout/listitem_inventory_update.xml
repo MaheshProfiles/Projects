@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1500dp"
+    android:layout_height="@dimen/inventory_update_item_height"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="104dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:background="@color/product_bgcolor_light" >
+
+        <ImageView
+            android:id="@+id/inventory_prod_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/update_global_prod_button_selected"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/product_checked_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <RelativeLayout
+        android:id="@+id/inventory_prodname_layout"
+        android:layout_width="@dimen/subList_distributor_orders_sku_name_width"
+        android:layout_height="match_parent"
+       android:paddingLeft="2dp"
+       android:paddingRight="2dp"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <TextView
+            android:id="@+id/inventory_prodname_textview"
+            style="@style/generic_expandable_list_product_textstyle"
+            android:layout_width="@dimen/subList_distributor_orders_sku_name_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:textColor="@color/product_textcolor" />
+
+        <TextView
+            android:id="@+id/inventory_prodcode_textview"
+            style="@style/product_barcode_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inventory_prodname_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/product_textcolor" />
+
+        <RelativeLayout
+            android:id="@+id/inventory_prodname_trns_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    
+    <TextView
+        android:id="@+id/inventory_mrp_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_purchaseprice_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="122dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_salesprice_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+     <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_salesprice_two_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+     <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_salesprice_three_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_prodquantity_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="105dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/wkly_avg_sale_txt"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="175dp"
+        android:layout_height="match_parent"
+        android:background="@color/highest_margin_bgcolor"
+        android:textColor="@color/product_textcolor"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <RelativeLayout
+        android:id="@+id/inventoryReportLayout"
+        style="@style/update_productheader_textstyle"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:background="@color/highest_margin_bgcolor" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_total_sales" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <ImageView
+        android:id="@+id/inventory_store_select_image"
+        android:layout_width="90dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:background="@color/highest_margin_bgcolor"
+        android:padding="25dp"
+        android:src="@drawable/product_checked_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_prodtax_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:background="@color/weekly_trend_bgcolor"
+        android:textColor="@color/product_textcolor" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_produnit_spinner"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:background="@color/highest_margin_bgcolor"
+        android:textColor="@color/product_textcolor" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_prod_cat_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:background="@color/weekly_trend_bgcolor"
+        android:maxLines="2"
+        android:textColor="@color/product_textcolor" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_prod_subcat_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:background="@color/highest_margin_bgcolor"
+        android:maxLines="2"
+        android:textColor="@color/product_textcolor" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <Button
+        android:id="@+id/inventory_batch_button"
+        style="@style/snap_textstyle"
+        android:layout_width="@dimen/inventory_update_item_height"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/update_batches_button_selector"
+        android:text="@string/batches"
+        android:textColor="@drawable/update_batches_button_textcolor_selector"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <Button
+        android:id="@+id/inventory_edit_prod_button"
+        style="@style/snap_textstyle"
+        android:layout_width="@dimen/inventory_update_item_height"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/inventory_prod_edit_selector"
+        android:text="Edit"
+        android:textColor="@drawable/update_edit_button_textcolor_selector"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <Button
+        android:id="@+id/inventory_delete_button"
+        style="@style/snap_textstyle"
+        android:layout_width="@dimen/inventory_update_item_height"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/inventory_delete_button_selector"
+        android:text="@string/delete"
+        android:textColor="@drawable/update_delete_button_textcolor_selector"
+        android:textSize="18sp" />
+
+</LinearLayout>

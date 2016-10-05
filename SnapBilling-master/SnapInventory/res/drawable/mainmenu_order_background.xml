@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false"><layer-list>
+            <item android:bottom="1dp" android:top="1dp"><shape android:shape="rectangle">
+                    <solid android:color="@color/inventory_order_button_colour" />
+                </shape></item>
+            <item><bitmap android:gravity="center" android:src="@drawable/icon_home_order" />
+            </item>
+        </layer-list></item>
+    <item android:state_pressed="true"><layer-list>
+            <item android:bottom="1dp" android:top="1dp"><shape android:shape="rectangle">
+                    <solid android:color="@color/inventory_order_button_pressed_colour" />
+                </shape></item>
+            <item><bitmap android:gravity="center" android:src="@drawable/icon_home_order" />
+            </item>
+        </layer-list></item>
+
+</selector>

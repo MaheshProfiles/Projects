@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SnapBilling</string>
+    <string name="action_settings">Settings</string>
+    <string name="checkout">Checkout</string>
+    <string name="receive">Receive</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="offers">Offers</string>
+    <string name="quick_add">Quick Add</string>
+    <string name="complete">Complete</string>
+    <string name="serial_no">Sl.</string>
+    <string name="products">Products</string>
+    <string name="search_product_hint">Search Products</string>
+    <string name="bill_search_hint_memo">Type Customer Name or Number</string>
+    <string name="bill_search_hint">Type Customer Name or Number or InvoiceID</string>
+    <string name="quantity">Quantity</string>
+    <string name="qty">Qty</string>
+    <string name="date">Date</string>
+    <string name="price">Price</string>
+    <string name="rate">Rate</string>
+    <string name="pp">PP</string>
+    <string name="total">Total</string>
+    <string name="total_bill">Total Bill</string>
+    <string name="status">Status</string>
+    <string name="delete">Delete</string>
+    <string name="return_product">Return</string>
+    <string name="editname_product">Edit Name</string>
+    <string name="revenue">Revenue</string>
+    <string name="basket_value">Avg. Basket Value</string>
+    <string name="customer_footfall">Customer Foot Fall</string>
+    <string name="returned_products">Returned Products</string>
+    <string name="keypad_0">0</string>
+    <string name="keypad_1">1</string>
+    <string name="keypad_2">2</string>
+    <string name="keypad_3">3</string>
+    <string name="keypad_4">4</string>
+    <string name="keypad_5">5</string>
+    <string name="keypad_6">6</string>
+    <string name="keypad_7">7</string>
+    <string name="keypad_8">8</string>
+    <string name="keypad_9">9</string>
+    <string name="keypad_dot">.</string>
+    <string name="keypad_enter">Enter</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="discount1">-2%</string>
+    <string name="discount2">-5%</string>
+    <string name="discount3">%</string>
+    <string name="discount4">-8%</string>
+    <string name="discount5">-10%</string>
+    <string name="billno">Bill No :\u0020 </string>
+    <string name="amount">Amount</string>
+    <string name="items">Items</string>
+    <string name="savings">Savings</string>
+    <string name="discount">Discount</string>
+    <string name="pay">Pay</string>
+    <string name="payment">Payment</string>
+    <string name="history">History</string>
+    <string name="payment_amt">Payment Amount</string>
+    <string name="cash_payment">Cash Payment :</string>
+    <string name="payable">Payable</string>
+    <string name="paid">Paid</string>
+    <string name="delivery">Delivery</string>
+    <string name="cash">Cash</string>
+    <string name="credit">Credit</string>
+    <string name="total_customers">Total Customers</string>
+    <string name="total_due">Total Due</string>
+    <string name="total_paid">Total Paid :</string>
+    <string name="change">Change</string>
+    <string name="default_cash">00</string>
+    <string name="default_discount">00</string>
+    <string name="invoice_no">Enter The Invoice No</string>
+    <string name="lineitems">Line Items</string>
+    
+    <string name="billed_qty">Billed Qty</string>
+    <string name="received_qty">Received Qty</string>
+
+    <string name="expiry">Expiry</string>
+    <string name="sales_price_two">Sales Price2</string>
+    <string name="sales_price_three">Sales Price3</string>
+    <string name="report">Report</string>
+    
+    <string name="saved">Saved</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="ty">Thank You!</string>
+    <string name="cancel_bill">Cancel Bill?</string>
+    <string name="alert_amount">Bill Amount exceeds 1 lakh ?</string>
+    <string name="cancel_clear_bill">Cancel/Clear Bill</string>
+    <string name="deliver_bill">Deliver Bill</string>
+    <string name="pay_bill">Pay Bill</string>
+    <string name="day">Day</string>
+    <string name="days">Days</string>
+    <string name="month">Month</string>
+    <string name="week">Week</string>
+    <string name="print">Print</string>
+    <string name="message">Message</string>
+    <string name="mail">Mail</string>
+    <string name="invoice">Invoice</string>
+    <string name="vat">VAT</string>
+    <string name="mrp">MRP</string>
+    <string name="sp1">SP1</string>
+    <string name="sp2">SP2</string>
+    <string name="sp3">SP3</string>
+    <string name="bills">Bills</string>
+    <string name="customers">Customers</string>
+    <string name="tabonly_mode">Tablet Only Mode</string>
+    <string name="dualdisp_mode">Dual Display Mode</string>
+    <string name="customer">Customer</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="display">Display</string>
+    <string name="customer_payment">Customers</string>
+    <string name="phonenumber_hint">Type Name or Number</string>
+    <string name="member_since">Member Since</string>
+    <string name="credit_limit">Credit Limit</string>
+    <string name="due">Due</string>
+    <string name="money">Money</string>
+    <string name="food">Food</string>
+    <string name="home_care">Home Care</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="bathroom">Bathroom</string>
+    <string name="others">Others</string>
+    <string name="summary">Summary</string>
+    <string name="avg_visits_pm">Avg. Visits Per Month</string>
+    <string name="avg_purchase_pm">Avg. Purchase Per Month</string>
+    <string name="days_since_last_purchase">Days Since Last Purchase</string>
+    <string name="charts">Charts</string>
+    <string name="alerts">Alerts</string>
+    <string name="hot_prods">Hot Products</string>
+    <string name="calc">Calculator</string>
+    <string name="total_salse">Total Sales</string>
+    <string name="opening_cash">Opening Cash</string>
+    <string name="paid_purchase">Paid Purchase</string>
+    <string name="cash_in_reg">Cash in Register</string>
+    <string name="bills_made">Bills Made</string>
+    <string name="avg_basket_size">Avg. Basket Size</string>
+    <string name="avg_basket_value">Avg. Basket Value</string>
+    <string name="footfall">Footfall</string>
+    <string name="items_sold">Items Sold</string>
+    <string name="items_returned">Items Returned</string>
+    <string name="credit_given">Total Credit Due</string>
+    <string name="store_visibility">Store Visibility</string>
+    <string name="forgotten_products">Forgotten Products</string>
+    <string name="suggested_products">Suggested Products</string>
+    <string name="customer_name_hint">Customer Name</string>
+    <string name="customer_number_hint">Customer Mobile Number</string>
+    <string name="customer_address_hint">Customer Address</string>
+    <string name="agency_name_hint">Agency Name</string>
+
+    <!-- Distributor Strings -->
+    <string name="distributor_number_hint">Distributor Mobile Number</string>
+    <string name="distributor_tin_hint">TIN Number</string>
+    <string name="distributor_error_msg">Distributor already exist</string>
+    <string name="position_tag">pos</string>
+    <string name="customer_tag">customer</string>
+    <string name="wrapper_tag">wrapper_tag</string>
+    <string name="billfragment_tag">bill_fragment</string>
+    <string name="visibilityfragment_tag">visibility_fragment</string>
+    <string name="billhistoryfragment_tag">bill_history_fragment</string>
+    <string name="storefragment_tag">store_fragment</string>
+    <string name="monitorfragment_tag">billmonitor_fragment</string>
+    <string name="splitscreenfragment_tag">splitscreen_fragment</string>
+    <string name="customerpaymentfragment_tag">customerpayment_fragment</string>
+    <string name="vat_summary_fragment_tag">vat_summary_fragment</string>
+    <string name="customerpaymentfragment_bills_tag">customerpayment_bills_fragment</string>
+    <string name="addeditfragment_tag">addedit_product_fragment</string>
+    <string name="settingsfragment_current_printer">Click to change printer </string>
+    <string name="settingsfragment_empty_printer">Click to change printer [No Printer Selected Currently]</string>
+    <string name="summary_tag">summary_tag</string>
+    <string name="charts_tag">charts_tag</string>
+    <string name="alerts_tag">alerts_tag</string>
+    <string name="hot_prods_tag">hot_prods_tag</string>
+    <string name="calc_tag">calc_tag</string>
+    <string name="money_tag">money_tag</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm_delivery">Are you sure you want to mark this bill as a delivery?</string>
+    <string name="confirm_bill">Are you sure you want to mark this delivery as completed?</string>
+    <string name="weight">Weight</string>
+    <string name="enter_weight">Enter Weight</string>
+    <string name="weight_10g">10 gm</string>
+    <string name="weight_20g">20 gm</string>
+    <string name="weight_25g">25 gm</string>
+    <string name="weight_50g">50 gm</string>
+    <string name="weight_100g">100 gm</string>
+    <string name="weight_200g">200 gm</string>
+    <string name="weight_250g">250 gm</string>
+    <string name="weight_500g">500 gm</string>
+    <string name="weight_750g">750 gm</string>
+    <string name="weight_1kg">1 Kg</string>
+    <string name="weight_2kg">2 Kg</string>
+    <string name="weight_3kg">3 Kg</string>
+    <string name="weight_4kg">4 Kg</string>
+    <string name="weight_5kg">5 Kg</string>
+    <string name="weight_10kg">10 Kg</string>
+    <string name="weight_15kg">15 Kg</string>
+    <string name="weight_20kg">20 Kg</string>
+    <string name="weight_25kg">25 Kg</string>
+    <string name="weight_50kg">50 Kg</string>
+    <string name="weight_10ml">10 ml</string>
+    <string name="weight_20ml">20 ml</string>
+    <string name="weight_25ml">25 ml</string>
+    <string name="weight_50ml">50 ml</string>
+    <string name="weight_100ml">100 ml</string>
+    <string name="weight_200ml">200 ml</string>
+    <string name="weight_250ml">250 ml</string>
+    <string name="weight_500ml">500 ml</string>
+    <string name="weight_750ml">750 ml</string>
+    <string name="weight_1l">1 L</string>
+    <string name="weight_2l">2 L</string>
+    <string name="weight_3l">3 L</string>
+    <string name="weight_4l">4 L</string>
+    <string name="weight_5l">5 L</string>
+    <string name="weight_10l">10 L</string>
+    <string name="weight_15l">15 L</string>
+    <string name="weight_20l">20 L</string>
+    <string name="weight_25l">25 L</string>
+    <string name="weight_50l">50 L</string>
+    <string name="weight_10g_value">10</string>
+    <string name="weight_20g_value">20</string>
+    <string name="weight_25g_value">25</string>
+    <string name="weight_50g_value">50</string>
+    <string name="weight_100g_value">100</string>
+    <string name="weight_200g_value">200</string>
+    <string name="weight_250g_value">250</string>
+    <string name="weight_500g_value">500</string>
+    <string name="weight_750g_value">750</string>
+    <string name="weight_1kg_value">1</string>
+    <string name="weight_2kg_value">2</string>
+    <string name="weight_3kg_value">3</string>
+    <string name="weight_4kg_value">4</string>
+    <string name="weight_5kg_value">5</string>
+    <string name="weight_10kg_value">10</string>
+    <string name="weight_15kg_value">15</string>
+    <string name="weight_20kg_value">20</string>
+    <string name="weight_25kg_value">25</string>
+    <string name="weight_50kg_value">50</string>
+    <string name="settings">Settings</string>
+    <string name="help_videos">Help Videos</string>
+    <string name="sales_assessable_value">Sales Assessable Value</string>
+    <string name="output_vat_payable">Output VAT Payable</string>
+    <string name="purchase_value">Purchase Value</string>
+    <string name="input_vat_credit">Input VAT Credit</string>
+    <string name="net_vat_payable">Net VAT Payable</string>
+    <string name="menu_visibility">Visibility</string>
+    <string name="menu_my_screen">My Store Screen</string>
+    <string name="menu_inventory_update">Update Inventory</string>
+    <string name = "new_settings_ui">New Settings UI</string>
+    
+    <string name="my_store">My Store</string>
+    <string name="campaign">Campaign</string>
+    <string name="synccampaign">Sync Campaign</string>
+    <string name="gdb_tab">GDB</string>
+    <string name ="categories_tab">Categories</string>
+    <string name="total_category_stock">Total Category Stock: </string>
+    <string name="product">Product\nName</string>
+    <string name="product_image">Product\nImage</string>
+    <string name="product_code">Code No.</string>
+    <string name="purchase_price">Purchase\nPrice</string>
+    <string name="sales_price">Sales Price</string>
+    <string name="stock_qty">In Stock\nQuantity</string>
+    <string name="avg_sales">Avg.Sales/Wk</string>
+    <string name="heading_category">Category</string>
+    <string name="heading_sub_category">Sub\nCategory</string>
+    <string name="haeding_actions">Actions</string>
+    <string name="received_date">Received Date</string>
+    <string name="vat_rate">VAT\nRate</string>
+    <string name="unit_type">Unit\nType</string>
+    <string name="offer">Offer</string>
+    <string name="updatefragment_tag">updatefragment_tag</string>
+    <string name="campaignName">Campaign Name</string>
+    <string name="campaignType">Campaign Type</string>
+    <string name="campaignCode">Campaign Code</string>
+    <string name="companyName">Company Name</string>
+    <string name="startDate">Start Date</string>
+    <string name="endDate">End Date</string>
+    <string name="downloadingCampaign">Downloading Campaign and Campaign Images</string>
+    <string name="synCampaign">Sync Campaign</string>
+    <string name="addEditProductfragment_tag">addEditProductfragment_tag</string>
+    <string name="credit_due">Credit Due</string>
+    <string name="credit_bill">Credit Bill</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="bill_amount">Bill Amt.</string>
+    <string name="print_estimate">Print \'ESTIMATE\' on memo bills</string>
+    <string name="print_savings">Show Savings in Printout</string>
+    <string name="print_extra_line">Print extra blank lines in bill items</string>
+
+    <!-- Clean Up Billing Strings -->
+    <string name="exit_message">Do you want to exit?</string>
+    <string name="confirm_state">Please Confirm State</string>
+    <string name="fetch_state">Fetch States</string>
+    <string name="translation_x">translationX</string>
+    <string name="translation_y">translationY</string>
+    <string name="scale_x">scaleX</string>
+    <string name="scale_y">scaleY</string>
+    <string name="alpha">alpha</string>
+    <string name="percentage">%</string>
+    <string name="credit_cash_bill">Credit/Cash</string>
+    <string name="display_due">Due :\u0020 </string>
+    <string name="alert_stop_download">Stopped Download Manager</string>
+    <string name="alert_sync_restart">Cancel to Sync Again</string>
+    <string name="alert_multiple_download">(Caution: May Cause Multiple Download)</string>
+    <string name="all_category">All Categories</string>
+    <string name="not_applicable">--</string>
+    <string name="pieces">Pieces</string>
+    <string name="show_store">show_store</string>
+    <string name="is_offer">is_offer</string>
+    <string name="exc_customer_exists">Customer already exist</string>
+    <string name="msg_select_product">Please Select a product</string>
+    <string name="msg_no_print">Could not print</string>
+    <string name="exc_no_products_match">No Matching Products Found</string>
+    <string name="msg_no_products">No Products Found</string>
+    <string name="msg_invoice">Change to invoice?</string>
+    <string name="total_bills">Bills(T)</string>
+    <string name="memo_bills">Bills(E)</string>
+    <string name="msg_confirm_delete">Confirm Delete?</string>
+    <string name="msg_confirm">Confirm ?</string>
+    <string name="header_billing_monitor">Billing Monitor</string>
+    <string name="header_inventory">Inventory</string>
+    <string name="header_customer_management">Customer Management</string>
+    <string name="header_vat_summary">VAT Summary</string>
+    <string name="msg_enter_pin">Please enter the pin</string>
+    <string name="msg_pin_match">Old Pin does not match</string>
+    <string name="msg_minimum_char_pin">Pin Should be 4 Characters</string>
+    <string name="msg_pin_not_matching">New Pin does not match</string>
+    <string name="msg_pin_created">Pin Successfully Changed</string>
+    <string name="msg_empty_sp">Empty SP field for category</string>
+    <string name="msg_enter_discount">Enter Valid Discounts for</string>
+    <string name="msg_sp_discounts">SP Discounts cannot be more than 100</string>
+    <string name="msg_no_update">No Changes to update</string>
+    <string name="msg_select_category">Select a Category</string>
+    <string name="msg_updated_sp">Updated SP Successfully</string>
+    <string name="msg_qty">Quantity cannot be 0</string>
+    <string name="return_cancel">Cancel Return</string>
+    <string name="msg_na">NA</string>
+    <string name="msg_last_paid">Last Paid on\u0020</string>
+    <string name="msg_last_paid_na">Last Paid on NA</string>
+    <string name="msg_enter_qty">Please Enter Quantity</string>
+    <string name="msg_integer_qty">Quantity Must be Integer</string>
+    <string name="stock">Stock</string>
+    <string name="msg_update_changes">Do you want to update the changes?</string>
+    <string name="alert_network_connection">No Network Connection</string>
+    <string name="mystore">MyStore</string>
+    <string name="mycampaign">MyCampaign</string>
+    <string name="xl_created">XLS created successfully</string>
+    <string name="xl_not_created">Something went wrong while creating xls</string>
+    <string name="msg_no_report">No details for composite report</string>
+    <string name="msg_enter_vat">Enter The Composite Vat%</string>
+    <string name="msg_compositevat">Composite Vat Cannot Be Greater Than 100</string>
+    <string name="err_no_val">No values found</string>
+    <string name="msg_detailed_report">Detailed regular report created</string>
+    <string name="msg_purchase_detailed_report">Purchase Detailed report created</string>
+    <string name="err_bill_empty">Bill is Empty!</string>
+    <string name="err_tag_customer">Please Tag a Customer</string>
+    <string name="err_tag_distributor">Please Tag a Distributor</string>
+    <string name="smart_store_saved">Smart Store page is saved</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="gross_amount">Gross Amount</string>
+    <string name="net_amount">Net Amount</string>
+    <string name="loading_please_wait">Loading please wait...</string>
+    <string name="remind">Remind</string>
+    <string name="customer_Remind_message">Hi %1$s! Hope you are doing well. 
+                    Gentle reminder that your Credit due is Rs.
+                   %2$s Hope to receive your payment soon - %3$s %4$s</string>
+    <string name="success_message">Message Sent Successfully</string>
+    <string name="remind_failure_message">Something went Wrong Please try again</string>
+    <string name="active_cart_on_touch">Activate cart on touch</string>
+    <string name="display_visiblity">Show Visiblity on Monitor</string>
+    <string name="display_rate">Show Rate in Visibility</string>
+    <string name="enable_multiple_scanner">Enable Multiple Scanner</string>
+    
+    <string-array name="state_names">
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+        <item>Delhi</item>
+    </string-array>
+    <string-array name="years_string_array">
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+    <string-array name="settings_tabs">
+        <item>General Settings</item>
+        <item>Printer Settings</item>
+        <item>Bill Settings</item>
+        <item>Version</item>
+        <item>Pin</item>
+        <item>Categories</item>
+        <item>Weighing Machine</item>
+        <item>MultiPos</item>
+    </string-array>
+
+    <!-- BillCheckout Strings -->
+    <string name="msg_greatervalue">Please Enter a value greater than 0</string>
+    <string name="msg_validnumber">Please Enter Correct Number</string>
+    <string name="msg_validname">Please Enter Correct Name</string>
+    <string name="msg_validcredit">Please Enter Valid Credit Limit</string>
+    <string name="msg_nobills">No Bills To Print</string>
+    <string name="msg_invalid_amount">Invalid Amount</string>
+    <string name="opening_balanace">Opening Balance : </string>
+    <string name="closing_balanace">Closing Balance : </string>
+    <string name="msg_enter_payment">Enter Payment Amount</string>
+    <string name="msg_select_month">Pick Month and Year</string>
+    <string name="datepicker_spinner">mDaySpinner</string>
+    <string name="datepicker_dialog_spinner">mDatePicker</string>
+    <string name="invoice_number_msg">Please enter the invoice number</string>
+
+    <!-- Bill History Fragment -->
+    <string name="msg_deliverycomplete">Are you sure you want to mark this delivery as completed?</string>
+    <string name="msg_deliveryconfirm">Are you sure you want to mark this bill as a delivery?</string>
+    <string name="msg_deletecreditbills">All Estimate Bills Will be Deleted Except Credit Bills?</string>
+    <string name="exc_implementnavigation"> must implement OnActionbarNavigationListener</string>
+    <string name="distributor_not_created">Distributor could not be created</string>
+    <string name="distributor_phonenumber_exist">Distributor phone number exist</string>
+    <string name="confirmation_fourth_cart">4th Cart will activate for receiving items</string>
+
+    <!-- Google Analytics -->
+    <string name="button_clicked">Button Click Event Occurred</string>
+    <string name="menuitem_clicked">MenuItem Click Event Occurred</string>
+
+    <!-- Apk version management -->
+	<string name="billing_app">SnapBilling</string>
+	<string name="inventory_app">SnapInventory</string>
+	<string name="dashboard_app">Dashboard</string>
+	<string name="pushoffers_app">PushOffers</string>
+	<string name="visibility_app">SnapVisibility</string>
+	<string name="upgrade_version_msg">Upgraded version of %1$s is available, do you want to update?</string>
+	<string name="mandatory_upgrade_version_msg">Upgraded version of %1$s is available, please update to get access to this application.</string>
+	<string name="update_now">Update Now</string>
+	<string name="update_later">Update Later</string>
+    <string name="customer_pay">Customer Payment</string>
+    
+    <!-- Billing settings fragment strings -->
+    <string name="sync_data">Sync Data</string>
+    <string name="sync_data_msg">Click \'Sync Data\' to sync data</string>
+    <string name="update_vat">Update VAT Rates</string>
+    <string name="update_vat_msg">Click \'update VAT Rates\' to update all VAT rates</string>
+    <string name="new_cust_msg">Click to get the new Customer suggestions</string>
+    <string name="cust_suggestion">Customer suggestions</string>
+    <string name="sort">Sort Loose Item in Ascending Order (A-Z)</string>
+    <string name="round_off">Round-off Cash And Total Fields</string>
+    <string name="version_text">Version:</string>
+    <string name="pin_text">Pin</string>
+    <string name="old_pin">Old Pin</string>
+    <string name="old_pin_hint">Enter old Pin</string>
+    <string name="new_pin">New Pin</string>
+    <string name="new_pin_hint">Enter new Pin</string>
+    <string name="re_enter_pin">Re-enter new pin</string>
+	<string name="save_text">Save</string>
+    <string name="change_pin_text">Change Pin</string>
+    <string name="delete_text">Delete</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="category_hint">Category</string>
+    <string name="vat_rate_text">Vat Rate(%)</string>
+    <string name="sp1_text">SP1 (% Discount on MRP)</string>
+    <string name="sp2_text">SP2 (% Discount on MRP)</string>
+    <string name="sp3_text">SP3 (% Discount on MRP)</string>
+    <string name="header_text">Header</string>
+    <string name="store_name_text">Store Name</string>
+    <string name="store_address_text">Store Address</string>
+    <string name="contact_number_text">Contact Number</string>
+    <string name="tin_number_text">Store TIN Number</string>
+    <string name="tin_num_hint">TIN Number</string>
+    <string name="store_city">Store City</string>
+    <string name="footer_text">Footer</string>
+    <string name="footer1">Footer 1</string>
+    <string name="footer1_hint">Thank You. Come Again!</string>
+    <string name="footer2">Footer 2</string>
+    <string name="footer3">Footer 3</string>
+    <string name="save_settings_text">Save Settings</string>
+    <string name="note_to_user">Keep field empty if you don\'t want information to be printed</string>
+    <string name="sel_printer">Select Printer</string>
+    <string name="font_size">Font Size</string>
+    <string name="font_size_hint">Enter font size</string>
+    <string name="content_font">Content</string>
+    <string name="auto_connect">Auto connect to selected printer</string>
+    <string name="spacing_text">Spacing after each line?</string>
+    <string name="ser_num_text">Show serial number in bill</string>
+    <string name="show_vat_text">Show VAT in bill</string>
+    <string name="show_mrp_text">Show MRP in bill</string>
+    <string name="bill_summ_text">Print bill summary</string>
+    <string name="note_to_user2">Keep field empty if you don\'t want to set any setting</string>
+    <string name="printer_settings_saved">Printer bill settings saved</string>
+    <string name="empty_sp_field_msg">Empty SP field for category</string>
+    <string name="valid_discount_msg">Enter Valid Discounts for</string>
+    <string name="sp_discount_msg">SP Discounts cannot be more than 100</string>
+    <string name="no_changes_update">No Changes to update</string>
+    <string name="sel_category">Select a Category</string>
+    <string name="sp_change_text">Sales Price %1$s for %2$s \n Changes from \n %3$s To %4$s \n and this will affect all products in the category.</string>
+    <string name="new_brand_store_msg">New brands stored</string>
+    <string name="sp_update_success_msg">Updated SP Successfully</string>
+    <string name="vat_rate_failure_msg">Failed to populate VAT rates</string>
+    <string name="sync_start_msg">Sync started</string>
+    <string name="sync_running_msg">Sync is already running</string>
+    <string name="device_offline_msg">Device is offline</string>
+    <string name="unable_to_process">Unable to process the request currently</string>
+    <string name="cust_sugg_stored_msg">Customer suggestions stored</string>
+    <string name="enter_pin_msg">Please enter the pin</string>
+    <string name="old_pin_match_msg">Old Pin does not match</string>
+    <string name="pin_char_limit">Pin Should be 4 Characters</string>
+    <string name="new_pin_match_msg">New Pin does not match</string>
+    <string name="pin_change_success_msg">Pin Successfully Changed</string>
+    <string name="pin_match_msg">Pin does not match</string>
+    <string name="pin_del_success_msg">Pin Successfully Deleted</string>
+    <string name="pin_create_success_msg">Pin Successfully Created</string>
+    <string name="delete_pin">Delete Pin</string>
+    <string name="gen_settings_menuitem">General Settings</string>
+    <string name="printer_settings_menuitem">Printer Settings</string>
+    <string name="print_bill_menuitem">Print Bill Settings</string>
+    <string name="version_menuitem">Version</string>
+    <string name="pin_settings_menuitem">Pin</string>
+    <string name="categories_menuitem">Categories</string>
+    <string name="pair_printer_text">Click to pair new Printer</string>
+    <string name="pair_printer_button">Pair Printer</string>
+    <string name="select_printer_text">Select Printer</string>
+    <string name="select_printer_size">Select Printer Size</string>
+    <string name="weighing_machine_text">Click to Select Weighing Machine</string>
+    <string name="select_weighing_machine">Select Weighing Machine</string>
+    <string name="pair_weighing_machine_text">Click to pair new Weighing Machine</string>
+    <string name="pair_weighing_machine">Pair Weighing Machine</string>
+    <string name="weighing_machine_switch_text">Use Weighing Machine</string>
+    <string name="printer_configuration">Configuration</string>
+    <string name="printer_customization">Customization</string>
+    <string name="printer_config_stored">Printer configuration is successfully saved.</string>
+    <string name="printer_customization_stored">Printer customization is successfully saved.</string>
+    <string name="set_font_text">Set Font Size</string>
+    <string name="footer_num1">1)</string>
+    <string name="footer_num2">2)</string>
+    <string name="footer_num3">3)</string>
+    <string name="show_visibility_text">Show Visibility</string>
+    <string name="pin_delete_hint">Enter pin to Change / Delete</string>
+    <string name="confirm_pin_delete">Are you sure to delete pin?</string>
+    <string name="no_paired_device_msg">No paired devices!!!</string>
+    <string name="bluetooth_scan_msg">Bluetooth Scan / Pair</string>
+    <string name="serach_progress_text">Searching...</string>
+    <string name="bluetooth_search_failed">Search failed! Is Bluetooth switched off?</string>
+    <string name="enable_multiple_scanner">Enable Multiple Scanner</string>
+
+    <string name="template_one_tag">template_one_tag</string>
+    <string name="template_two_tag">template_two_tag</string>
+    <string name="template_one">Template one</string>
+    <string name="template_two">Template two</string>
+    <string name="store_name">Store Name</string>
+    <string name="store_msg">Message</string>
+    <string name="store_phonenumber">Phone Number</string>
+    <string name="show_on_screen">Show On Screen</string>
+    <string name="msg_store_image">Storing store image..</string>
+    <string name="add_new">Add New</string>
+    <string name="batches">Batches</string>
+    <string name="category">Category</string>
+    <string name="search">Search</string>
+    <string name="barcode">Barcode</string>
+    <string name="description">Description</string>
+    <string name="info_valid_price">Item No %1$d needs a Price</string>
+    <string name="info_valid_name">Item No %1$d needs a Name</string>
+    <string name="info_valid_multiple_sp">Select an MRP for Item No %1$d</string>
+    <string name="info_valid_mrp">MRP of Item No  %1$d is 0</string>
+    <string name="cart">cart</string>
+    <string name="save_summary">Save Summary</string>
+    <string name="save_detailed_report">Save Detailed Report</string>
+    <string name="vat_percentage">VAT %</string>
+    <string name="regular">Regular</string>
+    <string name="composite">Composite</string>
+    <string name="get_report">Get Report</string>
+    <string name="select_all">Select All</string>
+    <string name="ok">OK</string>
+    <string name="error_purchase_vat">No Purchase VAT Rates Found</string>
+    <string name="error_unable_creating_purchase_detail_xl">Unable to get detailed VAT Purchase report</string>
+    <string name="xl_sales_detailed_report">SalesDetailedReport</string>
+    <string name="xl_purchase_detailed_report">PurchaseDetailedReport</string>
+    <string name="xl_vat_summary_report">RegularVATSummaryReport</string>
+    <string name="xl_composite_report">CompositeReport</string>
+    <string name="select_bluetooth_device_to_pair">Select Bluetooth device to pair</string>
+    <string name="product_pack_save">SAVE CHANGES</string>
+    <string name="save_buttom">SAVE</string>
+    <string name="product_pack_add">+ADD ITEM</string>
+    <string name="sales_price_one">Sales Price1</string>
+    <string name="customer_created">Customer Successfully Created</string>
+    <string name="err_no_customer_found">No Customer Found</string>
+    <string name="invoice_number">Invoice No</string>
+
+    <string name="product_name_notempty">Product Name cannot be empty</string>
+    <string name="mrp_notempty">Please enter valid MRP</string>
+    <string name="category_notempty">Please select Product category</string>
+    <string name="sub_category_notempty">Please select Product sub-category</string>
+    <string name="heading_addedit">Add and Edit</string>
+    <string name="heading_groupid">Group ID</string>
+    <string name="hint_product_name">Product Name</string>
+    <string name="hint_product_code">Product Code</string>
+    <string name="hint_selling_price1">Selling Price 1</string>
+    <string name="hint_selling_price2">Selling Price 2</string>
+    <string name="hint_selling_price3">Selling Price 3</string>
+    <string name="hint_mrp">MRP</string>
+    <string name="hint_stock_quantity">Stock Quantity</string>
+    <string name="hint_purchase_price">Purchase Price</string>
+    
+    <!-- Store Registration -->
+    <string name="enter_store_no">Enter Store Phone Number</string>
+    <string name="get_store_otp">Get OTP</string>
+    <string name="enter_store_otp">Enter Store OTP</string>
+    <string name="verify_store_otp_error">OTP is wrong</string>
+    <string name="verify_store_otp">Verifying Store OTP</string>
+    <string name="generate_store_otp">Generating Store OTP</string>
+    <string name="msg_invalid_store_phone_no">Invalid Store Phone Number</string>
+    <string name="update_app_version_msg">Please update app to continue</string>
+    <string name="download_sync_started_msg">Download Sync Started</string>
+    <string name="download_sync_end_msg">Download Sync Completed</string>
+    <string name="download_sync_error_msg">Error in download Sync</string>
+    <string name="sending_store_details_msg">Sending Store Details</string>
+    <string name="error_store_details_saving">Error in saving store Details to server</string>
+    <string name="progress_create_invoice">Processing Invoice...</string>
+    <string name="progress_create_transactions">Processing Transactions...</string>
+    <string name="progress_update_inventory">Updating Inventory...</string>
+    <string name="progress_update_customer">Updating Customer details...</string>
+    <string name="progress_printing">Printing...</string>
+
+    <!-- MultiPOS -->
+    <string name="multipos_client_switch_text">As MultiPOS Client?</string>
+    <string name="multipos_configure_btn_text">Configure</string>
+    <string name="multipos_configuration">Find and configure Master</string>
+    <string name="pos_id_hint">POS Id</string>
+    <string name="pos_name_hint">POS Name</string>
+    <string name="biller_name_hint">Biller Name</string>
+
+</resources>

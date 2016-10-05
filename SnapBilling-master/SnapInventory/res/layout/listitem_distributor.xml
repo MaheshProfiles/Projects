@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/small_padding"
+    android:paddingRight="@dimen/small_padding" >
+
+    <TextView
+        android:id="@+id/distributor_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/distributor_griditem_bgselector"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/distributor_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bttn_alphabets_normal"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

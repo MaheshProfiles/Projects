@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="virtual_store_rows">3</integer>
+    <integer name="quickadd_store_rows">3</integer>
+    <integer name="discount4">8</integer>
+    <integer name="discount5">10</integer>
+</resources>

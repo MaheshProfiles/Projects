@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/small_padding"
+    android:paddingLeft="@dimen/medium_padding"
+    android:paddingRight="@dimen/medium_padding"
+    android:paddingTop="@dimen/small_padding" >
+
+    <TextView
+        android:id="@+id/customer_name_textview"
+        style="@style/customermgmt_name_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/customer_number_textview"
+        style="@style/customermgmt_number_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/customer_name_textview"
+        android:layout_marginTop="@dimen/tiny_padding" />
+     <TextView
+        android:id="@+id/search_customeraddress_textview"
+        style="@style/customermgmt_number_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/customer_number_textview"
+        android:text="@string/address_hint"
+        android:layout_marginTop="@dimen/tiny_padding" />
+
+    <TextView
+        android:id="@+id/customer_credit_textview"
+        style="@style/customermgmt_name_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="20sp" />
+    
+
+</RelativeLayout>

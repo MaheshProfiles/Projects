@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bill_footer_layout"
+    android:layout_width="@dimen/billmonitor_bill_width"
+    android:layout_height="@dimen/billmonitor_billfooter_height"
+    android:background="@color/billhistory_footercolor"
+    android:paddingBottom="@dimen/small_padding"
+    android:paddingLeft="@dimen/medium_padding"
+    android:paddingRight="@dimen/medium_padding"
+    android:paddingTop="@dimen/small_padding" >
+
+    <TextView
+        android:id="@+id/bill_totalqty_textview"
+        style="@style/billhistory_footer_numbertextstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/bill_items_textview"
+        style="@style/billhistory_footer_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bill_totalqty_textview"
+        android:layout_marginTop="@dimen/small_padding"
+        android:text="@string/items" />
+
+    <ImageView
+        android:id="@+id/next_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_arrow_right_grey" />
+
+    <TextView
+        android:id="@+id/bill_totalprice_textview"
+        style="@style/billhistory_footer_numbertextstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/medium_padding"
+        android:layout_toLeftOf="@id/next_imageview"
+        android:gravity="center"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/bill_total_textview"
+        style="@style/billhistory_footer_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bill_totalprice_textview"
+        android:layout_marginRight="@dimen/medium_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:layout_toLeftOf="@id/next_imageview"
+        android:text="@string/total" />
+
+</RelativeLayout>

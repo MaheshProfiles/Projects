@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1800dp"
+    android:layout_height="@dimen/inventory_update_item_height"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="104dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:background="@color/product_bgcolor_light" >
+
+        <ImageView
+            android:id="@+id/campaign_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher" />
+         <ImageView
+            android:id="@+id/image_status"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/product_checked_selector" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/campaign_name_text"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_sku_name_width"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:textColor="@color/product_textcolor" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/campaign_code_text"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:textColor="@color/product_textcolor" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/campaign_type_text"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/stock_mrp_header_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/campaign_comapny_text"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/campaign_startdt_text"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/campaign_enddt_text"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+</LinearLayout>

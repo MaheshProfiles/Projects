@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/medium_padding"
+    android:paddingLeft="@dimen/medium_padding"
+    android:paddingRight="@dimen/medium_padding" >
+
+    <LinearLayout
+        android:id="@+id/customer_search_layout"
+        android:layout_width="@dimen/customer_mgmgt_listview_width"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white" >
+
+        <EditText
+            android:id="@+id/customer_search_edittext"
+            style="@style/customer_search_textstyle"
+            android:layout_width="@dimen/customer_mgmgt_listview_width"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_search_normal"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/customer_listview_header"
+        android:layout_width="@dimen/customer_mgmgt_listview_width"
+        android:layout_height="40dp"
+        android:layout_below="@id/customer_search_layout"
+        android:background="@color/customer_mgmy_listheader_color"
+        android:padding="@dimen/small_padding" >
+
+        <TextView
+            style="@style/customermgmt_name_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Distributors"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            style="@style/customermgmt_name_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Payment Due"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/total_credit_summary_relativelayout"
+        android:layout_width="@dimen/customer_mgmgt_listview_width"
+        android:layout_height="@dimen/customer_mgmgt_footer_height"
+        android:layout_alignParentBottom="true"
+        android:background="#f7f7f7"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingLeft="@dimen/medium_padding"
+        android:paddingRight="@dimen/medium_padding"
+        android:paddingTop="@dimen/small_padding" >
+
+        <TextView
+            android:id="@+id/total_customers_textview"
+            style="@style/customermgmt_small_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/total_distributors" />
+
+        <TextView
+            android:id="@+id/total_customers_value_textview"
+            style="@style/customermgmt_large_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/total_customers_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/small_padding" />
+
+        <TextView
+            android:id="@+id/total_credit_textview"
+            style="@style/customermgmt_small_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/total_due" />
+
+        <TextView
+            android:id="@+id/total_credit_value_textview"
+            style="@style/customermgmt_large_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/total_credit_textview"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/small_padding" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/customers_listview"
+        android:layout_width="@dimen/customer_mgmgt_listview_width"
+        android:layout_height="match_parent"
+        android:layout_above="@id/total_credit_summary_relativelayout"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/customer_listview_header"
+        android:background="@android:color/white"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_toRightOf="@id/customers_listview"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingLeft="@dimen/medium_padding"
+        android:paddingRight="@dimen/medium_padding"
+        android:paddingTop="@dimen/small_padding" >
+
+        <RelativeLayout
+            android:id="@+id/customer_detail_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:id="@+id/customer_info_relativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <TextView
+                    android:id="@+id/customer_name_textview"
+                    style="@style/customermgmt_large_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:id="@+id/customer_number_textview"
+                    style="@style/customermgmt_large_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customer_name_textview"
+                    android:textColor="#8e8e8e" />
+
+                <TextView
+                    android:id="@+id/customer_address_textview"
+                    style="@style/customermgmt_name_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customer_number_textview"
+                    android:maxLines="2"
+                    android:maxWidth="300dp"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/edit_customer_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/large_padding"
+                android:layout_toRightOf="@id/customer_info_relativelayout"
+                android:background="@null"
+                android:src="@drawable/edit_button_selector" />
+
+            <RelativeLayout
+                android:id="@+id/customer_infoedit_relativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/white"
+                android:visibility="invisible" >
+
+                <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+                    android:id="@+id/customer_number_edittext"
+                    style="@style/customer_search_textstyle"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:hint="@string/distributor_number_hint"
+                    android:maxLength="10"
+                    android:nextFocusDown="@+id/customer_name_edittext" />
+
+                <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+                    android:id="@+id/customer_name_edittext"
+                    style="@style/customer_search_textstyle"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customer_number_edittext"
+                    android:hint="@string/distributor_name_hint"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:nextFocusDown="@+id/customer_address_edittext" />
+
+                <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+                    android:id="@+id/customer_address_edittext"
+                    style="@style/customer_search_textstyle"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customer_name_edittext"
+                    android:hint="@string/distributor_address_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPostalAddress"
+                    android:maxLength="40" />
+
+                <Button
+                    android:id="@+id/save_customer_button"
+                    style="@style/customer_add_buttonstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/customer_address_edittext"
+                    android:layout_marginTop="@dimen/small_padding"
+                    android:text="@string/save" />
+
+                <Button
+                    android:id="@+id/cancel_edit_button"
+                    style="@style/customer_add_buttonstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customer_address_edittext"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:layout_marginTop="@dimen/small_padding"
+                    android:layout_toRightOf="@id/save_customer_button"
+                    android:text="@string/cancel" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/history_tab"
+                style="@style/customermgmt_name_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/customer_info_relativelayout"
+                android:background="@drawable/customer_tab_selector"
+                android:text="@string/payments"
+                android:textColor="@drawable/customertab_textcolor_selector" />
+
+            <Button
+                android:id="@+id/summary_tab"
+                style="@style/customermgmt_name_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customer_info_relativelayout"
+                android:layout_toLeftOf="@id/history_tab"
+                android:background="@drawable/customer_tab_selector"
+                android:enabled="false"
+                android:text="@string/summary"
+                android:textColor="@drawable/customertab_textcolor_selector" />
+
+            <RelativeLayout
+                android:id="@+id/summary_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/payments_textview"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/summary_tab"
+                android:layout_marginBottom="@dimen/medium_padding"
+                android:layout_marginLeft="@dimen/customer_mgmgt_card_margin"
+                android:layout_marginRight="@dimen/customer_mgmgt_card_margin"
+                android:layout_marginTop="@dimen/medium_padding" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/customer_mgmgt_card_width"
+                    android:layout_height="@dimen/customer_mgmgt_card_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#4cc59c"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/avg_visits_textview"
+                        style="@style/customermgmt_cardnum_textstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/customermgmt_card_textstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium_padding"
+                        android:text="@string/avg_visits_pm" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/customer_mgmgt_card_width"
+                    android:layout_height="@dimen/customer_mgmgt_card_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#de6fc8"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/avg_purchase_textview"
+                        style="@style/customermgmt_cardnum_textstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/customermgmt_card_textstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium_padding"
+                        android:text="@string/avg_purchase_pm" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/customer_mgmgt_card_width"
+                    android:layout_height="@dimen/customer_mgmgt_card_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#5cc8ff"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lastpurchasedate_textview"
+                        style="@style/customermgmt_cardnum_textstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/customermgmt_card_textstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium_padding"
+                        android:text="@string/days_since_last_purchase" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/customer_mgmgt_card_width"
+                    android:layout_height="@dimen/customer_mgmgt_card_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#8f7dff"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lastpaymentdate_amount_textview"
+                        style="@style/customermgmt_cardnum_textstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/lastpaymentdate_textview"
+                        style="@style/customermgmt_card_textstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium_padding" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/history_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/payments_textview"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/summary_tab"
+                android:layout_marginBottom="@dimen/medium_padding"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#5a98d1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/payment_header"
+                        android:layout_width="770dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/payments_history"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/monthOptionTextLayout"
+                        android:layout_width="145dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#5a98d1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/current_month"
+                            android:layout_width="110dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/monthOption_dropdwn_imageview"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/monthOption_dropdwn_imageview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/icon_customer_arrow_down" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#c7c7c7"
+                    android:gravity="left|center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/customermgmt_name_textstyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/date" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider_color" />
+
+                    <TextView
+                        style="@style/customermgmt_name_textstyle"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Bill No" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider_color" />
+
+                    <TextView
+                        style="@style/customermgmt_name_textstyle"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Bill Amt." />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider_color" />
+
+                    <TextView
+                        style="@style/customermgmt_name_textstyle"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Credit Given" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider_color" />
+
+                    <TextView
+                        style="@style/customermgmt_name_textstyle"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Cash Paid" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider_color" />
+
+                    <TextView
+                        style="@style/customermgmt_name_textstyle"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Credit due" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/opening_balance"
+                    style="@style/customermgmt_name_textstyle"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <ListView
+                    android:id="@+id/customer_payments_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </ListView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/payments_textview"
+                style="@style/customermgmt_large_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/medium_padding"
+                android:text="@string/cash_payment" />
+
+            <EditText
+                android:id="@+id/payment_edittext"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/medium_padding"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/payments_textview"
+                android:inputType="numberDecimal" />
+
+            <ImageButton
+                android:id="@+id/payment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/payment_edittext"
+                android:background="@null"
+                android:src="@drawable/tick_imgselector" />
+
+            <ImageButton
+                android:id="@+id/bills_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/payment_button"
+                android:background="@null"
+                android:src="@drawable/customer_showbills_imageselector" />
+
+            <TextView
+                android:id="@+id/customer_credit_textview"
+                style="@style/customermgmt_large_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/customer_total_due_textview"
+                style="@style/customermgmt_number_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/customer_credit_textview"
+                android:text="@string/total_due"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

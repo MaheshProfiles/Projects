@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/print_bill_button"
+            style="@style/checkout_billoptions_textstyle"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/bill_print_imgselector"
+            android:text="@string/print" />
+
+        <Button
+            android:id="@+id/invoice_bill_button"
+            style="@style/checkout_billoptions_textstyle"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/bill_message_imgselector"
+            android:text="@string/invoice" />
+
+        <Button
+            android:id="@+id/vat_bill_button"
+            style="@style/checkout_billoptions_textstyle"
+            android:layout_width="0dp"
+            android:layout_height="69dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/bill_mail_imgselector"
+            android:text="@string/vat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/medium_padding"
+        android:paddingRight="@dimen/medium_padding" >
+
+        <Button
+            android:id="@+id/delivery_bill_button"
+            android:layout_width="158dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bill_delivery_imgselector"
+            android:paddingTop="@dimen/large_padding"
+            android:text="@string/delivery"
+            android:textColor="@drawable/paydeliver_textcolor_selector" />
+
+        <Button
+            android:id="@+id/pay_bill_button"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="158dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:background="@drawable/bill_pay_imgselector"
+            android:paddingTop="@dimen/large_padding"
+            android:text="@string/paid"
+            android:textColor="@drawable/paydeliver_textcolor_selector" />
+    </LinearLayout>
+
+</LinearLayout>

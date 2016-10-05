@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.snapbizz.snapbilling"
+    android:sharedUserId="@string/shared_user_id"
+    android:versionCode="33"
+    android:versionName="2.0.0-beta1" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.snapbizz.snapbilling.activity.SnapBillingApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/icon_billing"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.snapbizz.snapbilling.activity.BillingActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.snapbizz.snapbilling.activity.BillingSplashscreenActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Splashscreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="fr.maxcom.libmedia.apiKey"
+            android:value="LDJBWVhsM4zGSzUqtVMMVHBA5lLU4yELs9AlWhSy4fZsRF6PCwhrjk3UzKXsDonrIVehnMb1esBO0IoYebHKYFQgI1wAAAAAQ0wxelNNPSRCSiYuDlAyNVBBNThMSjIz" />
+
+        <activity
+            android:name="com.snapbizz.snapbilling.activity.RetailerRegistrationActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+
+        <service
+            android:name="com.snapbizz.snapbilling.services.WeighingMachine">
+            <intent-filter>
+                <action android:name="com.snapbizz.snapbilling.services.WeighingMachine" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.snapbizz.snapbilling.services.PrinterService">
+            <intent-filter>
+                <action android:name="com.snapbizz.snaptoolkit.servicesV2.PrinterService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.snapbizz.snapbilling.services.MultiPos">
+            <intent-filter>
+                <action android:name="com.snapbizz.snapbilling.services.MultiPos" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.snapbizz.snaptoolkit.services.SnapSyncService"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.snapbizz.snaptoolkit.services.SnapSyncService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.snapbizz.snaptoolkit.services.SnapImageDownloadService"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.snapbizz.snaptoolkit.services.SnapImageDownloadService" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.snapbizz.snapbilling.activity.SlideshowService" />
+              <service
+            android:name="com.snapbizz.snaptoolkit.services.SnapVisibilityService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.snapbizz.snaptoolkit.services.SnapVisibilityService" />
+            </intent-filter>
+        </service>
+        
+        <service
+            android:name="com.snapbizz.snaptoolkit.services.GetCampaignImageService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.snapbizz.snaptoolkit.services.GetCampaignImageService" />
+            </intent-filter>
+        </service>
+        
+        <service
+            android:name="com.snapbizz.snaptoolkit.services.SaveCampaignImageService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.snapbizz.snaptoolkit.services.SaveCampaignImageService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.snapbizz.snapbilling.widget.HotprodsWidgetProvider"
+            android:label="Billing Hot Products" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/hotprods_widget_provider" />
+        </receiver>
+        <receiver
+            android:name="com.snapbizz.snapbilling.widget.HotprodsWidgetIntentReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.snapbizz.snapbilling.hotprods.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/hotprods_widget_provider" />
+        </receiver>
+        <receiver
+            android:name="com.snapbizz.snapbilling.widget.ChartsWidgetProvider"
+            android:label="Billing Footfalls" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/charts_widget_provider" />
+        </receiver>
+        <receiver
+            android:name="com.snapbizz.snapbilling.widget.ChartsWidgetIntentReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.snapbizz.snapbilling.charts.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/hotprods_widget_provider" />
+        </receiver>
+        <receiver android:name="com.snapbizz.snaptoolkit.receivers.NetworkConnectivityChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.snapbizz.snaptoolkit.receivers.DownloadCompleateReceiver">
+  			<intent-filter>
+     			<action android:name="android.intent.action.DOWNLOAD_COMPLETE"></action>
+  			</intent-filter>
+		</receiver>
+		
+        <service android:name="com.snapbizz.v2.sync.GlobalSync" ></service>
+    </application>
+
+</manifest>

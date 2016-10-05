@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_customer_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true" >
+
+    <Button
+        android:id="@+id/cancel_button"
+        style="@style/customer_add_buttonstyle"
+        android:layout_width="@dimen/def_button_width"
+        android:layout_height="@dimen/def_button_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ss_backbutton_imgselector" />
+
+    <View
+        android:id="@+id/backbutton_divider"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/billsplitscreen_divider_height"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cancel_button"
+        android:background="@color/billsplitscreen_divider_color" />
+
+    <RelativeLayout
+        android:id="@+id/saveedit_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/small_padding" >
+
+        <ImageButton
+            android:id="@+id/save_button"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/def_button_width"
+            android:layout_height="@dimen/def_button_height"
+            android:src="@drawable/tick_imgselector" />
+
+        <ImageButton
+            android:id="@+id/edit_button"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/def_button_width"
+            android:layout_height="@dimen/def_button_height"
+            android:src="@drawable/tick_imgselector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/savebutton_divider"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/billsplitscreen_divider_height"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_toLeftOf="@id/saveedit_layout"
+        android:background="@color/billsplitscreen_divider_color" />
+
+    <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+        android:id="@+id/customer_number_edittext"
+        style="@style/ss_customer_search_textstyle"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_toRightOf="@id/backbutton_divider"
+        android:hint="@string/customer_number_hint"
+        android:maxLength="10"
+        android:nextFocusDown="@+id/customer_name_edittext" />
+
+    <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+        android:id="@+id/customer_name_edittext"
+        style="@style/ss_customer_search_textstyle"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/customer_number_edittext"
+        android:hint="@string/customer_name_hint"
+        android:maxLength="30"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/customer_creditlimit_edittext" />
+
+    <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+        android:id="@+id/customer_creditlimit_edittext"
+        style="@style/ss_customer_search_textstyle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/small_padding"
+        android:maxLength="12"
+        android:layout_toLeftOf="@id/savebutton_divider"
+        android:layout_toRightOf="@id/customer_name_edittext"
+        android:hint="@string/credit_limit"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:nextFocusDown="@+id/customer_address_edittext" />
+
+    <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+        android:id="@+id/customer_address_edittext"
+        style="@style/ss_customer_search_textstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customer_name_edittext"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_toLeftOf="@id/savebutton_divider"
+        android:layout_toRightOf="@id/backbutton_divider"
+        android:maxLength="40"
+        android:hint="@string/customer_address_hint"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:singleLine="true" />
+
+</RelativeLayout>

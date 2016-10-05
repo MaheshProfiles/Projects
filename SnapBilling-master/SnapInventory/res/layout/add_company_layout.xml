@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_transparent_color"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/add_company_inputlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/new_company_imageview"
+            android:layout_width="@dimen/new_productimage_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/product_border_shapedark"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_camera" />
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/new_companyname_edittext"
+            style="@style/update_product_textstyle"
+            android:layout_width="@dimen/new_productname_width"
+            android:layout_height="match_parent"
+            android:hint="Company Name" />
+
+        <Button
+            android:id="@+id/new_company_done_button"
+            style="@style/update_product_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/add_prod_done_bgselector"
+            android:paddingLeft="@dimen/medium_padding"
+            android:text="@string/done" />
+    </LinearLayout>
+
+</RelativeLayout>

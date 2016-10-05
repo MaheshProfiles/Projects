@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/inventory_header_height"
+        android:background="@drawable/productheader_border_shape"
+        android:orientation="horizontal"
+        tools:ignore="HardcodedText,ContentDescription" >
+
+        <TextView
+            style="@style/update_productheader_textstyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:text="@string/product_image" />
+
+        <TextView
+            style="@style/update_productheader_textstyle"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:text="@string/product" />
+
+        <TextView
+            android:id="@+id/mrp_header"
+            style="@style/update_productheader_textstyle"
+            android:layout_width="@dimen/stock_weekly_trend_width"
+            android:layout_height="match_parent"
+            android:text="@string/mrp" />
+
+        <TextView
+            android:id="@+id/pp_header"
+            style="@style/update_productheader_textstyle"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:text="@string/purchase_price" />
+
+        <TextView
+            android:id="@+id/qty_header"
+            style="@style/update_productheader_textstyle"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:text="@string/stock_qty" />
+
+        <TextView
+            android:id="@+id/vat_header"
+            style="@style/vatheader_textstyle"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="@string/vat_rate" />
+
+        <TextView
+            android:id="@+id/unit_header"
+            style="@style/update_productheader_textstyle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="@string/unit_type" />
+
+        <TextView
+            android:id="@+id/category_header"
+            style="@style/update_productheader_textstyle"
+            android:layout_width="@dimen/subList_distributor_orders_width"
+            android:layout_height="match_parent"
+            android:text="@string/heading_category" />
+
+        <TextView
+            android:id="@+id/sub_category_header"
+            style="@style/update_productheader_textstyle"
+            android:layout_width="@dimen/subList_distributor_orders_width"
+            android:layout_height="match_parent"
+            android:text="@string/heading_sub_category" />
+
+        <TextView
+            android:id="@+id/actions_header"
+            style="@style/update_productheader_textstyle"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/haeding_actions" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/icon_show_columns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_prod_details" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/show_columns_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/category_bgcolor"
+        android:padding="10dp" 
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/action_layout"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            tools:ignore="HardcodedText,ContentDescription" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/stock_weekly_trend_width"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/mrp_selector"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/product_checked_selector" />
+
+                <TextView
+                    style="@style/update_productheader_textstyle"
+                    android:layout_width="@dimen/stock_weekly_trend_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/mrp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/purchase_price_selector"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/product_checked_selector" />
+
+                <TextView
+                    style="@style/update_productheader_textstyle"
+                    android:layout_width="122dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/purchase_price" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/qty_selector"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/product_checked_selector" />
+
+                <TextView
+                    style="@style/update_productheader_textstyle"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/stock_qty" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/vat_rate_selector"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/product_checked_selector" />
+
+                <TextView
+                    style="@style/update_productheader_textstyle"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/vat_rate" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/unit_type_selector"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/product_checked_selector" />
+
+                <TextView
+                    style="@style/update_productheader_textstyle"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/unit_type" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/category_selector"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/product_checked_selector" />
+
+                <TextView
+                    style="@style/update_productheader_textstyle"
+                    android:layout_width="@dimen/subList_distributor_orders_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/heading_category" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/subcategory_selector"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/product_checked_selector" />
+
+                <TextView
+                    style="@style/update_productheader_textstyle"
+                    android:layout_width="@dimen/subList_distributor_orders_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/subcategory_selector"
+                    android:text="@string/heading_sub_category" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/actions_selector"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/product_checked_selector" />
+
+                <TextView
+                    android:id="@+id/tv_actions"
+                    style="@style/update_productheader_textstyle"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/haeding_actions" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/selector_save"
+            style="@style/product_pack_save_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/action_layout"
+            android:layout_marginRight="148dp"
+            android:background="@drawable/product_pack_save"
+            android:text="@string/product_pack_save" />
+    </RelativeLayout>
+
+</LinearLayout>

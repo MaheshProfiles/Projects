@@ -1,0 +1,144 @@
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+-printseeds seeds.txt
+-printusage unused.txt
+-printmapping mapping.txt
+
+-dontwarn android.support.**
+-dontwarn android.webkit.**
+-dontwarn com.google.common.**
+-dontwarn aem.**
+-dontwarn com.aem.**
+-dontwarn com.usb.api.**
+-dontwarn fr.maxcom.**
+
+# Retrofit specific [Start]
+-dontwarn okio.**
+-dontwarn com.squareup.okhttp.**
+-dontwarn rx.**
+-dontwarn retrofit.**
+-dontwarn retrofit.appengine.UrlFetchClient
+
+-keep class com.squareup.okhttp.** { *; }
+-keep interface com.squareup.okhttp.** { *; }
+
+-keep class retrofit.** { *; }
+-keepclasseswithmembers class * {
+    @retrofit.http.* <methods>;
+}
+
+
+# GSON Specific classes
+-keep class com.snapbizz.snaptoolkit.asynctasks.OtpGenerateTask$OTPResponse { *; }
+-keep class com.snapbizz.snaptoolkit.asynctasks.OtpGenerateTask$VerifyOtp { *; }
+
+-keep class javax.** { *; }
+-keep class java.nio.** { *; }
+-keep class org.** { *; }
+-keep class com.j256.ormlite.** { *; }
+-keep class com.snapbizz.snaptoolkit.domains.** { *; }
+-keep class com.snapbizz.snaptoolkit.utils.** { *; }
+-keep class retrofit.** { *; }
+-keep class okio.** { *; }
+
+# Retrofit v2
+-keep class okhttp3.** { *; }
+-keep interface okhttp3.* { *; }
+-dontwarn okhttp3.*
+-dontwarn java.lang.*
+
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keepclasseswithmembers class * {
+    @retrofit2.http.* <methods>;
+}
+
+# Retrofit specific [End]
+
+# GreenDAO specific [Start]
+-keepclassmembers class * extends de.greenrobot.dao.AbstractDao {
+    public static java.lang.String TABLENAME;
+}
+-keep class **$Properties
+# GreenDAO specifc [End]
+
+# API Classes [Start]
+-keep class com.snapbizz.snapbilling.domainsV2.ApkData$* { *; }
+-keep class com.snapbizz.snapbilling.domainsV2.SyncGDBData$* { *; }
+-keep class com.snapbizz.snapbilling.asynctasks.RemindCreditCustomerTask$* { *; }
+# API Classes [End]
+
+# Crittercism [Start]
+-keep public class com.crittercism.**
+-keepclassmembers public class com.crittercism.* { *; }
+# Crittercism [End]
+
+# CIE Printer [Start]
+-keep class com.btp.** { *; }
+-dontwarn com.a.a.b.b
+# CIE Printer [End]
+
+-keep class net.sqlcipher.** {
+    *;
+}
+
+-keep class net.sqlcipher.database.** {
+    *;
+}
+
+-libraryjars  ../../SnapToolkit/bin/snaptoolkit.jar
+
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-optimizationpasses 5
+
+-allowaccessmodification
+-renamesourcefileattribute SourceFile
+-repackageclasses ''
+-keepattributes Exceptions,*Annotation*,InnerClasses,SourceFile,LineNumberTable,Deprecated,Signature
+-keepattributes EnclosingMethod
+
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.stream.** { *; }
+-keep class com.google.gson.FieldNamingStrategy { *; }
+ 
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+
+
+-keepclasseswithmembers class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+ -keepclassmembers public class * extends android.view.View {
+  void set*(***);
+  *** get*();
+ }
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+  public static <fields>;
+}

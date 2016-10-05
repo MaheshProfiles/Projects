@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="subList_distributor_orders_width">100dp</dimen>
+    <dimen name="distributor_product_image_width_and_height">100dp</dimen>
+    <dimen name="subList_distributor_orders_top_margin">10dp</dimen>
+    <dimen name="distributor_order_list_product_count_width">50dp</dimen>
+    <dimen name="distributor_order_product_total_value_width">100dp</dimen>
+    <dimen name="subList_distributor_orders_height">100dp</dimen>
+    <dimen name="subList_receive_product_name_width">260dp</dimen>
+    <dimen name="horz_item_padding">7dp</dimen>
+    <dimen name="alphabet_filterbutton_width">35dp</dimen>
+    <dimen name="alphabet_filterbutton_height">35dp</dimen>
+    <dimen name="store_shoppingcart_height">80dp</dimen>
+    <dimen name="distributor_list_header_width">48dp</dimen>
+    <dimen name="distributor_list_header_height">40dp</dimen>
+
+    <integer name="store_category_rows">1</integer>
+    <integer name="store_shoppingcart_rows">1</integer>
+    <integer name="store_subcategory_rows">1</integer>
+
+    <dimen name="store_subcategory_height">75dp</dimen>
+    <dimen name="store_subcategory_width">100dp</dimen>
+    <dimen name="store_category_height">75dp</dimen>
+    <dimen name="store_category_width">100dp</dimen>
+    <dimen name="store_category_verticalpadding">8dp</dimen>
+    <dimen name="store_category_horizontalpadding">8dp</dimen>
+    <dimen name="store_shoppingcart_width">100dp</dimen>
+    <dimen name="store_shoppingcart_listview_width">800dp</dimen>
+    <dimen name="inventory_update_item_height">100dp</dimen>
+    <dimen name="inventory_update_item_width">100dp</dimen>
+    <dimen name="inventory_update_list_width">300dp</dimen>
+    <dimen name="global_update_list_width">875dp</dimen>
+    <dimen name="stock_in_stock_header_width">103dp</dimen>
+    <dimen name="stock_mrp_header_width">148dp</dimen>
+    <dimen name="stock_weekly_trend_width">110dp</dimen>
+    <dimen name="order_header_width_large">94dp</dimen>
+    <dimen name="order_header_height">56dp</dimen>
+    <dimen name="stock_header_product_width">420dp</dimen>
+    <dimen name="subList_distributor_orders_sku_name_width">315dp</dimen>
+    <dimen name="order_group_width">1170dp</dimen>
+    <dimen name="dashboard_tab_width">160dp</dimen>
+    <dimen name="stock_summary_height">60dp</dimen>
+    <dimen name="stock_payment_width">195dp</dimen>
+    <dimen name="stock_summary_edit_width">65dp</dimen>
+    <dimen name="stock_payment_height">60dp</dimen>
+    <dimen name="stock_summary_distributor_name_width">160dp</dimen>
+    <dimen name="actionbar_menu_item_width">353dp</dimen>
+    <dimen name="stock_summary_width">420dp</dimen>
+    <dimen name="stock_summary_card_width">400dp</dimen>
+    <dimen name="stock_summary_lineitem_height">60dp</dimen>
+    <dimen name="stock_summary_view_width">380dp</dimen>
+    <dimen name="customer_search_height">63dp</dimen>
+    <dimen name="customer_details_cellheight">71dp</dimen>
+    <dimen name="bill_complete_width">346dp</dimen>
+    <dimen name="customer_addedit_width">420dp</dimen>
+    <dimen name="customer_mgmgt_listview_width">340dp</dimen>
+    <dimen name="customer_mgmgt_footer_height">90dp</dimen>
+    <dimen name="customer_mgmgt_card_height">136dp</dimen>
+    <dimen name="customer_mgmgt_card_width">300dp</dimen>
+    <dimen name="customer_mgmgt_card_margin">93dp</dimen>
+
+</resources>

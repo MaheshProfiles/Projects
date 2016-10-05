@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:padding="@dimen/small_padding" >
+
+    <Button
+        android:id="@+id/removecustomer_info_button"
+        android:layout_width="@dimen/def_button_width"
+        android:layout_height="@dimen/def_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_cancelred_normal" />
+
+    <View
+        android:id="@+id/removecustomer_divider"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/billsplitscreen_divider_height"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_toLeftOf="@id/removecustomer_info_button"
+        android:background="@color/billsplitscreen_divider_color" />
+
+    <Button
+        android:id="@+id/editcustomer_info_button"
+        android:layout_width="@dimen/def_button_width"
+        android:layout_height="@dimen/def_button_height"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_toLeftOf="@id/removecustomer_divider"
+        android:background="@drawable/ss_customer_edit_imgselector" />
+
+    <View
+        android:id="@+id/editcustomer_divider"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/billsplitscreen_divider_height"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_toLeftOf="@id/editcustomer_info_button"
+        android:background="@color/billsplitscreen_divider_color" />
+
+    <TextView
+        android:id="@+id/customername_textview"
+        style="@style/ss_customerdetails_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/customernumber_textview"
+        style="@style/ss_customerdetails_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_toRightOf="@id/customername_textview" />
+
+    <TextView
+        android:id="@+id/customer_duevalue_textview"
+        style="@style/ss_customerdetails_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_toLeftOf="@id/editcustomer_divider"
+        android:layout_toRightOf="@id/customernumber_textview" />
+
+    <TextView
+        android:id="@+id/customeraddress_textview"
+        style="@style/ss_customerdetails_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customername_textview"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_toLeftOf="@id/editcustomer_divider"
+        android:layout_alignParentLeft="true"
+        android:maxWidth="0dp" />
+
+</RelativeLayout>

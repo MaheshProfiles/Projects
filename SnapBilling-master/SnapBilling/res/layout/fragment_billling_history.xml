@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/medium_padding"
+    android:paddingRight="@dimen/medium_padding" >
+
+    <RelativeLayout
+        android:id="@+id/billlist_linearlayout"
+        android:layout_width="@dimen/billhistory_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bill_border_shape"
+        android:padding="1dp"
+        android:paddingBottom="@dimen/medium_padding" >
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/bill_search_edittext"
+            style="@style/customer_search_textstyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="@string/bill_search_hint"
+            android:inputType="text" />
+
+        <RelativeLayout
+            android:id="@+id/billhistory_footer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/billhistory_billfooter_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/billhistory_footercolor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/duration_textview"
+                style="@style/billhistory_footer_numbertextstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/days_textview"
+                style="@style/billhistory_footer_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/duration_textview"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:text="@string/day" />
+
+            <TextView
+                android:id="@+id/total_sales_textview"
+                style="@style/billhistory_footer_numbertextstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/medium_padding" />
+
+            <TextView
+                android:id="@+id/total_textview"
+                style="@style/billhistory_footer_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/total_sales_textview"
+                android:layout_marginRight="@dimen/medium_padding"
+                android:text="@string/total" />
+
+            <Button
+                android:id="@+id/deleteall_bill_button"
+                android:layout_width="34dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="54dp"
+                android:layout_toRightOf="@+id/duration_textview"
+                android:background="@drawable/bill_cancel_imgselector" 
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/billinghistory_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bill_search_edittext"
+            layout="@layout/header_bill_history" />
+
+        <ListView
+            android:id="@+id/billlist_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/billhistory_footer"
+            android:layout_below="@id/billinghistory_header"
+            android:background="@android:color/white" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bill_relativelayout"
+        android:layout_width="@dimen/billlist_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_toRightOf="@id/billlist_linearlayout"
+        android:background="@drawable/bill_border_shape"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:paddingBottom="@dimen/medium_padding" >
+
+        <include
+            android:id="@+id/bill_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/billmonitor_billfooter_height"
+            android:layout_alignParentBottom="true"
+            layout="@layout/billinghistory_footer_bill" />
+
+        <include
+            android:id="@+id/bill_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            layout="@layout/header_bill" />
+
+        <ListView
+            android:id="@+id/bill_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bill_footer_layout"
+            android:layout_below="@id/bill_header_layout"
+            android:background="@android:color/white"
+            android:listSelector="@null" >
+        </ListView>
+    </RelativeLayout>
+
+    <!-- <include -->
+    <!-- android:id="@+id/bill_layout" -->
+    <!-- android:layout_width="@dimen/billlist_width" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_below="@id/bill_filter_linearlayout" -->
+    <!-- android:layout_toRightOf="@id/billlist_linearlayout" -->
+    <!-- layout="@layout/layout_bill" /> -->
+
+    <include
+        android:id="@+id/bill_options_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/bill_relativelayout"
+        layout="@layout/layout_complete_bill"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/overlay_framelayout"
+        android:layout_width="@dimen/keypad_width"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </FrameLayout>
+
+</RelativeLayout>

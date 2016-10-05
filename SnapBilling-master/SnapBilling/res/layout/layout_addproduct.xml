@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/medium_padding" >
+
+    <TextView
+        android:id="@+id/productsku_name_textview"
+        style="@style/billitem_name_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:maxLines="2"
+        android:maxWidth="200dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/productsku_mrp_textview"
+        style="@style/billitem_price_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_toRightOf="@+id/productsku_name_textview"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/decrease_qty_button"
+        style="@style/keypad_bttn_style"
+        android:layout_width="@dimen/def_button_width"
+        android:layout_height="@dimen/def_button_height"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_toRightOf="@id/productsku_mrp_textview"
+        android:background="@drawable/decrease_bttn_selector" />
+
+    <Button
+        android:id="@+id/increase_qty_button"
+        style="@style/keypad_bttn_style"
+        android:layout_width="@dimen/def_button_width"
+        android:layout_height="@dimen/def_button_height"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/increase_bttn_selector" />
+
+    <EditText
+        android:id="@+id/qty_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_toLeftOf="@id/increase_qty_button"
+        android:layout_toRightOf="@id/decrease_qty_button"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="@integer/max_characters_numberinput"
+        android:text="1" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content" 
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/tab_title"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:paddingTop="@dimen/large_padding"
+        android:textColor="@drawable/tab_textcolor_selector" />
+
+</RelativeLayout>

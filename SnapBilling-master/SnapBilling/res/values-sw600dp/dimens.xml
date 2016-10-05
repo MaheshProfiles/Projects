@@ -1,0 +1,65 @@
+<resources>
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    -->
+    <dimen name="small_padding">10dp</dimen>
+    <dimen name="medium_padding">15dp</dimen>
+    <dimen name="large_padding">40dp</dimen>
+    <dimen name="actionbar_height">100dp</dimen>
+    
+    <dimen name="store_rowheight">143dp</dimen>
+    <dimen name="store_columnwidth">158dp</dimen>
+    <dimen name="store_category_height">40dp</dimen>
+    <dimen name="store_category_width">178dp</dimen>
+    <dimen name="store_productimage_height">143dp</dimen>
+    <dimen name="store_productimage_width">148dp</dimen>
+    
+    <dimen name="editproduct_popover_width">300dp</dimen>
+    
+    <dimen name="checkoutbill_productsnlo_width">40dp</dimen>
+    <dimen name="checkoutbill_producqty_width">70dp</dimen>
+    <dimen name="checkoutbill_productprice_width">125dp</dimen>
+    <dimen name="checkoutbill_producttotal_width">125dp</dimen>
+    <dimen name="bttn_discount_height">38dp</dimen>
+    <dimen name="bttn_discount_width">98dp</dimen>
+    <dimen name="billlist_width">400dp</dimen>
+    <dimen name="deletereturn_margin">415dp</dimen>
+    
+    <dimen name="billhistory_billdate_width">120dp</dimen>
+    <dimen name="billhistory_billcustomer_width">125dp</dimen>
+    <dimen name="billhistory_billtotal_width">120dp</dimen>
+    <dimen name="billhistory_billstatus_width">120dp</dimen>
+    <dimen name="billhistory_width">480dp</dimen>
+    <dimen name="billhistory_billheader_height">40dp</dimen>
+    <dimen name="billhistory_billitem_height">60dp</dimen>
+    <dimen name="billhistory_billfooter_height">100dp</dimen>
+    
+    <dimen name="billmonitor_bill_width">420dp</dimen>
+    <dimen name="billmonitor_search_width">340dp</dimen>
+    <dimen name="billmonitor_billfooter_height">100dp</dimen>
+    <dimen name="billmonitor_billheader_height">40dp</dimen>
+    <dimen name="billmonitor_bill_height">410dp</dimen>
+    <dimen name="bill_item_height">90dp</dimen>
+    <dimen name="bill_item_halfheight">45dp</dimen>    
+    <dimen name="customer_search_height">63dp</dimen>
+    <dimen name="customer_details_cellheight">71dp</dimen>
+    <dimen name="bill_complete_width">346dp</dimen>
+    <dimen name="customer_addedit_width">420dp</dimen>
+    
+    <dimen name="keypad_bttn_verticalspacing">9dp</dimen>
+    <dimen name="keypad_bttn_horizontalspacing">12dp</dimen>
+    <dimen name="keypad_display_height">70dp</dimen>
+    <dimen name="keypad_edititem_height">70dp</dimen>
+    <dimen name="keypad_qty_width">60dp</dimen>
+    <dimen name="keypad_price_width">135dp</dimen>
+    <dimen name="keypad_total_width">135dp</dimen>
+    <dimen name="keypad_width">340dp</dimen>
+    
+    <dimen name="def_button_height">44dp</dimen>
+    <dimen name="def_button_width">44dp</dimen>
+    
+    <dimen name="delete_return_width">274dp</dimen>
+    
+    <dimen name="completebill_dialog_width">340dp</dimen>
+</resources>

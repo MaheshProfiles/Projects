@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background_color"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/order_button"
+        style="@style/inventory_mainmenu_textstyle"
+        android:layout_width="@dimen/inventory_mainmenu_button_width"
+        android:layout_height="@dimen/inventory_mainmenu_button_height"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mainmenu_order_background"
+        android:text="@string/order" />
+
+    <Button
+        android:id="@+id/receive_button"
+        style="@style/inventory_mainmenu_textstyle"
+        android:layout_width="@dimen/inventory_mainmenu_button_width"
+        android:layout_height="@dimen/inventory_mainmenu_button_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mainmenu_receive_background"
+        android:text="@string/receive" />
+
+    <Button
+        android:id="@+id/update_button"
+        style="@style/inventory_mainmenu_textstyle"
+        android:layout_width="@dimen/inventory_mainmenu_button_width"
+        android:layout_height="@dimen/inventory_mainmenu_button_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="110dp"
+        android:background="@drawable/mainmenu_update_background"
+        android:text="@string/update" />
+
+</LinearLayout>

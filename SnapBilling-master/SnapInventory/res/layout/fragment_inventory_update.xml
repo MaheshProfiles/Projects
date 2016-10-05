@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/inventory_product_layout"
+        android:layout_width="@dimen/inventory_update_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/inventory_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stockheader_height"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:background="@drawable/stockupdate_headerbg_drawable" >
+
+            <Button
+                android:id="@+id/inventory_prod_add_button"
+                style="@style/stock_update_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/newitem_bg_selector"
+                android:paddingLeft="@dimen/large_padding"
+                android:text="@string/add_new"
+                android:textColor="@drawable/update_header_textcolor_selector" />
+
+            <TextView
+                android:id="@+id/stockupdate_header_textview"
+                style="@style/stock_my_store_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@+id/inventory_prod_add_button"
+                android:background="@color/transparent_color"
+                android:text="@string/my_store" />
+
+            <!-- category names goes here -->
+
+            <TextView
+                android:id="@+id/update_header_name_textview"
+                style="@style/stock_order_textstyle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:layout_toRightOf="@+id/stockupdate_header_textview" />
+
+            <TextView
+                android:id="@+id/update_header_category_text"
+                style="@style/stock_order_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:layout_toRightOf="@+id/update_header_name_textview"
+                android:text="@string/total_category_stock" />
+
+            <TextView
+                android:id="@+id/inventory_totalqty_textview"
+                style="@style/snap_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/update_header_category_text"
+                android:background="@color/transparent_color"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <!-- header total value goes here -->
+
+            <TextView
+                android:id="@+id/update_header_total_value_textview"
+                style="@style/stock_order_textstyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:layout_toRightOf="@+id/inventory_totalqty_textview" />
+
+            <!-- <Button
+                android:id="@+id/inventory_prod_done_button"
+                style="@style/stock_update_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/done_bg_selector"
+                android:paddingLeft="@dimen/large_padding"
+                android:text="@string/done"
+                android:textColor="@drawable/update_header_textcolor_selector" /> -->
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:scrollbars="none" >
+
+            <ListView
+                android:id="@+id/inventory_products_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </ListView>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inventory_batches_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_transparent_color"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/product_header_bgcolor"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_padding" >
+
+            <ListView
+                android:id="@+id/inventory_batches_listview"
+                android:layout_width="@dimen/inventory_batch_width"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/black"
+                android:dividerHeight="1dp" />
+
+            <View
+                android:layout_width="@dimen/inventory_batch_width"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="@dimen/inventory_batch_width"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/inventorybatch_cancel_button"
+                    android:layout_width="@dimen/inventory_batch_buttonwidth"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/update_inv_prod_light_selector"
+                    android:text="@string/cancel" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black" />
+
+                <Button
+                    android:id="@+id/inventorybatch_done_button"
+                    android:layout_width="@dimen/inventory_batch_buttonwidth"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/update_inv_prod_light_selector"
+                    android:text="@string/done" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/keypad_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_color"
+        android:clickable="true"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:id="@+id/keypad_frame_layout"
+            android:layout_width="@dimen/keypad_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/large_padding" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

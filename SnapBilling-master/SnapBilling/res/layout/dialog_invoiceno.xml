@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/small_padding" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/medium_padding"
+        android:paddingTop="@dimen/medium_padding" >
+
+        <ImageView
+            android:id="@+id/popup_icon_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_popup_list_pay" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/lineitems_layout_textview"
+        android:background="@color/divider_color" />
+
+    <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lineitems_textview"
+            style="@style/bill_popup_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/invoice_no" />
+        
+         <EditText
+            android:id="@+id/invoice_no_text"
+            style="@style/bill_popup_textstyle"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxLength="16"
+            android:layout_toRightOf="@id/lineitems_textview"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+            android:layout_marginTop="@dimen/small_padding"/>
+    </RelativeLayout>
+
+</LinearLayout>

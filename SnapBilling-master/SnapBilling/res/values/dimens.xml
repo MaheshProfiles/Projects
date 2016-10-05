@@ -1,0 +1,26 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="inventory_header_height">56dp</dimen>
+    <dimen name="stock_report_item_width">150dp</dimen>
+    <dimen name="inventory_mainmenu_button_height">470dp</dimen>
+    <dimen name="inventory_mainmenu_button_width">340dp</dimen>
+    <dimen name="new_productcode_width">191dp</dimen>
+    <dimen name="inventory_update_item_width">85dp</dimen>
+    <dimen name="inventory_update_unittype_width">104dp</dimen>
+    <dimen name="inventory_update_expiry_width">133dp</dimen>
+    <dimen name="subList_distributor_orders_sku_name_width">430dp</dimen>
+    <dimen name="stock_mrp_header_width">154dp</dimen>
+    <dimen name="stock_weekly_trend_width">113dp</dimen>
+    <dimen name="subList_distributor_orders_width">103dp</dimen>
+    <dimen name="inventory_update_width">1180dp</dimen>
+    <dimen name="stockheader_height">68dp</dimen>
+    <dimen name="inventory_batch_width">900dp</dimen>
+    <dimen name="inventory_batch_buttonwidth">450dp</dimen>
+    <dimen name="stock_header_product_width">422dp</dimen>
+    <dimen name="actionbar_menu_item_width">353dp</dimen>
+    <dimen name="actionbar_inventory_menu_item_width">200dp</dimen>
+    <dimen name="inventoryheader_height">100dp</dimen>
+
+</resources>

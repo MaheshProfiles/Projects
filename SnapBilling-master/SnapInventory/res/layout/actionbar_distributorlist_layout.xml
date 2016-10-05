@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_distributor_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" >
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/search_edittext"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/clear_search_text_button"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/clear_search_text_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_cancel_red_small" />
+    </RelativeLayout>
+
+   <!--  <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/filter_by_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/small_padding"
+            android:text="Filter by " />
+
+        <Button
+            android:id="@+id/filter_distributor_button"
+            android:layout_width="@dimen/distributorfilter_buttonwidth"
+            android:layout_height="@dimen/distributorfilter_buttonheight"
+            android:background="@drawable/filter_type_bgselector"
+            android:tag="@string/filter_distributor_column"
+            android:text="@string/distributor" />
+
+        <Button
+            android:id="@+id/filter_company_button"
+            android:layout_width="@dimen/distributorfilter_buttonwidth"
+            android:layout_height="@dimen/distributorfilter_buttonheight"
+            android:background="@drawable/filter_type_bgselector"
+            android:tag="@string/filter_company_column"
+            android:text="@string/company" />
+    </LinearLayout> -->
+
+</RelativeLayout>

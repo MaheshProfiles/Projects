@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/android/!svn/ver/1190/AzureMonitor/res/layout-land-ldpi
+END
+monitor_machine_footer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/monitor_machine_footer.xml
+END
+general_settings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/general_settings.xml
+END
+monitor_machine_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/android/!svn/ver/1165/AzureMonitor/res/layout-land-ldpi/monitor_machine_list.xml
+END
+footer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/footer.xml
+END
+vm_usage_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/android/!svn/ver/1165/AzureMonitor/res/layout-land-ldpi/vm_usage_details.xml
+END
+cores_created.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/cores_created.xml
+END
+home.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/home.xml
+END
+monitor_machine.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/monitor_machine.xml
+END
+machine_monitor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/machine_monitor.xml
+END
+activity_registration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/android/!svn/ver/1179/AzureMonitor/res/layout-land-ldpi/activity_registration.xml
+END
+activity_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/activity_main.xml
+END
+resource_vm_usage_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/android/!svn/ver/1190/AzureMonitor/res/layout-land-ldpi/resource_vm_usage_details.xml
+END
+price_detail_list_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/android/!svn/ver/1165/AzureMonitor/res/layout-land-ldpi/price_detail_list_row.xml
+END
+resource_summary_listrow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/resource_summary_listrow.xml
+END
+resource_usage_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/resource_usage_details.xml
+END
+cores_created_framelayout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/cores_created_framelayout.xml
+END
+account_settings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/account_settings.xml
+END
+cloud_created_framelayout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/cloud_created_framelayout.xml
+END
+forgot_password.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/android/!svn/ver/1197/AzureMonitor/res/layout-land-ldpi/forgot_password.xml
+END
+activity_login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/activity_login.xml
+END
+monitor_machine_framelayout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/android/!svn/ver/1179/AzureMonitor/res/layout-land-ldpi/monitor_machine_framelayout.xml
+END
+storage_acc_created_framelayout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/storage_acc_created_framelayout.xml
+END
+account_setting.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/android/!svn/ver/1179/AzureMonitor/res/layout-land-ldpi/account_setting.xml
+END
+account_setting_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/account_setting_list.xml
+END
+footer_repeat.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/footer_repeat.xml
+END
+subcription_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/1179/AzureMonitor/res/layout-land-ldpi/subcription_detail.xml
+END
+drawer_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/drawer_list_item.xml
+END
+price_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/android/!svn/ver/1180/AzureMonitor/res/layout-land-ldpi/price_detail.xml
+END
+resource_details_listrow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/android/!svn/ver/1109/AzureMonitor/res/layout-land-ldpi/resource_details_listrow.xml
+END
+dashboard.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/android/!svn/ver/1165/AzureMonitor/res/layout-land-ldpi/dashboard.xml
+END
+price_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/android/!svn/ver/1179/AzureMonitor/res/layout-land-ldpi/price_menu.xml
+END

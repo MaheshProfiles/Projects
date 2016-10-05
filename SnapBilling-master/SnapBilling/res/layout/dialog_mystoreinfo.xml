@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/template_layout" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07" >
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            style="@style/bill_popup_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/store_name" />
+
+        <View
+            android:id="@+id/lineitems_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_store_name"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/tv_store_msg"
+            style="@style/bill_popup_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lineitems_divider"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/store_msg"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/totalqty_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_store_msg"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@color/divider_color"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_store_phonenumber"
+            style="@style/bill_popup_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/totalqty_divider"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/store_phonenumber" />
+
+        <View
+            android:id="@+id/total_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_store_phonenumber"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@color/divider_color" />
+
+        <EditText
+            android:id="@+id/et_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_store_name"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_toRightOf="@+id/tv_store_phonenumber"
+            android:ems="10" 
+            android:singleLine="true">
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_store_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/totalqty_divider"
+            android:layout_alignLeft="@+id/et_store_name"
+            android:ems="10"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_store_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_store_phonenumber"
+            android:layout_alignLeft="@+id/et_store_msg"
+            android:ems="10"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/button_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/total_divider"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/save" />
+    </RelativeLayout>
+
+</LinearLayout>

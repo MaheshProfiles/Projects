@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/delete_return_linearlayout"
+        android:layout_width="@dimen/delete_return_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/return_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_padding" >
+
+        <Button
+            android:id="@+id/billitem_delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/product_delete_button_selector"
+            android:drawablePadding="@dimen/medium_padding"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/medium_padding"
+            android:text="@string/delete"
+            android:textColor="@drawable/product_delete_return_textcolor_selector" />
+
+        <Button
+            android:id="@+id/billitem_return_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/product_return_button_selector"
+            android:drawablePadding="@dimen/medium_padding"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/medium_padding"
+            android:text="@string/return_product"
+            android:textColor="@drawable/product_delete_return_textcolor_selector" />
+
+        <Button
+            android:id="@+id/billitem_editname_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:layout_marginTop="@dimen/medium_padding"
+            android:background="@drawable/productnameedit_color_selector"
+            android:text="@string/editname_product"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

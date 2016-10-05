@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_transparent_color"
+    android:clickable="true" >
+
+    <Button
+        android:id="@+id/order_summary_overlay_button"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/order_summary_scrollview"
+        android:background="@drawable/order_slidein_selector" />
+
+    <ScrollView
+        android:id="@+id/order_summary_scrollview"
+        android:layout_width="@dimen/stock_summary_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" >
+
+        <RelativeLayout
+            android:id="@+id/summary_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/expandable_listview_product_mrp_bgcolor" >
+
+            <RelativeLayout
+                android:id="@+id/order_summary_distributor_info_layout"
+                android:layout_width="@dimen/stock_summary_card_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_marginRight="@dimen/small_padding"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/shadow_effect" >
+
+                <TextView
+                    android:id="@+id/order_summary_agency_name_text_view"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:layout_marginTop="@dimen/medium_padding" />
+
+                <TextView
+                    android:id="@+id/order_summary_distributor_brands_text_view"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_summary_agency_name_text_view"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/order_summary_distributor_number_text_view"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_summary_distributor_brands_text_view"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:paddingBottom="@dimen/medium_padding" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_summary_bill_info_layout"
+                android:layout_width="@dimen/stock_summary_card_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_summary_distributor_info_layout"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_marginRight="@dimen/small_padding"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/shadow_effect" >
+
+                <TextView
+                    android:id="@+id/order_summary_line_item_text"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/stock_summary_lineitem_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:text="@string/line_items" />
+
+                <TextView
+                    android:id="@+id/order_summary_line_item_text_view"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/stock_summary_lineitem_height"
+                    android:layout_alignBaseline="@+id/order_summary_line_item_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/small_padding"
+                    android:paddingRight="@dimen/medium_padding" />
+
+                <TextView
+                    android:id="@+id/order_summary_quantity_text"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/stock_summary_lineitem_height"
+                    android:layout_below="@+id/order_summary_line_item_text"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:text="@string/distributor_product_quantity" />
+
+                <TextView
+                    android:id="@+id/order_summary_quantity_text_view"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/stock_summary_lineitem_height"
+                    android:layout_alignBaseline="@+id/order_summary_quantity_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/order_summary_line_item_text_view"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:paddingRight="@dimen/medium_padding" />
+
+                <TextView
+                    android:id="@+id/order_summary_mrp_text"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/stock_summary_lineitem_height"
+                    android:layout_below="@+id/order_summary_quantity_text"
+                    android:layout_marginBottom="@dimen/medium_padding"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:text="@string/mrp" />
+
+                <TextView
+                    android:id="@+id/order_summary_mrp_text_view"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/order_summary_mrp_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/order_summary_quantity_text_view"
+                    android:layout_marginBottom="@dimen/medium_padding"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:paddingRight="@dimen/medium_padding" />
+
+                <View
+                    android:layout_width="@dimen/stock_summary_view_width"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/order_summary_line_item_text"
+                    android:background="@color/stock_summary_divider_color" />
+
+                <View
+                    android:layout_width="@dimen/stock_summary_view_width"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/order_summary_quantity_text"
+                    android:background="@color/stock_summary_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_summary_payment_layout"
+                android:layout_width="@dimen/stock_summary_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_summary_bill_info_layout"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_marginRight="@dimen/small_padding"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/shadow_effect" >
+
+                <TextView
+                    android:id="@+id/order_summary_distributor_name_text"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/stock_summary_lineitem_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:text="@string/salesman" />
+
+                <TextView
+                    android:id="@+id/order_summary_distributor_name_text_view"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/stock_summary_lineitem_height"
+                    android:layout_alignBaseline="@+id/order_summary_distributor_name_text"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/medium_padding"
+                    android:singleLine="true" />
+
+                <Spinner
+                    android:id="@+id/order_summary_payment_mode_spinner"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/stock_summary_lineitem_height"
+                    android:layout_below="@+id/order_summary_distributor_name_text_view"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:entries="@array/payment_mode" />
+
+                <TextView
+                    android:id="@+id/order_summary_payment_amount_text_view"
+                    style="@style/stock_summary_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/stock_summary_lineitem_height"
+                    android:layout_alignBaseline="@+id/order_summary_payment_mode_spinner"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/order_summary_distributor_name_text_view"
+                    android:paddingRight="@dimen/medium_padding" />
+
+                <View
+                    android:layout_width="@dimen/stock_summary_view_width"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/order_summary_distributor_name_text_view"
+                    android:background="@color/stock_summary_divider_color" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/order_summary_cancel_button"
+                style="@style/snap_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/order_summary_payment_layout"
+                android:layout_marginBottom="@dimen/medium_padding"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/summary_cancel_button_selector"
+                android:drawablePadding="@dimen/small_padding"
+                android:text="@string/cancel"
+                android:textColor="@drawable/summary_cancel_button_textcolor_selector"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/order_summary_confirm_button"
+                style="@style/snap_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_summary_payment_layout"
+                android:layout_marginBottom="@dimen/medium_padding"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:layout_toRightOf="@+id/order_summary_cancel_button"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/summary_confirm_button_selector"
+                android:drawablePadding="@dimen/small_padding"
+                android:paddingRight="@dimen/medium_padding"
+                android:text="@string/confirm"
+                android:textColor="@drawable/summary_confirm_button_textcolor_selector"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

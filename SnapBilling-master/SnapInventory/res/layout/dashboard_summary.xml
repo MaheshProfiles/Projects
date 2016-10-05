@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboard_summary_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dashboard_summary_itenary_width"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/large_padding"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding" >
+
+            <ImageView
+                android:id="@+id/total_sales_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/total_stock_textview"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1"
+                android:text="@string/stock_value" />
+
+            <TextView
+                android:id="@+id/total_stockvalue_textview"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_stock_textview"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding" >
+
+            <ImageView
+                android:id="@+id/total_sales_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/monthly_sales_textview"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1"
+                android:text="@string/monthly_sales" />
+
+            <TextView
+                android:id="@+id/monthly_salesvalue_textview"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/monthly_sales_textview"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding" >
+
+            <ImageView
+                android:id="@+id/total_sales_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/monthly_profit_textview"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1"
+                android:text="@string/monthly_profit" />
+
+            <TextView
+                android:id="@+id/monthly_profitvalue_textview"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/monthly_profit_textview"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding" >
+
+            <ImageView
+                android:id="@+id/total_sales_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/total_skus_textview"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1"
+                android:text="@string/total_skus" />
+
+            <TextView
+                android:id="@+id/total_skusvalue_textview"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_skus_textview"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dashboard_summary_itenary_width"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/summary_date_textview"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding" >
+
+            <ImageView
+                android:id="@+id/total_sales_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/new_sku_textview"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1"
+                android:text="@string/total_new_skus" />
+
+            <TextView
+                android:id="@+id/new_skuvalue_textview"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_sku_textview"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding" >
+
+            <ImageView
+                android:id="@+id/total_sales_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/paid_stock_textview"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1"
+                android:text="@string/paid_stock" />
+
+            <TextView
+                android:id="@+id/paid_stockvalue_textview"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paid_stock_textview"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding" >
+
+            <ImageView
+                android:id="@+id/total_sales_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/unpaid_stock_textview"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1"
+                android:text="@string/unpaid_stock" />
+
+            <TextView
+                android:id="@+id/unpaid_stockvalue_textview"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unpaid_stock_textview"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding" >
+
+            <ImageView
+                android:id="@+id/total_sales_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/days_stock_textview"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1"
+                android:text="@string/days_of_stock" />
+
+            <TextView
+                android:id="@+id/days_stockvalue_textview"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/days_stock_textview"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

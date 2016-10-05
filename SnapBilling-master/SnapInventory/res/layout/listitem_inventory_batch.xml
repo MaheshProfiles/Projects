@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/inventory_prodname_textview"
+        style="@style/update_product_textstyle"
+        android:layout_width="210dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_alignParentLeft="true"
+        android:background="@color/product_bgcolor_dark" />
+
+    <TextView
+        android:id="@+id/inventory_batchmrp_textview"
+        style="@style/update_product_textstyle"
+        android:layout_width="@dimen/inventory_update_item_width"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_prodname_textview"
+        android:background="@drawable/update_inv_prod_light_selector" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_prodname_textview"
+        android:background="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/inventory_batch_purchaseprice_textview"
+        style="@style/update_product_textstyle"
+        android:layout_width="@dimen/inventory_update_item_width"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batchmrp_textview"
+        android:background="@drawable/update_inv_prod_light_selector" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batchmrp_textview"
+        android:background="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/inventory_batch_salesprice_textview"
+        style="@style/update_product_textstyle"
+        android:layout_width="@dimen/inventory_update_item_width"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batch_purchaseprice_textview"
+        android:background="@drawable/update_inv_prod_light_selector" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batch_purchaseprice_textview"
+        android:background="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/inventory_batchqty_textview"
+        style="@style/update_product_textstyle"
+        android:layout_width="@dimen/inventory_update_item_width"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batch_salesprice_textview"
+        android:background="@drawable/update_inv_prod_light_selector" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batch_salesprice_textview"
+        android:background="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/inventory_batch_availableqty_textview"
+        style="@style/update_product_textstyle"
+        android:layout_width="@dimen/inventory_update_item_width"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batchqty_textview"
+        android:background="@drawable/update_inv_prod_dark_selector" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batchqty_textview"
+        android:background="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/inventory_batchdate_textview"
+        style="@style/update_product_textstyle"
+        android:layout_width="@dimen/inventory_update_expiry_width"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batch_availableqty_textview"
+        android:background="@drawable/update_inv_prod_light_selector" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batch_availableqty_textview"
+        android:background="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/inventory_batchexpdate_textview"
+        style="@style/update_product_textstyle"
+        android:layout_width="@dimen/inventory_update_expiry_width"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batchdate_textview"
+        android:background="@drawable/update_inv_prod_light_selector" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:layout_toRightOf="@+id/inventory_batchdate_textview"
+        android:background="@android:color/black"
+        />
+
+</RelativeLayout>

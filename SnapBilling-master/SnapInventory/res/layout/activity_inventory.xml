@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background_color"
+    tools:context=".InventoryActivity" >
+
+    <FrameLayout
+        android:id="@+id/content_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <include
+        android:id="@+id/add_new_product_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/add_item_layout"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/second_content_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pin_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+    
+    <LinearLayout
+        android:id="@+id/new_pin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        
+        <EditText
+            android:id="@+id/newpin_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_pin_hint"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/renterpin_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/re_enter_pin"
+            android:inputType="numberPassword"
+            android:layout_marginBottom="10dp"
+            android:maxLength="4"
+            android:textSize="16sp" />
+	
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="end">
+            
+	        <Button
+	            android:id="@+id/save_pin_settings"
+	            android:layout_width="wrap_content"
+	            android:layout_height="35dp"
+	            android:layout_gravity="end"
+	            android:layout_marginTop="20dp"
+	            android:background="@drawable/settings_green_button"
+	            android:text="@string/save"
+	            android:textColor="@color/settings_tab_bgcolor" />
+	        
+	        <Button
+	            android:id="@+id/cancel_change_pin_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="35dp"
+	            android:layout_gravity="end"
+	            android:layout_marginStart="20dp"
+	            android:background="@drawable/settings_orange_button"
+	            android:text="@string/cancel_text"
+	            android:textColor="@color/settings_tab_bgcolor" />
+        </LinearLayout>  
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/existing_pin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+        <EditText
+            android:id="@+id/existing_pin_val"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pin_delete_hint"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:textSize="16sp" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="end">
+            
+            <Button
+                android:id="@+id/change_pin_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:background="@drawable/settings_green_button"
+                android:text="@string/change_pin_text"
+                android:textColor="@color/settings_tab_bgcolor" />
+
+            <Button
+                android:id="@+id/delete_pin_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/settings_red_button"
+                android:text="@string/delete_pin"
+                android:textColor="@color/settings_tab_bgcolor" />            
+        </LinearLayout>        
+    </LinearLayout>
+</LinearLayout>

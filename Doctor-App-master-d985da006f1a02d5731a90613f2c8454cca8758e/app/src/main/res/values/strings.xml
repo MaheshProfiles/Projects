@@ -1,0 +1,468 @@
+<resources>
+    <string name="app_name">Nerve24</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_title">Login from a Social account</string>
+    <string name="login_user">Username/Mobile Number/Email ID</string>
+    <string name="login_pass">Password</string>
+    <string name="login_chk">Remember Me</string>
+    <string name="login_forget">Forget password</string>
+    <string name="login_button">Submit</string>
+    <string name="login_retext">Not Nerve24 ?</string>
+    <string name="login_retextsub">Register</string>
+    <string name="my_friend">My friends List</string>
+    <string name="name">Name</string>
+    <string name="job">Job</string>
+    <string name="gender">Gender</string>
+    <string name="title_activity_register">Register</string>
+    <string name="action_search">Search</string>
+    <string name="action_notification">Notification</string>
+    <string name="action_filter">filter</string>
+    <string name="title_activity_registeractivity">Register as</string>
+    <string name="title_activity_doctor_register">Register</string>
+    <string name="title_activity_price_setup">PriceSetup</string>
+    <string name="fee">Fee (\u20B9)</string>
+    <string name="feeer">Fee :</string>
+    <string name="feee">\u20B9500</string>
+
+    <string-array name="array_days_full_name_lowercase">
+        <item>monday</item>
+        <item>tuesday</item>
+        <item>wednesday</item>
+        <item>thursday</item>
+        <item>friday</item>
+        <item>saturday</item>
+        <item>sunday</item>
+
+    </string-array>
+
+    <string-array name="days_full_name">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+
+    </string-array>
+    <string-array name="days">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+
+    </string-array>
+    <string-array name="nav_drawer_items">
+        <item>Price Setup</item>
+        <item>Calendar</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="android_layout_ref">
+        <item>Dr Bhatra</item>
+        <item>Dr Sathish</item>
+    </string-array>
+    <string-array name="android_layout_gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="android_layout_medals">
+        <item>Degree</item>
+        <item>Gold</item>
+        <item>Silver</item>
+    </string-array>
+    <string-array name="android_layout_de">
+        <item>Degination</item>
+        <item>Sr Doctor</item>
+        <item>Jr doctor</item>
+    </string-array>
+    <string-array name="android_layout_hospi">
+        <item>Appllo</item>
+        <item>Narayana hospital</item>
+        <item>Manipal hospital</item>
+    </string-array>
+    <string-array name="android_layout_start">
+        <item>start date</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+    </string-array>
+    <string-array name="android_layout_end">
+        <item>end date</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+    </string-array>
+    <string-array name="array_duration">
+        <item>Select Duration</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+
+    </string-array>
+
+    <string-array name="appoinment_option">
+        <item>Reschedule</item>
+        <item>Change status</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="android_layout_arrays">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+
+    </string-array>
+    <string-array name="android_layout_price">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>3000</item>
+        <item>4500</item>
+        <item>5000</item>
+        <item>10000</item>
+    </string-array>
+    <string-array name="android_layout_slot">
+        <item>\u20B9 500</item>
+        <item>\u20B9 600</item>
+        <item>\u20B9 800</item>
+        <item>\u20B9 900</item>
+        <item>\u20B9 1000</item>
+        <item>\u20B9 1200</item>
+        <item>\u20B9 1500</item>
+    </string-array>
+    <string-array name="android_layout_paymentmethod">
+        <!--
+        <item>All</item>
+-->
+        <item>Credit card</item>
+        <item>Debit card</item>
+        <item>Cash Payment</item>
+        <item>Net Banking</item>
+
+    </string-array>
+    <string-array name="android_layout_location">
+        <item>Indira nagar</item>
+        <item>jp nagar</item>
+        <item>Hsr layout</item>
+        <item>Madiwala</item>
+
+    </string-array>
+    <string-array name="android_layout_percentage">
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>30%</item>
+
+
+    </string-array>
+    <string-array name="nav_drawer_label">
+        <item>Home</item>
+        <item>Logout</item>
+    </string-array>
+    <string name="title_activity_pricesetupslot">Nerve24</string>
+    <string name="title_activity_clinicwise">Clinic Wise</string>
+    <string name="title_activity_dailywise">Daily Wise</string>
+    <string name="title_activity_edit_clinic">Edit</string>
+    <string name="title_section1">Pricesetup</string>
+    <string name="title_section2">Calendar</string>
+    <string name="title_section3">Logout</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Under Development</string>
+    <string name="title_activity_dailtwiseclinic">Jyothi clinic</string>
+    <string name="title_activity_diagnostics">Register</string>
+    <string name="title_activity_pharmacy">Register</string>
+    <string name="title_activity_locumtenens">Register</string>
+    <string name="title_activity_locumrecruiter">Register</string>
+    <string name="title_activity_tue_slot">Daya Clinic</string>
+    <string name="title_activity_wed_slot">Daya Clinic</string>
+    <string name="title_activity_thu_slot">Daya Clinic</string>
+    <string name="title_activity_fri_slot">Daya Clinic</string>
+    <string name="title_activity_sat_slot">Daya Clinic</string>
+    <string name="title_activity_sun_slot">Daya Clinic</string>
+    <string name="title_activity_welcome">Welcome User</string>
+    <string name="title_activity_onboarding">Price Setup Slot</string>
+    <string name="err_msg_name">Enter your Mobile no</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_otp">Enter valid Otp</string>
+    <string name="err_msg_chk">Enter valid Otp</string>
+    <string name="title_activity_httpregister">Httpregister</string>
+    <string name="title_activity_spi">Slot Setup</string>
+    <string name="title_activity_priceandslot">Pricing and Slot</string>
+    <string name="title_activity_daily_price">Joyothi Clinic </string>
+    <string name="title_activity_slot_setup">Slot Setup</string>
+    <string name="title_activity_pricesetupnew">Pricesetupnew</string>
+    <string name="title_activity_android_nav_drawer">Nerve24</string>
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_onboardingnew">Onboardingnew</string>
+    <string name="title_activity_addappointment">Addappointment</string>
+    <string name="title_activity_login_new">LoginNew</string>
+    <string name="title_activity_addappointmentnew">Addappointmentnew</string>
+    <string name="title_activity_calendarweek">Calendarweek</string>
+    <string name="title_activity_filterby">Filter By</string>
+    <string name="title_activity_patienthistory">Patient History</string>
+    <string name="title_activity_subscription">Subscription</string>
+    <string name="title_desscption">This package is all you need to get started with increasing appointments and referrals!</string>
+    <string name="title_activity_forgetpassword">Forgetpassword</string>
+    <string name="title_activity_changepassword">Changepassword</string>
+    <string name="title_activity_forgotnew">Forgotnew</string>
+
+    <string name="welcome_user">Welcome User</string>
+    <string name="we_have_created">We have created a Nerve24 ID for you.</string>
+
+    <string name="no_items_found">Empty!</string>
+    <string name="msg_no_internet">no internet connection.</string>
+    <string name="msg_no_wifi">please turn on your network connection.</string>
+    <string name="msg_unexpected_error">sorry could not process the request. please try again</string>
+
+    <!-- -->
+    <string name="apply_for_all">Apply For All</string>
+    <string name="Rs">\u20B9</string>
+
+
+    <!-- content_edit_clinic -->
+    <string name="clinic_name">Clinic Name</string>
+    <string name="location">Location</string>
+    <string name="fee_with_rs">Fee (\u20B9)</string>
+    <string name="doctor_discount">Doctor Discount (%)</string>
+    <string name="nerve24_discount">Nerve24 Discount (%)</string>
+    <string name="payment_method">Payment Method :</string>
+    <string name="credit_card">Credit card</string>
+    <string name="debit_card">Debit card</string>
+    <string name="cash_only">Cash Payment</string>
+    <string name="net_banking"> Net Banking</string>
+    <string name="title_activity_activity_main">ActivityMain</string>
+
+    <!-- common messages -->
+    <string name="list_empty">List empty!</string>
+
+    <!-- Login -->
+    <string name="register"><u>Register</u></string>
+    <string name="forget_password"><u>Forgot Password ?</u></string>
+
+    <string-array name="array_pick_apply_for_all">
+        <item>apply for all</item>
+        <item> only inherited</item>
+        <item> only overridden</item>
+    </string-array>
+
+    <string-array name="array_time_12_am_12pm">
+        <item>12 am</item>
+        <item>1 am</item>
+        <item>2 am</item>
+        <item>3 am</item>
+        <item>4 am</item>
+        <item>5 am</item>
+        <item>6 am</item>
+        <item>7 am</item>
+        <item>8 am</item>
+        <item>9 am</item>
+        <item>10 am</item>
+        <item>11 am</item>
+        <item>12 pm</item>
+        <item>1 pm</item>
+        <item>2 pm</item>
+        <item>3 pm</item>
+        <item>4 pm</item>
+        <item>5 pm</item>
+        <item>6 pm</item>
+        <item>7 pm</item>
+        <item>8 pm</item>
+        <item>9 pm</item>
+        <item>10 pm</item>
+        <item>11 pm</item>
+        <item>11.59 pm</item>
+
+
+    </string-array>
+
+
+    <!-- Add new appointment -->
+    <string name="add_new_appointment">Add New Appointment</string>
+    <string name="search_for_patient">Search For Patient</string>
+    <string name="patient_details">Patient Details</string>
+    <string name="salutation">Salutation</string>
+    <string name="first_name">First Name *</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile_no">Mobile No *</string>
+    <string name="email_id">Email ID</string>
+    <string name="dob">DOB</string>
+    <string name="gender_with_star">Gender</string>
+    <string name="referred_by">Referred By</string>
+    <string name="appointment_details">Appointment Details</string>
+    <string name="clinic">Clinic *</string>
+    <string name="date">Date *</string>
+    <string name="time">Time *</string>
+    <string name="type">Type *</string>
+    <string name="appointment_for">Appointment for *</string>
+    <string name="encounter_details">Encounter Details</string>
+    <string name="enter_select_episode">Enter/Select Episode *</string>
+    <string name="enter_encounter">Enter Encounter *</string>
+
+    <!-- Button strings -->
+    <string name="add">Add</string>
+    <string name="submit">Submit</string>
+    <string name="save">Save</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+
+    <!-- Group Cancellation -->
+    <string name="select_clinic">Select Clinic :</string>
+    <string name="select_action">Select Action :</string>
+    <string name="all">All</string>
+    <string name="cancel_all">Cancel All</string>
+    <string name="cancel_by_timings">Cancel By Timings</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="msg_failure_error">No appointments to cancel</string>
+    <string name="msg_success_error">Appointments cancelled successfully</string>
+    <string name="group_cancellation">Group Cancellation</string>
+
+    <!-- Patient Appointment Details -->
+    <string name="appoitment_details">Appointment Details</string>
+    <string name="status">Status</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="reschedule_appointment">Reschedule Appointment</string>
+    <string name="appointment_type">Appointment Type :</string>
+    <string name="appointment_for_with_colon">Appointment For :</string>
+    <string name="episode_name">Edpisode Name :</string>
+    <string name="encounter_name">Encounter Name :</string>
+    <string name="total_payment">Total Payment :</string>
+    <string name="payment_mode">Payment Mode :</string>
+
+    <!-- Filter By Calendar-->
+    <string name="filter_by">Filter By</string>
+    <string name="all_clinics">Clinic</string>
+    <string name="appointment_type_without_colon">Appointment Type</string>
+    <string name="appointment_for_without_colon">Appointment For</string>
+    <string name="search_patient">Search Patient</string>
+    <string name="more">More</string>
+    <string name="less">Less ↑</string>
+    <string name="slot_type">Slot Type</string>
+    <string name="booking_source">Booking Source</string>
+    <string name="referral">Referral</string>
+    <string name="search_referrals">Search Referrals</string>
+
+    <!-- Patient history -->
+    <string name="patient_history">Patient History</string>
+    <string name="yesterday">Yesterday : </string>
+    <string name="referred_by_with_colon">Referred By : </string>
+    <string name="clinic_with_colon">Clinic : </string>
+    <string name="refer">REFER</string>
+
+    <!-- Send referral -->
+    <string name="send_referral">Send Referral</string>
+    <string name="refer_to_pharmacy">Refer to Pharmacy</string>
+    <string name="refer_tests">Refer Tests</string>
+    <string name="refer_to_doctor">Refer to Doctor</string>
+    <string name="refer_to_hospital">Refer to Hospital</string>
+    <string-array name="array_refer">
+        <item>Refer to Pharmacy</item>
+        <item>Refer Tests</item>
+        <item>Refer to Doctor</item>
+        <item>Refer to Hospital</item>
+    </string-array>
+
+    <!-- Upload Prescription -->
+    <string name="use_camera">USE CAMERA</string>
+    <string name="use_gallery">PHOTO GALLERY</string>
+    <string name="recapture_image">Retake Picture</string>
+    <string name="capturing_image">Taking New Picture</string>
+    <string name="done">Done</string>
+    <string name="capture_image">Snap it!</string>
+
+    <!-- refer-doctor -->
+    <string name="search_by_doctor">Search By Doctor</string>
+    <string name="filter_by_location">Filter By Location</string>
+    <string name="note_for_doctor">Note For Doctor</string>
+    <string name="select_pre_defined_templates">SELECT PRE-DEFINED TEMPLATES</string>
+
+    <!-- Screen Names -->
+
+    <!--
+        <string-array name="screen_names">
+        <item>Acheivements</item>
+        <item>Calendar</item>
+        <item>Calendar-Mobile</item>
+        <item>Chief Complaints</item>
+        <item>Configration</item>
+        <item>Daily</item>
+        <item>Daily-Mobile</item>
+        <item>Documents</item>
+        <item>Education</item>
+        <item>Email</item>
+        <item>Experience</item>
+        <item>Favorites</item>
+        <item>General Examination</item>
+        <item>History Of Past Illness</item>
+        <item>Notifications</item>
+        <item>Org. Structure</item>
+        <item>Organization</item>
+        <item>Personal Detail</item>
+        <item>Price Setup</item>
+        <item>Print</item>
+        <item>Roles & Users</item>
+        <item>SMS</item>
+        <item>Specialization</item>
+        <item>Summary</item>
+        <item>Summary</item>
+        <item>Weekly</item>
+        <item>Weekly-Mobile</item>
+  <item>Patient History</item>
+        <item>Cross Reference</item>
+
+    </string-array>
+    -->
+
+    <string-array name="screen_names">
+        <item>Calendar</item>
+        <item>Calendar-Mobile</item>
+        <item>Daily</item>
+        <item>Daily-Mobile</item>
+        <item>Weekly</item>
+        <item>Weekly-Mobile</item>
+        <item>Price Setup</item>
+        <item>Patient History</item>
+        <item>Cross Reference</item>
+    </string-array>
+
+</resources>

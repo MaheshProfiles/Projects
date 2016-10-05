@@ -1,0 +1,103 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.10.+'
+    }
+}
+
+apply plugin: 'android'
+
+dependencies {
+    compile project(':..:SnapToolkit')
+}
+
+android {
+    buildToolsVersion "19.1.0"
+    compileSdkVersion 17
+    
+     sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        instrumentTest.setRoot('tests')
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/notice.txt'
+    }
+    lintOptions {
+      abortOnError false
+  	}
+  	
+  	signingConfigs {
+        releaseConfig {
+        	def propsFile = file('../Docs/keystore.properties')
+        	def props = new Properties()
+            props.load(new FileInputStream(propsFile))
+            storeFile file("../Docs/snapbizz.keystore")
+            storePassword props['storePassword']
+            keyAlias props['keyAlias']
+            keyPassword props['keyPassword']
+        }
+    }
+    
+    buildTypes {
+    	
+        release {
+            zipAlign true
+            signingConfig signingConfigs.releaseConfig
+            runProguard true
+            proguardFile 'proguard-project.txt'
+        	def releasePath = file("${rootDir}/../Builds/")
+			def releaseTask = tasks.create(name: 'release') {
+    			group 'Build'
+    			description "Assembles and archives all Release builds"
+			}
+			android.applicationVariants.all { variant ->
+    			if (variant.buildType.name == android.buildTypes.release.name) {
+        			def build = variant.name.capitalize()
+        			def releaseBuildTask = tasks.create(name: "release${build}", type: Zip) {
+            			group 'Build'
+            			baseName variant.outputFile.name.replace('.apk', '') + " "+getDate()
+            			if (variant.versionName) {
+                			version " v${variant.versionName}_${variant.versionCode}"
+            			} else {
+                			version " v$variant.versionCode"
+            			}
+            			def archiveBaseName = archiveName.replaceFirst(/\.${extension}$/, '')
+            			from(variant.outputFile.path) {
+                			rename '.*', "${archiveBaseName}.apk"
+            			}
+            			from('mapping.txt')
+            			destinationDir releasePath
+        			}
+        			releaseBuildTask.dependsOn variant.assemble
+					releaseTask.dependsOn releaseBuildTask
+    			}
+			}
+        }
+    }
+}
+
+def getDate() {
+	def date = new Date()
+    def formattedDate = date.format('yyyy-MM-dd HH-mm-ss')
+   	return formattedDate
+}
+
+build << {
+	installDebug.execute();
+}

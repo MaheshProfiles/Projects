@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/payment_date_mode_textView"
+        android:layout_width="@dimen/stock_payment_width"
+        android:layout_height="@dimen/stock_payment_height"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:textColor="@color/product_textcolor"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/payment_amount_textView"
+        android:layout_width="@dimen/stock_payment_width"
+        android:layout_height="@dimen/stock_payment_height"
+        android:layout_toRightOf="@+id/payment_date_mode_textView"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:textColor="@color/product_textcolor"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/stock_payment_height"
+        android:layout_toRightOf="@+id/payment_date_mode_textView"
+        android:background="@color/divider_color" />
+
+    <ImageButton
+        android:id="@+id/payment_edit_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/payment_amount_textView"
+        android:background="@drawable/edit_button_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/stock_payment_height"
+        android:layout_toRightOf="@+id/payment_amount_textView"
+        android:background="@color/divider_color" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/stock_payment_height"
+        android:layout_toRightOf="@+id/payment_edit_image_view"
+        android:background="@color/divider_color" />
+
+</RelativeLayout>

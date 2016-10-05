@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/small_padding" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/medium_padding"
+        android:paddingTop="@dimen/medium_padding" >
+
+        <ImageView
+            android:id="@+id/popup_icon_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_popup_list_pay" />
+
+        <TextView
+            android:id="@+id/ty_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ty"
+            android:textColor="#30ab47"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cancel_bill_textview"
+            style="@style/cancel_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/cancel_bill" />
+        <TextView
+            android:id="@+id/alert_payment_textview"
+            style="@style/snap_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" 
+            android:text="@string/alert_amount" />
+
+        <TextView
+            android:id="@+id/customername_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ty_textview"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_toRightOf="@id/popup_icon_imageview"
+            android:textColor="@color/unselected_textcolor"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/lineitems_layout_textview"
+        android:background="@color/divider_color" />
+
+    <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lineitems_textview"
+            style="@style/bill_popup_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/lineitems" />
+
+        <View
+            android:id="@+id/lineitems_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/lineitems_textview"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/total_qty_textview"
+            style="@style/bill_popup_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lineitems_divider"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/quantity" />
+
+        <View
+            android:id="@+id/totalqty_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/total_qty_textview"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/total_textview"
+            style="@style/bill_popup_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/totalqty_divider"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/total" />
+
+        <View
+            android:id="@+id/total_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/total_textview"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/saved_textview"
+            style="@style/bill_popup_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/total_divider"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/saved" />
+
+        <TextView
+            android:id="@+id/lineitems_value_textview"
+            style="@style/bill_popup_numberstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding" />
+
+        <TextView
+            android:id="@+id/total_qty_value_textview"
+            style="@style/bill_popup_numberstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/lineitems_divider"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding" />
+
+        <TextView
+            android:id="@+id/total_value_textview"
+            style="@style/bill_popup_numberstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/totalqty_divider"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding" />
+
+        <TextView
+            android:id="@+id/saved_value_textview"
+            style="@style/bill_popup_numberstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/total_divider"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding" />
+    </RelativeLayout>
+
+</LinearLayout>

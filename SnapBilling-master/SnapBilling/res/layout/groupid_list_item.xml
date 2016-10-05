@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <TextView
+        android:id="@+id/group_item_name_text"
+        style="@style/incentory_product_textstyle"
+        android:layout_width="480dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/group_item_mrp_text"
+        style="@style/group_item_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/group_item_pp_text"
+        style="@style/group_item_left_align_textstyle"
+        android:layout_width="122dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/group_item_stock_text"
+        style="@style/group_item_left_align_textstyle"
+        android:layout_width="105dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/group_item_vat_text"
+        style="@style/group_item_left_align_textstyle"
+        android:layout_width="70dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/group_item_unit_text"
+        style="@style/group_item_textstyle"
+        android:layout_width="100dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/group_item_category_text"
+        style="@style/group_item_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/group_item_subcategory_text"
+        style="@style/group_item_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

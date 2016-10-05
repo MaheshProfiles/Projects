@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEEF1"
+    android:orientation="vertical"
+    android:paddingBottom="25dp"
+    android:paddingLeft="25dp"
+    android:clickable="true"
+    android:paddingRight="15dp"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <RelativeLayout
+        android:id="@+id/stock_body_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp" >
+
+        <include
+            android:id="@+id/stockLayout"
+            android:layout_width="550dp"
+            android:layout_height="135dp"
+            android:layout_alignParentLeft="true"
+            layout="@layout/stock_details_include" />
+
+        <ImageView
+            android:id="@+id/alertImgOne"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/stockLayout"
+            android:background="@drawable/alert" />
+
+        <TextView
+            android:id="@+id/alert_text_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/stockweeklyLayout"
+            android:layout_below="@+id/alertImgOne"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/stockLayout"
+            android:text="Not Sold in \n  30 days"
+            android:textColor="#7F7F7F"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <include
+            android:id="@+id/stockweeklyLayout"
+            android:layout_width="550dp"
+            android:layout_height="135dp"
+            android:layout_below="@+id/stockLayout"
+            android:layout_marginTop="10dp"
+            layout="@layout/weekly_stock_report_include" />
+
+        <ImageView
+            android:id="@+id/alertImgTwo"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_alignTop="@+id/stockweeklyLayout"
+            android:layout_below="@+id/alertImgOne"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/stockweeklyLayout"
+            android:background="@drawable/alert" />
+
+        <TextView
+            android:id="@+id/alert_text_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alertImgTwo"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/stockweeklyLayout"
+            android:text="    Sales\n Dropped"
+            android:textColor="#7F7F7F"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/white_bar_top"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/sku_product_stock_list_header"
+        android:layout_alignRight="@+id/sku_product_stock_list_header"
+        android:layout_below="@+id/stock_body_layout"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" />
+
+    <include
+        android:id="@+id/sku_product_stock_list_header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/white_bar_top"
+        layout="@layout/stock_report_product_details_header" />
+
+    
+    
+    <RelativeLayout
+        android:id="@+id/white_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/sku_product_stock_list_header"
+        android:background="@android:color/white"
+        android:paddingTop="10dp"
+         >
+
+    <ListView
+        android:id="@+id/sku_product_stock_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </ListView>
+</RelativeLayout>
+</RelativeLayout>

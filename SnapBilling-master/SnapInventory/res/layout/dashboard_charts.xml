@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboard_charts_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/chart_filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/small_padding"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/distributor_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/distributor" />
+
+        <RadioButton
+            android:id="@+id/company_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/company" />
+
+        <RadioButton
+            android:id="@+id/category_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/category" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/chart_value_filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/small_padding"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/revenue_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/revenue" />
+
+        <RadioButton
+            android:id="@+id/stock_value_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stock_value" />
+
+        <RadioButton
+            android:id="@+id/days_stock_button"
+            style="@style/chart_filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/days_of_stock" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/charts"
+        android:layout_below="@id/chart_value_filters"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/medium_padding" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/productheader_border_shape"
+    >
+
+    <TextView
+        android:id="@+id/product_text"
+        style="@style/update_productheader_textstyle"
+        android:layout_width="210dp"
+        android:layout_height="@dimen/inventory_header_height"
+        android:text="@string/product"
+        android:layout_alignParentLeft="true"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/product_mrp"
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/inventory_update_item_width"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_text"
+        android:text="@string/mrp" />
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_text"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/product_pp"
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/inventory_update_item_width"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_mrp"
+        android:text="@string/purchase_price" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_mrp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/product_sp"
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/inventory_update_item_width"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_pp"
+        android:text="@string/sales_price" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_pp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/product_rq"
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/inventory_update_item_width"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_sp"
+        android:text="@string/received_qty" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_sp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/product_in_stock"
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/inventory_update_item_width"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_rq"
+        android:text="@string/stock_qty" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_rq"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/product_received_date"
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/inventory_update_expiry_width"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_in_stock"
+        android:text="@string/received_date" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_in_stock"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/product_expiry"
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/inventory_update_expiry_width"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_received_date"
+        android:text="@string/expiry" />
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="@dimen/inventory_header_height"
+        android:layout_toRightOf="@+id/product_received_date"
+        android:background="@android:color/black"/>
+
+</RelativeLayout>

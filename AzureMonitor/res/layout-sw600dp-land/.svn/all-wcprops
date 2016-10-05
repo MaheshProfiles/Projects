@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/android/!svn/ver/1191/AzureMonitor/res/layout-sw600dp-land
+END
+empty_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/android/!svn/ver/1043/AzureMonitor/res/layout-sw600dp-land/empty_view.xml
+END
+forgot_password.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/1197/AzureMonitor/res/layout-sw600dp-land/forgot_password.xml
+END
+monitor_machine_footer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/android/!svn/ver/1135/AzureMonitor/res/layout-sw600dp-land/monitor_machine_footer.xml
+END
+activity_login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/android/!svn/ver/1135/AzureMonitor/res/layout-sw600dp-land/activity_login.xml
+END
+general_settings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/695/AzureMonitor/res/layout-sw600dp-land/general_settings.xml
+END
+monitor_machine_framelayout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/android/!svn/ver/1179/AzureMonitor/res/layout-sw600dp-land/monitor_machine_framelayout.xml
+END
+monitor_machine_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/android/!svn/ver/1165/AzureMonitor/res/layout-sw600dp-land/monitor_machine_list.xml
+END
+spinner_text_layout2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/android/!svn/ver/1043/AzureMonitor/res/layout-sw600dp-land/spinner_text_layout2.xml
+END
+vm_usage_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/android/!svn/ver/1165/AzureMonitor/res/layout-sw600dp-land/vm_usage_details.xml
+END
+cores_created.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/android/!svn/ver/1135/AzureMonitor/res/layout-sw600dp-land/cores_created.xml
+END
+account_setting.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/1179/AzureMonitor/res/layout-sw600dp-land/account_setting.xml
+END
+storage_acc_created_framelayout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/android/!svn/ver/1135/AzureMonitor/res/layout-sw600dp-land/storage_acc_created_framelayout.xml
+END
+footer_repeat.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/android/!svn/ver/1043/AzureMonitor/res/layout-sw600dp-land/footer_repeat.xml
+END
+account_setting_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/android/!svn/ver/1135/AzureMonitor/res/layout-sw600dp-land/account_setting_list.xml
+END
+machine_monitor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/1135/AzureMonitor/res/layout-sw600dp-land/machine_monitor.xml
+END
+progress_hud.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/android/!svn/ver/1043/AzureMonitor/res/layout-sw600dp-land/progress_hud.xml
+END
+drawer_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/689/AzureMonitor/res/layout-sw600dp-land/drawer_list_item.xml
+END
+subcription_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/android/!svn/ver/1179/AzureMonitor/res/layout-sw600dp-land/subcription_detail.xml
+END
+price_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/android/!svn/ver/1179/AzureMonitor/res/layout-sw600dp-land/price_detail.xml
+END
+activity_registration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/android/!svn/ver/1135/AzureMonitor/res/layout-sw600dp-land/activity_registration.xml
+END
+activity_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/android/!svn/ver/749/AzureMonitor/res/layout-sw600dp-land/activity_main.xml
+END
+resource_vm_usage_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/android/!svn/ver/1191/AzureMonitor/res/layout-sw600dp-land/resource_vm_usage_details.xml
+END
+resource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/android/!svn/ver/1043/AzureMonitor/res/layout-sw600dp-land/resource.xml
+END
+price_detail_list_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/android/!svn/ver/1043/AzureMonitor/res/layout-sw600dp-land/price_detail_list_row.xml
+END
+dashboard.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/android/!svn/ver/1165/AzureMonitor/res/layout-sw600dp-land/dashboard.xml
+END
+price_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/android/!svn/ver/1179/AzureMonitor/res/layout-sw600dp-land/price_menu.xml
+END
+cores_created_framelayout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/android/!svn/ver/1135/AzureMonitor/res/layout-sw600dp-land/cores_created_framelayout.xml
+END
+account_settings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/android/!svn/ver/653/AzureMonitor/res/layout-sw600dp-land/account_settings.xml
+END
+delete_account_listrow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/android/!svn/ver/1043/AzureMonitor/res/layout-sw600dp-land/delete_account_listrow.xml
+END
+cloud_created_framelayout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/android/!svn/ver/1135/AzureMonitor/res/layout-sw600dp-land/cloud_created_framelayout.xml
+END

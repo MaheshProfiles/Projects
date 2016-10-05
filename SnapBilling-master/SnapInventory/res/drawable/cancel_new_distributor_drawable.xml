@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/cancel_new_distributor_bgselector">
+    </item>
+    <item 
+        android:left="18dp">
+        <bitmap
+            android:gravity="left|center_vertical"
+            android:src="@drawable/icon_cancel_grey" />
+    </item>
+
+</layer-list>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboard_alerts_tab"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_padding" >
+
+        <ImageView
+            android:id="@+id/bills_made_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/small_padding"
+            android:src="@drawable/icon_credit" />
+
+        <TextView
+            android:id="@+id/avg_basketsize_textview"
+            style="@style/dashboard_summary_itenary_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/tiny_padding"
+            android:layout_toRightOf="@+id/bills_made_icon"
+            android:text="@string/avg_basket_size" />
+
+        <TextView
+            android:id="@+id/avg_basketsizevalue_textview"
+            style="@style/dashboard_summary_itenary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avg_basketsize_textview"
+            android:layout_margin="@dimen/tiny_padding"
+            android:layout_toRightOf="@+id/bills_made_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_padding" >
+
+        <ImageView
+            android:id="@+id/bills_made_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/small_padding"
+            android:src="@drawable/icon_credit" />
+
+        <TextView
+            android:id="@+id/avg_basketvalue_textview"
+            style="@style/dashboard_summary_itenary_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/tiny_padding"
+            android:layout_toRightOf="@+id/bills_made_icon2"
+            android:text="@string/avg_basket_value" />
+
+        <TextView
+            android:id="@+id/avg_basketvalue_value_textview"
+            style="@style/dashboard_summary_itenary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avg_basketvalue_textview"
+            android:layout_margin="@dimen/tiny_padding"
+            android:layout_toRightOf="@+id/bills_made_icon2" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_padding" >
+
+        <ImageView
+            android:id="@+id/bills_made_icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/small_padding"
+            android:src="@drawable/icon_credit" />
+
+        <TextView
+            android:id="@+id/footfall_textview"
+            style="@style/dashboard_summary_itenary_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/tiny_padding"
+            android:layout_toRightOf="@+id/bills_made_icon3"
+            android:text="@string/footfall" />
+
+        <TextView
+            android:id="@+id/footfall_value_textview"
+            style="@style/dashboard_summary_itenary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footfall_textview"
+            android:layout_margin="@dimen/tiny_padding"
+            android:layout_toRightOf="@+id/bills_made_icon3" />
+    </RelativeLayout>
+
+</LinearLayout>

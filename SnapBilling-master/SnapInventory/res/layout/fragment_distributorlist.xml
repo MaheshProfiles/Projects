@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.snapbizz.snapinventory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/add_distributor_button"
+        style="@style/snap_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:background="@drawable/add_distributor_bgselector"
+        android:text="@string/add_distributor"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!--
+         <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter by "
+            style="@style/filter_by_textstyle"
+            android:layout_marginRight="@dimen/small_padding"
+            />
+
+        <Button
+            android:id="@+id/filter_distributor_button"
+            android:layout_width="@dimen/distributorfilter_buttonwidth"
+            android:layout_height="@dimen/distributorfilter_buttonheight"
+            android:background="@drawable/filter_type_bgselector"
+            android:tag="@string/filter_distributor_column"
+            android:text="@string/distributor" />
+
+        <Button
+            android:id="@+id/filter_company_button"
+            android:layout_width="@dimen/distributorfilter_buttonwidth"
+            android:layout_height="@dimen/distributorfilter_buttonheight"
+            android:background="@drawable/filter_type_bgselector"
+            android:tag="@string/filter_company_column"
+            android:text="@string/company" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/filter_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_distributor_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_hash"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="#" />
+
+        <Button
+            android:id="@+id/button_a"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/button_b"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/button_c"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/button_d"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="D" />
+
+        <Button
+            android:id="@+id/button_e"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="E" />
+
+        <Button
+            android:id="@+id/button_f"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="F" />
+
+        <Button
+            android:id="@+id/button_g"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="G" />
+
+        <Button
+            android:id="@+id/button_h"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="H" />
+
+        <Button
+            android:id="@+id/button_i"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="I" />
+
+        <Button
+            android:id="@+id/button_j"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="J" />
+
+        <Button
+            android:id="@+id/button_k"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="K" />
+
+        <Button
+            android:id="@+id/button_l"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="L" />
+
+        <Button
+            android:id="@+id/button_m"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="M" />
+
+        <Button
+            android:id="@+id/button_n"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="N" />
+
+        <Button
+            android:id="@+id/button_o"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="O" />
+
+        <Button
+            android:id="@+id/button_p"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="P" />
+
+        <Button
+            android:id="@+id/button_q"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="Q" />
+
+        <Button
+            android:id="@+id/button_r"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="R" />
+
+        <Button
+            android:id="@+id/button_s"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="S" />
+
+        <Button
+            android:id="@+id/button_t"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="T" />
+
+        <Button
+            android:id="@+id/button_u"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="U" />
+
+        <Button
+            android:id="@+id/button_v"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="V" />
+
+        <Button
+            android:id="@+id/button_w"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="W" />
+
+        <Button
+            android:id="@+id/button_x"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/button_y"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="Y" />
+
+        <Button
+            android:id="@+id/button_z"
+            android:layout_width="@dimen/alphabet_filterbutton_width"
+            android:layout_height="@dimen/alphabet_filterbutton_height"
+            android:background="@drawable/distributor_filter_bgselector"
+            android:text="Z" />
+    </LinearLayout>
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/distributor_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filter_linearlayout"
+        android:layout_margin="@dimen/medium_padding"
+        android:layout_marginTop="@dimen/medium_padding"
+        app:columnWidth="@dimen/distributorlist_columnwidth"
+        app:gravity="left"
+        app:horizontalSpacing="@dimen/medium_padding"
+        app:numColumns="auto_fit"
+        app:numRows="6"
+        app:verticalSpacing="@dimen/small_padding"
+        app:rowHeight="70dp"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="horizontal"
+        app:stretchMode="none" />
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/company_filter_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filter_linearlayout"
+        android:layout_margin="@dimen/medium_padding"
+        android:visibility="gone"
+        app:columnWidth="200dp"
+        app:gravity="left"
+        app:horizontalSpacing="@dimen/medium_padding"
+        app:numColumns="auto_fit"
+        app:numRows="3"
+        app:rowHeight="130dp"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="horizontal"
+        app:stretchMode="none" />
+
+</RelativeLayout>

@@ -1,0 +1,531 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/thick_ab_style</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="snap_textstyle">
+        <item name="android:fontFamily">roboto-light</item>
+    </style>
+
+    <style name="snap_reg_textstyle">
+        <item name="android:fontFamily">roboto-regular</item>
+    </style>
+
+    <style name="vat_table_field_textstyle1" parent="@style/snap_textstyle">
+        <item name="android:textColor">#7f7f7f</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="vat_table_field_textstyle_grey" parent="@style/snap_textstyle">
+        <item name="android:textColor">#cccccc</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="vat_table_field_textstyle2" parent="@style/snap_textstyle">
+        <item name="android:textColor">#363636</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="vat_table_field_textstyle3" parent="@style/snap_textstyle">
+        <item name="android:textColor">#363636</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="vat_table_field_textstyle4" parent="@style/snap_textstyle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="customermgmt_cardnum_textstyle" parent="@style/snap_reg_textstyle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="customermgmt_card_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="customermgmt_name_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">#484747</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="customermgmt_number_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">#7f7f7f</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="customermgmt_large_textstyle" parent="@style/ss_textstyle">
+        <item name="android:textColor">#484747</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="customermgmt_small_textstyle" parent="@style/ss_textstyle">
+        <item name="android:textColor">#7f7f7f</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="bill_header_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">#9493ad</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="spinner_style" parent="@style/snap_textstyle">
+        <item name="android:textColor">#9493ad</item>
+        <item name="android:fontFamily">roboto-light</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="customer_search_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColorHint">#4D5053</item>
+        <item name="android:hint">@string/phonenumber_hint</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="customer_namenumber_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="customersearch_namenumber_textstyle" parent="@style/customer_namenumber_textstyle">
+        <item name="android:textColor">#484747</item>
+    </style>
+
+    <style name="customer_details_headertextstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#484747</item>
+    </style>
+
+    <style name="customer_details_valuetextstyle" parent="@style/customer_details_headertextstyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#283036</item>
+    </style>
+
+    <style name="customer_dividerstyle">
+        <item name="android:height">1dp</item>
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+    <style name="billfooter_textstyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:fontFamily">roboto</item>
+    </style>
+
+    <style name="billfooter_number_textstyle" parent="@style/billfooter_textstyle">
+        <item name="android:textSize">26sp</item>
+        <item name="android:maxWidth">150dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">roboto-light</item>
+    </style>
+
+    <style name="ss_textstyle">
+        <item name="android:shadowColor">#1affffff</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:textColor">@color/billsplitscreen_textcolor_color</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:fontFamily">roboto-regular</item>
+    </style>
+
+    <style name="ss_light_textstyle" parent="@style/ss_textstyle">
+        <item name="android:fontFamily">roboto-light</item>
+    </style>
+
+    <style name="ss_billfooter_number_textstyle" parent="@style/ss_textstyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:maxWidth">140dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ss_billfooter_textstyle" parent="@style/ss_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">roboto-light</item>
+    </style>
+
+    <style name="ss_customer_search_textstyle" parent="@style/ss_textstyle">
+        <item name="android:textColorHint">#9a7400</item>
+        <item name="android:hint">@string/phonenumber_hint</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">roboto-light</item>
+    </style>
+
+    <style name="ss_customerdetails_textstyle" parent="@style/ss_light_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxWidth">150dp</item>
+    </style>
+
+    <style name="ss_quickadd_buttonstyle" parent="@style/ss_light_textstyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@drawable/ss_quickadd_textcolor_selector</item>
+    </style>
+
+    <style name="billitem_name_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#484747</item>
+        <item name="android:background">@drawable/listitem_bg_selector</item>
+    </style>
+
+    <style name="quickadd_name_price_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#484747</item>
+        <item name="android:background">@drawable/listitem_bg_selector</item>
+    </style>
+
+    <style name="billitem_price_textstyle" parent="@style/billitem_name_textstyle">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="billitem_discount_textstyle" parent="@style/billitem_name_textstyle">
+        <item name="android:textColor">#a3b0c0</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="customer_add_buttonstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">#e6484747</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/customer_save_bgselector</item>
+    </style>
+
+    <style name="actionbar_headertextstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">#39a0ff</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="productname_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">#2f2f2f</item>
+        <item name="android:background">#e6f4f4f4</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="quickadd_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@drawable/quickadd_textcolor_selector</item>
+        <item name="android:background">@drawable/quickadd_textbg_selector</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="keypad_bttn_style" parent="@style/snap_textstyle">
+        <item name="android:textColor">@drawable/keypad_textcolor_selector</item>
+        <item name="android:background">@drawable/keypad_bttn_selector</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="horz_keypad_bttn_style" parent="@style/snap_textstyle">
+        <item name="android:textColor">@drawable/horz_keypad_textcolor_selector</item>
+        <item name="android:background">@drawable/keypad_bttn_selector</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="horzkeypad_bttn_style" parent="@style/horz_keypad_bttn_style">
+        <item name="android:background">@drawable/horzkeypad_bttn_selector</item>
+    </style>
+
+    <style name="keypad_textstyle" parent="@style/billitem_price_textstyle">
+        <item name="android:textColor">@drawable/edititem_textcolor_selector</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="checkout_bill_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#484747</item>
+    </style>
+
+    <style name="checkout_billoptions_textstyle" parent="@style/checkout_bill_textstyle">
+        <item name="android:textColor">@drawable/billoptions_textcolor_selector</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">@dimen/small_padding</item>
+    </style>
+
+    <style name="filter_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">@dimen/small_padding</item>
+        <item name="android:textColor">@drawable/textcolor_selector</item>
+    </style>
+
+    <style name="billhistory_footer_textstyle" parent="@style/billfooter_textstyle">
+        <item name="android:textColor">@color/unselected_textcolor</item>
+        <item name="android:fontFamily">roboto-light</item>
+    </style>
+
+    <style name="billhistory_footer_numbertextstyle" parent="@style/billhistory_footer_textstyle">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="billhistory_light_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#cc484747</item>
+    </style>
+
+    <style name="billhistory_strong_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#8e8e8e</item>
+    </style>
+
+    <style name="category_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@drawable/textcolor_selector</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/store_category_bgselector</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxWidth">@dimen/store_category_width</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="chart_filter_textstyle" parent="@style/category_textstyle">
+        <item name="android:background">@drawable/chart_filter_bgselector</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/chartfilter_textcolor_selector</item>
+    </style>
+
+    <style name="cancel_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#c82727</item>
+    </style>
+
+    <style name="bill_popup_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="bill_popup_numberstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">#484747</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="quickadd_weight_style" parent="@style/snap_textstyle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#605e5f</item>
+        <item name="android:background">@drawable/white_bg_color</item>
+    </style>
+
+    <style name="quickadd_weight_style_row_one" parent="@style/snap_textstyle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#00aeef</item>
+        <item name="android:background">@drawable/white_bg_color</item>
+    </style>
+
+    <style name="quickadd_weight_style_row_two" parent="@style/snap_textstyle">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#ff7800</item>
+        <item name="android:background">@drawable/white_bg_color</item>
+    </style>
+
+    <style name="quickadd_weight_style_row_three" parent="@style/snap_textstyle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#9f58a3</item>
+        <item name="android:background">@drawable/white_bg_color</item>
+    </style>
+
+    <style name="quickadd_weight_style_row_four" parent="@style/snap_textstyle">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">#1d9832</item>
+        <item name="android:background">@drawable/white_bg_color</item>
+    </style>
+
+    <style name="generic_expandable_list_product_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">Roboto-condensed</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="unit_type_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">Roboto-condensed</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    
+     <style name="gdb_unit_type_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">Roboto-condensed</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    
+      <style name="gdb_subcategory_type_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">Roboto-condensed</item>
+        <item name="android:textColor">@android:color/black</item>
+         <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="product_pack_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">Roboto-condensed</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="list_product_tax_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">Roboto-condensed</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="incentory_product_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">Roboto-condensed</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="product_barcode_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#157ed2</item>
+    </style>
+
+    <style name="stock_update_textstyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">roboto-medium</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="stock_my_store_textstyle">
+        <item name="android:fontFamily">roboto-regular</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="stock_order_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="actionbar_order_category_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@drawable/actionbar_order_category_textcolor_selector</item>
+    </style>
+
+    <style name="update_productheader_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+    </style>
+    
+     <style name="category_slide_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+        <item name="android:textColor">@drawable/slide_textcolor_selector</item>
+    </style>
+    
+    
+    
+    <style name="gdb_mrpheader_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+    </style>
+
+    <style name="group_item_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+    </style>
+
+    <style name="group_item_left_align_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+    </style>
+
+    <style name="groupId_header_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+    </style>
+
+    <style name="groupId_header_name_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+    </style>
+    
+    <style name="groupId_header_tittle_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+    </style>
+
+    <style name="vatheader_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+    </style>
+
+    <style name="product_pack_header_textstyle" parent="@style/snap_textstyle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+    </style>
+
+    <style name="product_pack_add_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+        <item name="android:textColor">#ed1c24</item>
+    </style>
+
+    <style name="product_pack_save_textstyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">roboto-condensed</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+</resources>

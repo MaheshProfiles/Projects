@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_editkeypad_mainlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <ImageView
+        android:id="@+id/keypad_arrow_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="65dp"
+        android:src="@drawable/calculator_blue_arrow" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/unittype_spinner"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"            
+            android:layout_marginTop="@dimen/billmonitor_billheader_height"
+            android:background="@drawable/white_border_shape" />
+
+        <ListView
+            android:id="@+id/units_listview"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/unittype_spinner"
+            android:background="@drawable/white_border_shape"
+            android:visibility="gone" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/keypad_linearlayout"
+            android:layout_width="@dimen/editkeypad_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/unittype_spinner"
+            android:background="@drawable/keypad_border_shape"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="1dp" >
+
+            <include
+                android:layout_width="@dimen/editkeypad_width"
+                android:layout_height="wrap_content"
+                layout="@layout/header_bill" />
+
+            <LinearLayout
+                android:layout_width="@dimen/editkeypad_width"
+                android:layout_height="@dimen/keypad_edititem_height"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/qty_value_textview"
+                    style="@style/keypad_textstyle"
+                    android:layout_width="@dimen/keypad_qty_width"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/small_padding"
+                    />
+
+                <TextView
+                    android:id="@+id/multiplication_textview"
+                    style="@style/keypad_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="X" />
+
+                <TextView
+                    android:id="@+id/price_value_textview"
+                    style="@style/keypad_textstyle"
+                    android:layout_width="@dimen/keypad_price_width"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/small_padding"
+                     />
+                <TextView
+                    android:id="@+id/rate_value_textview"
+                    style="@style/keypad_textstyle"
+                    android:layout_width="@dimen/keypad_rate_width"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/small_padding"
+                     />
+
+                <TextView
+                    android:id="@+id/total_value_textview"
+                    style="@style/keypad_textstyle"
+                    android:layout_width="@dimen/keypad_total_width"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/small_padding"
+                     />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/arrow_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:src="@drawable/calculator_blue_arrow" />
+
+            <View
+                android:layout_width="@dimen/editkeypad_width"
+                android:layout_height="1dp"
+                android:background="@color/keypad_divider_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keypad_display_height" >
+
+                <Button
+                    android:id="@+id/button_decrease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"                    
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"
+                    android:background="@drawable/decrease_bttn_selector" />
+
+                <Button
+                    android:id="@+id/button_increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"                    
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"
+                    android:background="@drawable/increase_bttn_selector" />
+
+                <TextView
+                    android:id="@+id/value_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/button_increase"
+                    android:layout_toRightOf="@id/button_decrease"
+                    android:gravity="center"
+                    android:maxLength="@integer/max_characters_numberinput"
+                    android:textColor="@color/keypad_selected_textcolor"
+                    android:textSize="32sp" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/button_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/button_increase"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/cancel_imgselector" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/editkeypad_width"
+                android:layout_height="1dp"
+                android:background="@color/divider_color" />
+
+            <LinearLayout
+                android:id="@+id/discount_linearlayout"
+                android:layout_width="@dimen/editkeypad_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keypad_bttn_horizontalspacing"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/button_discount1"
+                    style="@style/keypad_bttn_style"
+                    android:layout_width="@dimen/editkeypad_bttn_width"
+                    android:layout_height="@dimen/editkeypad_bttn_height"
+                    android:tag="@integer/discount1"
+                    android:text="@string/discount1" />
+
+                <Button
+                    android:id="@+id/button_discount2"
+                    style="@style/keypad_bttn_style"
+                    android:layout_width="@dimen/editkeypad_bttn_width"
+                    android:layout_height="@dimen/editkeypad_bttn_height"
+                    android:layout_marginLeft="@dimen/keypad_bttn_horizontalspacing"
+                    android:tag="@integer/discount2"
+                    android:text="@string/discount2" />
+
+                <Button
+                    android:id="@+id/button_discount3"
+                    style="@style/keypad_bttn_style"
+                    android:layout_width="@dimen/editkeypad_bttn_width"
+                    android:layout_height="@dimen/editkeypad_bttn_height"
+                    android:layout_marginLeft="@dimen/keypad_bttn_horizontalspacing"
+                    android:tag="@integer/discount3"
+                    android:text="@string/discount3" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/keypad_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/keypad_bttn_horizontalspacing"
+                layout="@layout/layout_editkeypad" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

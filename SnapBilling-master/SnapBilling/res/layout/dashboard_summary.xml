@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboard_summary_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/summary_date_textview"
+        style="@style/dashboard_summary_itenary_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dashboard_summary_itenary_width"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/summary_date_textview"
+        android:layout_marginLeft="@dimen/large_padding"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding" >
+
+            <ImageView
+                android:id="@+id/total_sales_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@drawable/icon_total_sales" />
+
+            <TextView
+                android:id="@+id/total_sales_text"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1"
+                android:text="@string/total_salse" />
+
+            <TextView
+                android:id="@+id/total_sales"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_sales_text"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/total_sales_icon"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding" >
+
+            <ImageView
+                android:id="@+id/opening_cash_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@drawable/icon_opening_cash" />
+
+            <TextView
+                android:id="@+id/opening_cash_text"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/opening_cash_icon"
+                android:lines="1"
+                android:text="@string/opening_cash" />
+
+            <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+                android:id="@+id/opening_cash_edit_text"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:maxLength="12"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/opening_cash_text"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/opening_cash_icon"
+                android:hint="@string/keypad_0"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding" >
+
+            <ImageView
+                android:id="@+id/paid_purchase_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@drawable/icon_paid_purchase" />
+
+            <TextView
+                android:id="@+id/paid_purchase_text"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/paid_purchase_icon"
+                android:lines="1"
+                android:text="@string/paid_purchase" />
+
+            <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+                android:id="@+id/paid_purchase_edit_text"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paid_purchase_text"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/paid_purchase_icon"
+                android:hint="@string/keypad_0"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding" >
+
+            <ImageView
+                android:id="@+id/cash_in_reg_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@drawable/icon_cash_in_register" />
+
+            <TextView
+                android:id="@+id/cash_in_reg_text"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/cash_in_reg_icon"
+                android:lines="1"
+                android:text="@string/cash_in_reg" />
+
+            <TextView
+                android:id="@+id/cash_in_reg"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cash_in_reg_text"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/cash_in_reg_icon"
+                android:lines="1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dashboard_summary_itenary_width"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/summary_date_textview"
+        android:layout_marginRight="@dimen/large_padding"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_padding" >
+
+            <ImageView
+                android:id="@+id/bills_made_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@drawable/icon_bills_made" />
+
+            <TextView
+                android:id="@+id/bills_made_text"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/bills_made_icon"
+                android:lines="1"
+                android:text="@string/bills_made" />
+
+            <TextView
+                android:id="@+id/bills_made"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bills_made_text"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/bills_made_icon"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding" >
+
+            <ImageView
+                android:id="@+id/items_sold_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@drawable/icon_items_sold" />
+
+            <TextView
+                android:id="@+id/items_sold_text"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/items_sold_icon"
+                android:lines="1"
+                android:text="@string/items_sold" />
+
+            <TextView
+                android:id="@+id/items_sold"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/items_sold_text"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/items_sold_icon"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding" >
+
+            <ImageView
+                android:id="@+id/items_returned_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@drawable/icon_items_returned" />
+
+            <TextView
+                android:id="@+id/items_returned_text"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/items_returned_icon"
+                android:lines="1"
+                android:text="@string/items_returned" />
+
+            <TextView
+                android:id="@+id/items_returned"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/items_returned_text"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/items_returned_icon"
+                android:lines="1" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding" >
+
+            <ImageView
+                android:id="@+id/credit_given_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/small_padding"
+                android:src="@drawable/icon_opening_cash" />
+
+            <TextView
+                android:id="@+id/credit_given_text"
+                style="@style/dashboard_summary_itenary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/credit_given_icon"
+                android:lines="1"
+                android:text="@string/credit_given" />
+
+            <TextView
+                android:id="@+id/credit_given"
+                style="@style/dashboard_summary_itenary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/credit_given_text"
+                android:layout_margin="@dimen/tiny_padding"
+                android:layout_toRightOf="@+id/credit_given_icon"
+                android:lines="1" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

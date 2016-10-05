@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/pending_purchase_order_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/order_receive_distributor_PO_horizontal_list"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:text="@string/pending_purchase_order"
+        android:textColor="@color/unselected_textcolor"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <com.snapbizz.snaptoolkit.customviews.HorizontalListView
+        android:id="@+id/order_receive_distributor_PO_horizontal_list"
+        android:layout_width="1100dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/shadow_right_textView"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:layout_toRightOf="@+id/pending_purchase_order_textView"
+        android:visibility="gone" >
+    </com.snapbizz.snaptoolkit.customviews.HorizontalListView>
+
+    <View
+        android:id="@+id/shadow_left_textView"
+        android:layout_width="@dimen/category_shadow_width"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:layout_toRightOf="@+id/pending_purchase_order_textView"
+        android:background="@drawable/category_shadow_gradient"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/receive_mystore_header_layout"
+        android:layout_width="@dimen/stock_header_width"
+        android:layout_height="@dimen/stock_header_height"
+        android:layout_alignRight="@+id/receive_horizontal_scroll"
+        android:layout_below="@+id/receive_wo_po_btn"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:background="@drawable/receive_group_gradient" >
+
+        <Button
+            android:id="@+id/add_prod_button"
+            style="@style/stock_add_new_product_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/receive_add_product_btn_selector"
+            android:paddingLeft="@dimen/medium_padding"
+            android:text="   Add New" />
+
+        <TextView
+            style="@style/stock_my_store_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/large_padding"
+            android:layout_toRightOf="@+id/add_prod_button"
+            android:background="@color/transparent_color"
+            android:text="@string/my_store" />
+
+        <TextView
+            android:id="@+id/receive_header_name_text_view"
+            style="@style/stock_order_textstyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/receive_header_category_text"
+            style="@style/stock_order_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_toRightOf="@+id/receive_header_name_text_view"
+            android:text="@string/total_category_stock" />
+
+        <TextView
+            android:id="@+id/receive_header_count_textview"
+            style="@style/stock_order_textstyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:layout_toRightOf="@+id/receive_header_category_text" />
+
+        <TextView
+            android:id="@+id/receive_header_total_value_textview"
+            style="@style/stock_order_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/large_padding"
+            android:layout_toRightOf="@+id/receive_header_count_textview" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/receive_horizontal_scroll"
+        android:layout_width="@dimen/stock_header_width"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/receive_mystore_header_layout"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_marginRight="@dimen/large_padding"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/order_group_width"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/order_receive_header_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/productheader_border_shape" >
+
+                <TextView
+                    android:id="@+id/header_product_name"
+                    style="@style/inventory_order_productheader"
+                    android:layout_width="@dimen/stock_header_product_width"
+                    android:layout_height="@dimen/order_header_height"
+                    android:text="@string/product" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_name"
+                    android:background="#80000000" />
+
+                <TextView
+                    android:id="@+id/header_product_received_qty"
+                    style="@style/inventory_order_header"
+                    android:layout_width="@dimen/stock_in_stock_header_width"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_name"
+                    android:text="@string/received_qty" />
+
+                <TextView
+                    android:id="@+id/header_product_billed_qty"
+                    style="@style/inventory_order_header"
+                    android:layout_width="@dimen/stock_in_stock_header_width"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_received_qty"
+                    android:text="@string/billed_qty" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_received_qty"
+                    android:background="#80000000" />
+
+                <TextView
+                    android:id="@+id/header_product_pending_qty"
+                    style="@style/inventory_order_header"
+                    android:layout_width="@dimen/stock_in_stock_header_width"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_billed_qty"
+                    android:text="@string/pending_order" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_billed_qty"
+                    android:background="#80000000" />
+
+                <TextView
+                    android:id="@+id/header_product_MRP"
+                    style="@style/inventory_order_header"
+                    android:layout_width="@dimen/stock_mrp_header_width"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_pending_qty"
+                    android:text="@string/mrp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_pending_qty"
+                    android:background="#80000000" />
+
+                <TextView
+                    android:id="@+id/header_product_tax_rate"
+                    style="@style/inventory_order_header"
+                    android:layout_width="@dimen/stock_weekly_trend_width"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_MRP"
+                    android:text="@string/vat_rate" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_MRP"
+                    android:background="#80000000" />
+
+                <TextView
+                    android:id="@+id/header_product_purchase_price"
+                    style="@style/inventory_order_header"
+                    android:layout_width="@dimen/stock_weekly_trend_width"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_tax_rate"
+                    android:text="@string/purchase_price" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_tax_rate"
+                    android:background="#80000000" />
+
+                <TextView
+                    android:id="@+id/header_product_discount"
+                    style="@style/inventory_order_header"
+                    android:layout_width="@dimen/stock_weekly_trend_width"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_purchase_price"
+                    android:text="@string/discount" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_purchase_price"
+                    android:background="#80000000" />
+
+                <TextView
+                    android:id="@+id/header_product_net_amount"
+                    style="@style/inventory_order_header"
+                    android:layout_width="@dimen/stock_weekly_trend_width"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_discount"
+                    android:text="@string/net_amount" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_discount"
+                    android:background="#80000000" />
+
+                <TextView
+                    android:id="@+id/header_product_tax_amount"
+                    style="@style/inventory_order_header"
+                    android:layout_width="@dimen/stock_weekly_trend_width"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_net_amount"
+                    android:text="@string/vat_amount" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_net_amount"
+                    android:background="#80000000" />
+
+                <TextView
+                    android:id="@+id/header_product_total"
+                    style="@style/inventory_order_header"
+                    android:layout_width="@dimen/stock_weekly_trend_width"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_tax_amount"
+                    android:text="@string/total" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/order_header_height"
+                    android:layout_toRightOf="@+id/header_product_tax_amount"
+                    android:background="#80000000" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/po_details_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/order_receive_header_layout" >
+            </ListView>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/clickable_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/purchase_order_receive_keypad_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_overlay_order_receive"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/receive_slidein_selector"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/receive_wo_po_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/small_padding"
+        android:background="@drawable/receive_clear_po_selector"
+        android:paddingLeft="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:text="Show All"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:id="@+id/shadow_right_textView"
+        android:layout_width="@dimen/category_shadow_width"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:layout_toLeftOf="@+id/receive_wo_po_btn"
+        android:background="@drawable/category_shadow_gradient"
+        android:rotation="180"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/receive_summary_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/receive_summary_layout"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/receive_summary_invoice_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/invoice_image_layout"
+        android:visibility="gone" />
+
+</RelativeLayout>

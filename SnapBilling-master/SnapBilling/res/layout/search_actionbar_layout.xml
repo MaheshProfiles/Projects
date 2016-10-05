@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_update_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+
+>
+
+     <RelativeLayout
+        android:id="@+id/search_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+<RelativeLayout 
+    
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:layout_alignParentRight="true"
+   android:id="@+id/search_layout"
+    >
+    
+    
+     <com.snapbizz.snaptoolkit.customviews.AutoSoftInputEditText
+            android:id="@+id/barcode_product_name_search_edittext"
+            android:layout_width="@dimen/billmonitor_search_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:background="@drawable/product_search_normal"
+            android:hint="Search with barcode"
+            android:imeOptions="actionDone"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:singleLine="true"
+            android:inputType="none"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp" />
+    
+       <!--  <TextView
+            android:id="@+id/barcode_search_textview"
+            android:layout_width="@dimen/billmonitor_bill_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/barcode_search_normal"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:hint="Search with barcode"
+            android:inputType="none"
+            android:paddingLeft="60dp"
+            android:singleLine="true"
+            android:textColorHint="@android:color/black"
+            android:textIsSelectable="true"
+            android:textSize="18sp" /> -->
+
+        <ImageButton
+            android:id="@+id/clear_barcode_product_button"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/barcode_product_name_search_edittext"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:background="@null"
+            android:paddingBottom="@dimen/small_padding"
+            android:paddingLeft="@dimen/small_padding"
+            android:src="@drawable/cancel_imgselector" />
+
+  <com.snapbizz.snaptoolkit.customviews.AutoSoftInputEditText
+                  android:id="@+id/product_name_search_edittext"
+            android:layout_width="@dimen/billmonitor_search_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_toRightOf="@+id/barcode_product_name_search_edittext"
+            android:background="@drawable/product_search_normal"
+            android:hint="@string/search_product_hint"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:singleLine="true"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/clear_name_product_button"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/product_name_search_edittext"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:background="@null"
+            android:paddingBottom="@dimen/small_padding"
+            android:paddingLeft="@dimen/small_padding"
+            android:src="@drawable/cancel_imgselector" />
+        </RelativeLayout>
+    </RelativeLayout>
+<TextView
+        android:id="@+id/actionbar_header"
+        style="@style/actionbar_headertextstyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/app_name" />
+</RelativeLayout>

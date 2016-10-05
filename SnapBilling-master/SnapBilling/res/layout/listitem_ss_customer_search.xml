@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/billsplitscreen_customersearch_bgcolor"
+    android:paddingBottom="@dimen/small_padding"
+    android:paddingTop="@dimen/small_padding" >
+
+    <ImageView
+        android:id="@+id/search_customer_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:src="@drawable/icon_customer" />
+
+    <TextView
+        android:id="@+id/search_customername_textview"
+        style="@style/customersearch_namenumber_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_toRightOf="@id/search_customer_imageview"
+        android:text="@string/customer_name_hint"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/search_customernumber_textview"
+        style="@style/customersearch_namenumber_textstyle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_customername_textview"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_toRightOf="@id/search_customer_imageview"
+        android:text="@string/distributor_number_hint"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/billsplitscreen_divider_height"
+        android:layout_toRightOf="@id/search_customernumber_textview"
+        android:background="@color/billsplitscreen_customersearch_dividercolor" />
+
+</RelativeLayout>

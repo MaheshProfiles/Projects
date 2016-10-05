@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/small_padding"
+    android:paddingRight="@dimen/medium_padding"
+    android:paddingTop="@dimen/small_padding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="160dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left"
+            android:divider="@null"
+            android:gravity="top|left"
+            android:orientation="vertical"
+            android:showDividers="none" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" >
+
+            <include
+                android:id="@+id/tabs_dashboard_summary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/dashboard_summary" />
+
+            <include
+                android:id="@+id/tabs_dashboard_charts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/dashboard_charts" />
+
+            <include
+                android:id="@+id/tabs_dashboard_alerts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/dashboard_alerts" />
+
+            <include
+                android:id="@+id/tabs_dashboard_stockreport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/dashboard_stockreport" />
+            
+            <include
+                android:id="@+id/tabs_dashboard_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/dashboard_money" />
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

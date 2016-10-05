@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/editproduct_popover_width"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editproduct_name_edittext"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Product Name" />
+
+    <Spinner
+        android:id="@+id/new_prodcategory_spinner"
+        style="@style/update_product_textstyle"
+        android:layout_width="@dimen/new_distributor_edittext_width"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:text="" 
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/new_prodsubcategory_spinner"
+        style="@style/update_product_textstyle"
+        android:layout_width="@dimen/new_distributor_edittext_width"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:text="" 
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/distributorlist_textwidth"
+    android:layout_height="@dimen/distributorlist_rowheight"
+    android:background="@drawable/distributor_griditem_bgselector"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/companyname_textview"
+        android:layout_width="@dimen/distributorlist_textwidth"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/companyheader_textview"
+        android:layout_width="@dimen/distributor_list_header_width"
+        android:layout_height="@dimen/distributor_list_header_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/brandname_textview"
+        android:layout_width="@dimen/distributorlist_textwidth"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/companyname_textview"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:paddingBottom="@dimen/small_padding"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/cancel_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:src="@drawable/icon_cancel_red"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="@dimen/distributorlist_textwidth"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:gravity="right" >
+
+        <ImageButton
+            android:id="@+id/company_edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/edit_button_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

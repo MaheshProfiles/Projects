@@ -1,0 +1,599 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background_color"
+    tools:context="com.snapbizz.snapvat.VatSplashScreenActivity" >
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:padding="30dp" >
+
+        <Button
+            android:id="@+id/saveSummaryButton"
+            style="@style/vat_table_field_textstyle4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bttn_save_summary"
+            android:text="@string/save_summary" />
+
+        <Button
+            android:id="@+id/saveReportButton"
+            style="@style/vat_table_field_textstyle4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bttn_save_summary"
+            android:text="@string/save_detailed_report" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/regular_vat_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linlay1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/vat_table_border_shape"
+        android:padding="1dp"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/vat_table_field_textstyle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="@dimen/vat_summary_table_column1_leftmargin"
+                android:layout_marginTop="7dp"
+                android:text="@string/vat_percentage" />
+
+            <!--
+                 <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/summary_table_border_width"
+	            android:background="@android:color/black"/>
+            -->
+
+            <TextView
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vat_summary_table_column1_leftmargin"
+                android:layout_marginTop="40dp"
+                android:text="@string/sales_assessable_value" />
+
+            <TextView
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vat_summary_table_column1_leftmargin"
+                android:layout_marginTop="15dp"
+                android:text="@string/output_vat_payable" />
+
+            <TextView
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vat_summary_table_column1_leftmargin"
+                android:layout_marginTop="60dp"
+                android:text="@string/purchase_value" />
+
+            <TextView
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vat_summary_table_column1_leftmargin"
+                android:layout_marginTop="15dp"
+                android:enabled="false"
+                android:text="@string/input_vat_credit" />
+
+            <TextView
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="@dimen/vat_summary_table_column1_leftmargin"
+                android:layout_marginTop="30dp"
+                android:gravity="bottom"
+                android:text="@string/net_vat_payable" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/vat_summary_table_border_width"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/vatCat1TextView"
+                style="@style/vat_table_field_textstyle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vat_summary_table_border_width"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/salesValueCat1TextView"
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:id="@+id/outputPayableCat1TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/purchaseValueCat1TextView"
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="60dp" />
+
+            <TextView
+                android:id="@+id/inputCreditCat1TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/netPayableCat1TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="30dp"
+                android:gravity="bottom" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/vat_summary_table_border_width"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/vatCat2TextView"
+                style="@style/vat_table_field_textstyle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vat_summary_table_border_width"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/salesValueCat2TextView"
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:id="@+id/outputPayableCat2TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/purchaseValueCat2TextView"
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="60dp" />
+
+            <TextView
+                android:id="@+id/inputCreditCat2TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/netPayableCat2TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="30dp"
+                android:gravity="bottom" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/vat_summary_table_border_width"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/vatCat3TextView"
+                style="@style/vat_table_field_textstyle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vat_summary_table_border_width"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/salesValueCat3TextView"
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:id="@+id/outputPayableCat3TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/purchaseValueCat3TextView"
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="60dp" />
+
+            <TextView
+                android:id="@+id/inputCreditCat3TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/netPayableCat3TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="30dp"
+                android:gravity="bottom" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/vat_summary_table_border_width"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/vatCat4TextView"
+                style="@style/vat_table_field_textstyle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vat_summary_table_border_width"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/salesValueCat4TextView"
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:id="@+id/outputPayableCat4TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/purchaseValueCat4TextView"
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="60dp" />
+
+            <TextView
+                android:id="@+id/inputCreditCat4TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/netPayableCat4TextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="30dp"
+                android:gravity="bottom" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/vat_summary_table_border_width"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <View
+            android:layout_width="@dimen/vat_summary_table_border_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@color/divider_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/vat_table_field_textstyle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="7dp"
+                android:text="Total" />
+
+            <!--
+                 <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/summary_table_border_width"
+	            android:background="@android:color/black"/>
+            -->
+
+            <TextView
+                android:id="@+id/salesValueTotalTextView"
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="50dp" />
+
+            <TextView
+                android:id="@+id/outputPayableTotalTextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/purchaseValueTotalTextView"
+                style="@style/vat_table_field_textstyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="60dp" />
+
+            <TextView
+                android:id="@+id/inputCreditTotalTextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/netPayableTotalTextView"
+                style="@style/vat_table_field_textstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="@dimen/vat_summary_table_rightmargin"
+                android:layout_marginTop="30dp"
+                android:gravity="bottom" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/composite_vat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linlay1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/vat_table_border_shape"
+        android:padding="1dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/sales_text_view"
+            style="@style/vat_table_field_textstyle1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="150dp"
+            android:text="@string/sales_assessable_value" />
+
+        <TextView
+            android:id="@+id/sales_value_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sales_text_view"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/sales_text_view"
+            style="@style/vat_table_field_textstyle1" />
+        
+         <TextView
+            android:id="@+id/compositeVAT_text_view"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sales_text_view"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="50dp"
+            android:text="Composite VAT%"
+            style="@style/vat_table_field_textstyle2" />
+         
+         <EditText
+             android:id="@+id/compositeVAT_edit_text"
+             android:layout_below="@+id/sales_text_view"
+             android:layout_toRightOf="@+id/compositeVAT_text_view"
+             android:layout_width="120dp"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/compositeVAT_text_view"
+             android:layout_marginLeft="100dp"
+             android:hint="Enter Vat%"
+             android:maxLength="4"
+             android:inputType="numberDecimal"
+             />
+
+        <TextView
+            android:id="@+id/composite_text_view"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/compositeVAT_text_view"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="50dp"
+            android:text="VAT Payable"
+            style="@style/vat_table_field_textstyle2" />
+
+        <TextView
+            android:id="@+id/composite_value_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/composite_text_view"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/composite_text_view"
+            style="@style/vat_table_field_textstyle2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linlay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/regular_view_button"
+                style="@style/customermgmt_name_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customer_tab_selector"
+                android:text="@string/regular"
+                android:textColor="@drawable/customertab_textcolor_selector" />
+
+            <Button
+                android:id="@+id/composite_view_button"
+                style="@style/customermgmt_name_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customer_tab_selector"
+                android:text="@string/composite"
+                android:textColor="@drawable/customertab_textcolor_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Spinner
+                android:id="@+id/vat_month_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/vat_year_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/years_string_array" />
+
+            <Button
+                android:id="@+id/get_vat_summary_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:enabled="false"
+                android:text="@string/get_report" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

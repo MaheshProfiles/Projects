@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/inventory_header_height"
+    android:background="@drawable/productheader_border_shape"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_header_product_width"
+        android:layout_height="match_parent"
+        android:text="@string/product"
+        android:textSize="28sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:text="@string/mrp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="122dp"
+        android:layout_height="match_parent"
+        android:text="@string/purchase_price" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:text="@string/sales_price" />
+     <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:text="@string/sales_price_two" />
+     <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:text="@string/sales_price_three" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="105dp"
+        android:layout_height="match_parent"
+        android:text="@string/stock_qty" />
+
+   
+   
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="175dp"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:text="Avg.Sales/Wk" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+     <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:text="@string/report" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <RelativeLayout
+        style="@style/update_productheader_textstyle"
+        android:layout_width="90dp"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_monitor" />
+    </RelativeLayout>
+      <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:text="@string/vat_rate" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:text="@string/unit_type" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:text="Category" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:text="Sub-Category" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Actions" />
+
+</LinearLayout>

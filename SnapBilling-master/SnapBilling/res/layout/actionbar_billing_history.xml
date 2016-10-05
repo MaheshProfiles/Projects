@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_billinghistory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bill_filter_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/small_padding"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/day_button"
+            style="@style/filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bill_dayfilter_imgselector" />
+
+        <Button
+            android:id="@+id/week_button"
+            style="@style/filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bill_weekfilter_imgselector" />
+
+        <Button
+            android:id="@+id/month_button"
+            style="@style/filter_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bill_monthfilter_imgselector" />
+
+        <Button
+            android:id="@+id/calendar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bill_customfilter_imgselector" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/actionbar_header"
+        style="@style/actionbar_headertextstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/app_name" />
+
+</RelativeLayout>

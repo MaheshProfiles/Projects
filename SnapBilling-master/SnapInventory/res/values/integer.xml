@@ -1,0 +1,6 @@
+<resources>
+     <integer-array name="horz_gv_rows_columns">
+        <item name="rows">7</item>
+        <item name="columns">5</item>
+    </integer-array>
+</resources>

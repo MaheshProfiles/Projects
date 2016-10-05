@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <string-array name="quickaddCategoryArray">
+        <item>Bread &amp; Baked Foods</item>
+        <item>Butter, Ghee Etc</item>
+        <item>Cooking Oils</item>
+        <item>Dairy Products</item>
+        <item>Dals &amp; Pulses</item>
+        <item>Dry Fruits</item>
+        <item>Flours &amp; Sooji</item>
+        <item>Fruits, Vegetables &amp; Eggs</item>
+        <item>Grains</item>
+        <item>Miscellaneous</item>
+        <item>Raw Spices</item>
+        <item>Rice</item>
+        <item>Salt, Sugar &amp; Jaggery</item>
+        <item>Whole Wheat &amp; Wheat Flour</item>
+   </string-array>
+   
+   <string-array name="new_settings_tabs">
+        <item>General Settings</item>
+        <item>Printer</item>
+        <item>Weighing Machine</item>
+        <item>Pin</item>
+        <item>MultiPos</item>
+    </string-array>
+    
+    <string-array name="font_sizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+</resources>

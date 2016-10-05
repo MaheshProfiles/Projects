@@ -1,0 +1,5 @@
+{response: [
+{id:99, categoryName:"Medicine", parentId:10, isQuickAddCategory:false,profitMargin:0},
+{id:100, categoryName:"Perfumes", parentId:1, isQuickAddCategory:false,profitMargin:0},
+{id:101, categoryName:"Cat Food", parentId:76, isQuickAddCategory:false,profitMargin:0}
+]}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/help_videos_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/large_padding"
+        app:columnWidth="@dimen/store_columnwidth"
+        app:gravity="left"
+        android:paddingTop="50dp"
+        app:horizontalSpacing="@dimen/medium_padding"
+        android:paddingLeft="30dp"
+        app:numColumns="auto_fit"
+        app:numRows="2"
+        app:stretchMode="none"
+        app:rowHeight="250dp"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="horizontal"
+        android:background="@android:color/white" 
+      />
+
+    <FrameLayout
+        android:id="@+id/help_video_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/dark_transparent_color"
+         >
+
+        <VideoView
+            android:id="@+id/video_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:descendantFocusability="blocksDescendants"
+            
+             />
+    </FrameLayout>
+
+</FrameLayout>

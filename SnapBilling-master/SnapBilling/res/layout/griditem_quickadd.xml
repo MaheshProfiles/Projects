@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="158dp"
+    android:layout_height="143dp"
+    android:background="@drawable/product_bordercolor_selector"
+    android:padding="1dp" >
+
+    <ImageView
+        android:id="@+id/product_imageview"
+        android:layout_width="158dp"
+        android:layout_height="143dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/product_name_textview"
+        style="@style/productname_textstyle"
+        android:layout_width="158dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/product_mrp_textview"
+        style="@style/snap_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/small_padding"
+        android:background="@drawable/red"
+        android:paddingLeft="@dimen/small_padding"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/product_sp_textview"
+        style="@style/snap_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_mrp_textview"
+        android:background="@drawable/green"
+        android:paddingLeft="@dimen/small_padding"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

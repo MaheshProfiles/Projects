@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_build_version">2.0.0-Unknown</string>
+    <string name="app_name">SnapToolkit</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="shared_user_id">com.snapbizz</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="db_password">Enter DB Password</string>
+    <string name="wrong_password">Password is wrong try again</string>
+    <string name="printer_errconn_state">Printer device can not access, please re-connect</string>
+    <string name="keypad_0">0</string>
+    <string name="keypad_1">1</string>
+    <string name="keypad_2">2</string>
+    <string name="keypad_3">3</string>
+    <string name="keypad_4">4</string>
+    <string name="keypad_5">5</string>
+    <string name="keypad_6">6</string>
+    <string name="keypad_7">7</string>
+    <string name="keypad_8">8</string>
+    <string name="keypad_9">9</string>
+    <string name="keypad_dot">.</string>
+    <string name="keypad_enter">Enter</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="discount1">-2%</string>
+    <string name="discount2">-4%</string>
+    <string name="discount3">-6%</string>
+    <string name="done">Done</string>
+
+    <string-array name="quickadd_array">
+        <item name="quickadd_food_tag">quickaddfood</item>
+        <item name="quickadd_kitchen_tag">quickaddkitchen</item>
+        <item name="quickadd_homecare_tag">quickaddhomecare</item>
+        <item name="quickadd_bathroom_tag">quickaddbathroom</item>
+        <item name="quickadd_others_tag">quickaddothers</item>
+    </string-array>
+    <string-array name="xl_store_information">
+        <item>Store Name</item>
+        <item>Mobile Number</item>
+        <item>Store Address</item>
+        <item>TIN Number</item>
+        <item>Email ID</item>
+        <item>Period</item>
+    </string-array>
+    <string-array name="xl_table_headers">
+        <item>Date</item>
+        <item>Invoice</item>
+        <item>Basic Value</item>
+        <item>VAT %</item>
+        <item>Input VAT</item>
+        <item>Total</item>
+    </string-array>
+
+    <string name="quickadd_food_tag">quickaddfood</string>
+    <string name="quickadd_kitchen_tag">quickaddkitchen</string>
+    <string name="quickadd_homecare_tag">quickaddhomecare</string>
+    <string name="quickadd_bathroom_tag">quickaddbathroom</string>
+    <string name="quickadd_others_tag">quickaddothers</string>
+    <string name="create_retailer_header">Create Retailer</string>
+    <string name="sales_person_details">Sales Person Details</string>
+    <string name="sales_person_phone_hint">Sales Phone Number</string>
+    <string name="sales_person_phone">Sales Person Phone Number</string>
+    <string name="confirm_message">Please confirm to update the price changes.</string>
+    <string name="owner_details">Owner Details</string>
+    <string name="owner_name_hint">Name</string>
+    <string name="owner_name">"Owner's Name"</string>
+    <string name="owner_phone_hint">Phone Number</string>
+    <string name="owner_phone">Phone Number</string>
+    <string name="email">"E-Mail"</string>
+    <string name="email_hint">"E-Mail"</string>
+    <string name="error_generate_otp">Unable to Generate OTP.</string>
+    <string name="store_details">Store Details</string>
+    <string name="store_name">Store Name</string>
+    <string name="store_tin_number">TIN Number</string>
+    <string name="store_address1">Address Line 1</string>
+    <string name="store_address2">Address Line 2</string>
+    <string name="address_hint">Address</string>
+    <string name="store_city">City</string>
+    <string name="store_state">State</string>
+    <string name="store_zip">Zip Code</string>
+    <string name="store_landline">Landline Number</string>
+    <string name="submit">Terms and Conditions</string>
+    <string name="passkey">sn@pb1zz@123</string>
+    <string name="accept">Accept</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="estimate">ESTIMATE</string>
+    <string name="no_network">No Network Connection</string>
+    <string name="db_backup_error">Unable to backup db</string>
+    <string name="add_existing_products">Add Existing Product</string>
+    <string name="error_add_existing_products">Sorry! This product does not exist in Inventory</string>
+    <string name="condition_string">
+ 
+\n\nBY INSTALLING OR USING THIS SOFTWARE AND ANY APPLICATIONS USED IN 
+CONJUNCTION WITH THIS SOFTWARE (“SOFTWARE”) YOU ARE AGREEING TO BE 
+BOUND BY ALL OF THE TERMS SET FORTH BELOW. IF YOU DO NOT AGREE TO THE 
+TERMS OF THIS AGREEMENT, DO NOT INSTALL OR USE THE SOFTWARE..
+ 
+\n\nLimited License. SnapBizz CloudTech Pte. Ltd, the licensor of the Software (“We” or “Licensor”), 
+grants you a non-exclusive limited license to install the object code version of 
+the Software on one device and to use the Software on such device. All rights not expressly 
+granted are reserved by the Licensor.
+ 
+ \n\nPrivacy Policy. We encourage you to review our privacy policy which can be found at bottom 
+of the page ("SnapBizz Privacy Policy"). By agreeing to this End User License Agreement 
+you are also agreeing to our Privacy Policy. Our Privacy Policy governs the collection, use 
+and disclosure of information we collect from you. The information we collect is stored and 
+processed by us on servers in India and potentially other countries. By installing the Software 
+you consent to any such transfer of your information outside your country and/or outside the 
+country where you use or have installed the Software.
+
+\n\nRestrictions. You agree not to reproduce, modify, make derivative works or distribute the 
+Software to any third party. You agree not to decompile, disassemble or reverse engineer 
+the Software. You agree not to (i) remove any copyright or other proprietary notice from the 
+Software, or (ii) rent, lease, lend, upload, host, sell, or sublicense the Software, in whole or in 
+part.
+ 
+\n\nOwnership. You agree that the Licensor and its licensors retain all right, title and interest in 
+and to the Software and has unconditional right to lock-out or disable the software. You agree to 
+erase the Software from your wireless device upon receipt of notice.
+
+ 
+\n\nTermination. This Agreement shall terminate immediately, without notice, if you fail to comply 
+with any material term of this Agreement. Upon termination you agree to immediately erase the 
+Software from your device. Termination is in addition to and not in lieu of any other rights and 
+remedies Licensor may have.
+ 
+\n\nNo Support. Neither Licensor nor its licensors are obligated to provide any maintenance, 
+technical or other support for the Software.
+\nDisclaimer of Warranty. THE SOFTWARE IS LICENSED TO YOU “AS IS.” LICENSOR AND 
+ITS LICENSORS DISCLAIM ANY AND ALL WARRANTIES REGARDING THE APPLICATION, 
+WHETHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, THE IMPLIED 
+WARRANTIES OF NON-INFRINGEMENT OF THIRD PARTY RIGHTS, MERCHANTABILITY 
+AND FITNESS FOR A PARTICULAR PURPOSE. 
+ 
+\n\nLimitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE 
+LAW, IN NO EVENT SHALL THE LICENSOR OR ITS LICENSORS BE LIABLE FOR ANY 
+CONSEQUENTIAL, SPECIAL, INCIDENTAL, EXEMPLARY, PUNITIVE, INDIRECT OR 
+DIRECT DAMAGES OF ANY KIND ARISING OUT OF THE USE OF THE APPLICATION 
+(INCLUDING BUT NOT LIMITED TO LOST DATA OR LOST PROFITS), EVEN IF THE 
+LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
+
+\n\nExport. The Software is subject to the export control laws and regulations of the Singapore 
+Government and other jurisdictions. You agree to comply with all such laws and regulations.
+ 
+\n\nU.S. Government End Users. This section only applies to the U.S. Government or if you are 
+or are acting on behalf of an agency or instrumentality of the U.S. Government. The Software 
+is “commercial software” developed exclusively at private expense. Pursuant to FAR 12.212 or 
+DFARS 227 7202 and their successors, as applicable, use, reproduction and disclosure of the 
+Software is governed by the terms of this agreement.
+
+\n\nMiscellaneous. The United Nations Convention on Contracts for the Sale of International 
+Goods does not apply to this agreement. If any provision hereof is held illegal, invalid or 
+unenforceable, in whole or in part, such provision shall be modified to the minimum extent 
+necessary to make it legal, valid and enforceable, and the legality, validity and enforceability 
+of all other provisions of this agreement shall not be affected thereby. This agreement 
+constitutes the entire agreement between you and the Licensor regarding its subject matter and 
+supersedes any prior agreement, whether written or oral, relating to the subject matter of this 
+agreement. No modification or alteration of this agreement will be valid except in writing signed 
+by you and the Licensor. SnapBizz CloudTech Pte. Ltd is an intended beneficiary of, and has 
+the right to enforce, the terms and conditions of this agreement that relate to or affect SnapBizz 
+CloudTech Pte. Ltd.
+
+\n\nSnapBizz Privacy Policy
+This Privacy Policy describes our policies on the collection, use and disclosure of 
+your information through our mobile application service (“SnapBizz Services”). When using 
+our service you agree to this Privacy Policy. SnapBizz Services are provided by SnapBizz 
+CloudTech Pte. Ltd, a company headquartered and incorporated in Singapore (“we”, “us”, and 
+“our”). 
+
+\n\n1. Data we collect
+
+a. Information You Provide to SnapBizz
+an account. The information SnapBizz will collect about you and your business includes: 
+business owner name (first name, middle name, and last name), date of birth, pan number, 
+mobile number, landline number, address, pin code, business name, business license number, 
+date the license number is valid until, business category, business address, pin code, and 
+contact number. If you are required to create a password, you should choose one that is known 
+only by you. 
+
+b. Information About Your Customer
+your obligation to appropriately inform your customer how you will be using the information, 
+including if you will be sending offers or advertisements to their phones via SMS.
+
+c. General Usage Information Collected
+SnapBizz Services requires you to register and provide us information to create 
+SnapBizz Services may allow you to enter information about your customer. It is 
+We’ll collect information about how you use our SnapBizz Services such as: (i) 
+the services that you access, (ii) information about the links and/or advertisements that you 
+click, (iii) the frequency and duration of use, and (iv) the fact that you use certain features or 
+functions. We will use this information in order to provide and improve our SnapBizz Services.
+Additional information that will be collected includes monthly sales stats and details and pricing 
+of products sold in retail shop. The information you provide will be stored on our or a third party 
+service providers’ servers.
+
+d. Information You Submit
+If you voluntarily submit information to us - for example, if you participate in 
+a survey, provide us feedback, or respond to our request for information - we will collect the 
+information you submit. In each such instance, you will know what data we collect, because 
+you actively submit it. We will use the data you voluntarily submit to us for the purposes we 
+describe in this Privacy Policy, as well as any purposes that we describe to you when we collect 
+such information.
+
+e. Transactional Information we collect
+All transactional data as it relates to bills/ memos created to consumers, purchase 
+orders raised to distributors, invoices received from distributors, inventory information, 
+product, brand information will be saved and processed on SnapBizz servers. Data will 
+also be backed up for disaster recovery
+
+\n\n2. Cross-Border Transfer
+The information we collect is stored and processed on servers in India, Singapore and 
+may also be transferred to other countries. By using the SnapBizz Services you consent to 
+the transfer of the information described in this Privacy Policy to locations that may be outside 
+of the country in which you live, and such places may be in the United States, within one or 
+more European countries, and/or in one or more countries within Asia, Africa or Australia. If 
+any provision within this Privacy Policy is held to be invalid or unenforceable in a territory, such 
+provision shall be struck with respect to such territory and all remaining provisions shall be 
+enforced.
+
+\n\n3. Uses of Information
+In addition to the other uses of your information described in this Privacy Policy, we may 
+use and process the data we collect for the following general purposes:\na. To provide, protect, and improve our SnapBizz Services, and our systems;\nb. To respond to requests that you may send us such as your request for information; 
+\nc. To develop new products and services, and other internal business purposes; 
+\nd. To protect our rights and the rights of our users;
+\ne. Any other use we describe at the point where we collect the data. 
+\nTo the extent permitted by applicable law, we reserve the right to combine the various 
+types of data that we collect and to combine the data that we collect with anonymous or 
+aggregated data (e.g., demographic information) that we obtain from third parties or other 
+sources. We may use the combined data for any of the purposes described in this Privacy 
+Policy.
+
+\n\n4. Data Sharing 
+We do not share your personally identifiable information with others, except as 
+follows: We may share your information with agents, service providers, vendors, contractors, 
+or affiliates who process the data only on our behalf for the purposes set forth in this Policy 
+and under terms of confidentiality. We may also share your information as required by law 
+or in the interest of protecting or exercising our or others legal rights, e.g., without limitation, 
+in connection with requests from law enforcement officials and in connection with court 
+proceedings. We may share or transfer your information in connection with a prospective or 
+actual sale, merger, transfer or other reorganization of all or parts of our business. Finally, we 
+may also share your personal information where you have granted us permission.
+
+\n\n5.Opt Out
+If you do not want us to collect, use, and share the information we describe in this Policy, 
+please notify us of your decision to opt out, discontinue your use of SnapBizz Services, and 
+uninstall or clean your devices of any SnapBizz software or licenses.
+
+\n\n6. Accessing and Changing Your Account Information
+You can review the personal information you provided to us and make any desired 
+changes to your username, password, and phone number at any time by logging in to your 
+account. Please be aware that even after your request for a change is processed, SnapBizz 
+may, for a time, retain uncorrected, residual information about you in its backup and/or archival 
+copies of its database. To access other personal information we may have associated with your 
+account, please contact us through the Contact Us section below. Upon request we will provide 
+you a copy and/or description of any personal identification information we hold about you within 
+in a reasonable time and we will correct or delete it upon your request. 
+
+\n\n7. Security
+We take reasonable steps to protect the personal information submitted to us, both 
+during transmission and once we receive it. No method of transmission over the Internet, or 
+method of electronic storage, is 100% secure, however. Therefore, while we strive to use 
+commercially acceptable means to protect your personal information, we cannot guarantee its 
+absolute security. It is your responsibility to protect the security of your login and password 
+information.
+
+\n\n8. Contact Us
+Please feel free to contact us with any comments, questions or suggestions you might 
+have regarding the information practices described in this statement. You may contact us by 
+writing to us at: 
+\n\nSnapBizz CloudTech Pte. Ltd
+\n#1 Raffles Place, One Raffles Place #39-01, 
+\nSingapore 048616
+
+\nEffective Date: April 15, 2014
+
+\n\nBy clicking, “I Agree” I have read, understood and 
+agree to the terms and conditions in this agreement.
+</string>
+
+    <string-array name="state_names">
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+        <item>Delhi</item>
+    </string-array>
+    
+    <string name="upgrade_billing">SnapBilling is old version please Upgrade</string>
+    <string name="upgrade_inventory">SnapInventory is old version please Upgrade</string>
+    <string name="restart_billing">Restart snap billing and open snap inventory</string>
+    <string name="restart_tab">Please Restart the Tablet</string>
+    <string name="snapbizz_footer">Powered By SnapBizz</string>
+    <string name="msg_invalid_sales_phone_no">Invalid Sales Person Phone Number</string>
+    <string name="msg_invalid_owner_name">Invalid Owner Name</string>
+    <string name="msg_invalid_owner_phone_no">Invalid Owner Phone Number</string>
+    <string name="msg_invalid_owner_email">Invalid Owner Email</string>
+    <string name="msg_invalid_store_name">Invalid Store Name</string>
+    <string name="msg_invalid_tin_no">Invalid Store TIN Number</string>
+    <string name="msg_invalid_store_address">Invalid Store Address1</string>
+    <string name="msg_invalid_store_state">Invalid Store State</string>
+    <string name="msg_invalid_store_city">Invalid Store City</string>
+    <string name="msg_invalid_zip_code">Invalid Store Zip Code</string>
+    <string name="msg_invalid_landline_no">Invalid Landline Number</string>
+    <string name="msg_no_products_added">New products added</string>
+    <string name="add_edit_product">Add/Edit Product</string>
+    <string name="msg_sp_more_than_mrp">Selling price cannot be more than MRP</string>
+    <string name="msg_pp_more_than_mrp">Purchase price cannot be more than MRP</string>
+    <string name="msg_sp_two_more_than_mrp">Selling price 2 cannot be more than MRP</string>
+    <string name="msg_sp_three_more_than_mrp">Selling price 3 cannot be more than MRP</string>
+    <string name="enter_pin">Enter Pin</string>
+    <string name="wrong_pin">Wrong Pin</string>
+    <string name="product_name_hint">Product Name</string>
+    <string name="auto_filled_code_hint">Auto-filled Product Code</string>
+    <string name="mrp_hint">MRP</string>
+    <string name="stock_qty_hint">Stock Qty</string>
+    <string name="purchase_price_hint">Purchase Price</string>
+    <string name="selling_price_1_hint">Selling Price 1</string>
+    <string name="selling_price_2_hint">Selling Price 2</string>
+    <string name="selling_price_3_hint">Selling Price 3</string>
+    <string name="vat_rate">VAT rate</string>
+    <string name="unit_type">Unit type</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+    
+    <string name="scan_existing_product">Scan Existing Product Barcode</string>
+    <string name="existing_quickadd_product_msg">This product already exists in QuickAdd</string>
+    <string name="add_existing_product_into_quickadd_msg">Product Added to</string>
+    <string name="xtra_products">Xtra Products</string>
+    
+    <!-- Printer Strings -->
+    <string name="tin">TIN: </string>
+    <string name="bill_no">Bill No:</string>
+    <string name="customer_name">Customer Name:</string>
+    <string name="customer_no">Customer No:</string>
+    <string name="address">Address:</string>
+    <string name="vat_amount">VAT Amount:</string>
+    <string name="gross_amount">Gross Amount:</string>
+    <string name="savings_label">Savings:</string>
+    <string name="discount_label">Discount:</string>
+    <string name="net_amount_label">Net Amount:</string>
+    <string name="total_savings">Total Savings:</string>
+    <string name="cash_paid">Cash Paid:</string>
+    <string name="credit_card">Credit Card:</string>
+    <string name="credit_amount">Credit Amount:</string>
+    <string name="cash_change">Cash Change:</string>
+    <string name="current_outstanding">Current Outstanding:</string>
+    <string name="tax_invoce">TAX INVOICE</string>
+    <string name="item_name">Item Name</string>
+    <string name="qty">Qty</string>
+    <string name="mrp">MRP</string>
+    <string name="sp">SP</string>
+    <string name="tax">T</string>
+    <string name="amount">amt</string>
+    <string name="item_per_qty">Items/Qty:</string>
+</resources>

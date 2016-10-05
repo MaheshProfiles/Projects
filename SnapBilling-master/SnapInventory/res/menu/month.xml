@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/jan_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="January"/>
+    <item
+        android:id="@+id/feb_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="February"/>
+    <item
+        android:id="@+id/march_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="March"/>
+    <item
+        android:id="@+id/april_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="April"/>
+    <item
+        android:id="@+id/may_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="May"/>
+    <item
+        android:id="@+id/june_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="June"/>
+    <item
+        android:id="@+id/july_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="July"/>
+    <item
+        android:id="@+id/aug_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="August"/>
+    <item
+        android:id="@+id/sept_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="September"/>
+    <item
+        android:id="@+id/oct_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="October"/>
+    <item
+        android:id="@+id/nov_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="November"/>
+    <item
+        android:id="@+id/dec_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="December"/>
+
+</menu>

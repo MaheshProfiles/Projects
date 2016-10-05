@@ -1,0 +1,32 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false"><layer-list>
+            <item><shape android:shape="rectangle">
+                    <solid android:color="#4C000000" />
+
+                    <corners android:radius="1dp" />
+
+                    <stroke android:width="4dp" />
+                </shape></item>
+            <item android:bottom="1dp" android:top="1dp"><shape android:shape="rectangle">
+                    <solid android:color="@color/inventory_receive_button_colour" />
+                </shape></item>
+            <item><bitmap android:gravity="center" android:src="@drawable/icon_home_receive" />
+            </item>
+        </layer-list></item>
+    <item android:state_pressed="true"><layer-list>
+            <item><shape android:shape="rectangle">
+                    <solid android:color="#4C000000" />
+
+                    <corners android:radius="1dp" />
+
+                    <stroke android:width="4dp" />
+                </shape></item>
+            <item android:bottom="1dp" android:top="1dp"><shape android:shape="rectangle">
+                    <solid android:color="@color/inventory_receive_button_pressed_colour" />
+                </shape></item>
+            <item><bitmap android:gravity="center" android:src="@drawable/icon_home_receive" />
+            </item>
+        </layer-list></item>
+
+</selector>

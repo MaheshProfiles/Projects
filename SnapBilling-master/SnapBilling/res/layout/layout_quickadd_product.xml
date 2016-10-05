@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res/com.snapbizz.snapbilling">
+
+    <RelativeLayout
+        android:id="@+id/product_category_layout"
+        android:layout_width="@dimen/store_productimage_width"
+        android:layout_height="@dimen/store_productimage_height"
+        android:background="@drawable/product_bordercolor_selector"
+        android:padding="1dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/quickadd_productcategory_imageview"
+            android:layout_width="@dimen/store_productimage_width"
+            android:layout_height="@dimen/store_productimage_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/quickadd_productcategory_name_textview"
+            style="@style/productname_textstyle"
+            android:layout_width="@dimen/store_productimage_width"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <!-- <Button -->
+    <!-- android:id="@+id/create_quickaddproduct_button" -->
+    <!-- android:layout_width="330dp" -->
+    <!-- android:layout_height="58dp" -->
+    <!-- android:layout_below="@id/product_category_layout" -->
+    <!-- android:layout_marginLeft="@dimen/small_padding" -->
+    <!-- android:layout_marginTop="@dimen/medium_padding" -->
+    <!-- android:background="@android:color/white" -->
+    <!-- android:text="New" /> -->
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/quickadd_product_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        app:columnWidth="148dp"
+        app:gravity="center"
+        app:horizontalSpacing="@dimen/medium_padding"
+        app:numColumns="5"
+        app:numRows="auto_fit"
+        app:rowHeight="143dp"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="vertical"
+        app:stretchMode="none"
+        app:verticalSpacing="@dimen/small_padding"/>
+
+    <RelativeLayout
+        android:id="@+id/quickadd_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/default_background_color"
+        android:visibility="gone" >
+
+        <!-- <Button -->
+        <!-- android:id="@+id/quickadd_unittype_spinner" -->
+        <!-- style="@style/quickadd_weight_style" -->
+        <!-- android:layout_width="58dp" -->
+        <!-- android:layout_height="58dp" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:background="@drawable/white_bg_color" -->
+        <!-- android:gravity="center" /> -->
+
+        <ListView
+            android:id="@+id/unittype_listview"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/white_border_shape"
+            android:scrollbars="none"
+            android:visibility="gone" >
+        </ListView>
+
+        <!-- <FrameLayout -->
+        <!-- android:id="@+id/quickadd_weight_fragment" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_toRightOf="@id/unittype_listview" > -->
+        <!-- </FrameLayout> -->
+
+        <LinearLayout
+            android:id="@+id/quickadd_weight_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/quickadd_weight_textview"
+                    style="@style/quickadd_weight_style"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:src="@drawable/icon_keypad_selector" />
+
+                <Button
+                    android:id="@+id/quickadd_weight10g_button"
+                    style="@style/quickadd_weight_style_row_one"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_10g_value"
+                    android:text="@string/weight_10g" />
+
+                <Button
+                    android:id="@+id/quickadd_weight20g_button"
+                    style="@style/quickadd_weight_style_row_one"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_20g_value"
+                    android:text="@string/weight_20g" />
+
+                <Button
+                    android:id="@+id/quickadd_weight25g_button"
+                    style="@style/quickadd_weight_style_row_one"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_25g_value"
+                    android:text="@string/weight_25g" />
+
+                <Button
+                    android:id="@+id/quickadd_weight50g_button"
+                    style="@style/quickadd_weight_style_row_one"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_50g_value"
+                    android:text="@string/weight_50g" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/quickadd_weight100g_button"
+                    style="@style/quickadd_weight_style_row_two"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:tag="@string/weight_100g_value"
+                    android:text="@string/weight_100g" />
+
+                <Button
+                    android:id="@+id/quickadd_weight200g_button"
+                    style="@style/quickadd_weight_style_row_two"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_200g_value"
+                    android:text="@string/weight_200g" />
+
+                <Button
+                    android:id="@+id/quickadd_weight250g_button"
+                    style="@style/quickadd_weight_style_row_two"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_250g_value"
+                    android:text="@string/weight_250g" />
+
+                <Button
+                    android:id="@+id/quickadd_weight500g_button"
+                    style="@style/quickadd_weight_style_row_two"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_500g_value"
+                    android:text="@string/weight_500g" />
+
+                <Button
+                    android:id="@+id/quickadd_weight750g_button"
+                    style="@style/quickadd_weight_style_row_two"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_750g_value"
+                    android:text="@string/weight_750g" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/quickadd_weight1kg_button"
+                    style="@style/quickadd_weight_style_row_three"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:tag="@string/weight_1kg_value"
+                    android:text="@string/weight_1kg" />
+
+                <Button
+                    android:id="@+id/quickadd_weight2kg_button"
+                    style="@style/quickadd_weight_style_row_three"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_2kg_value"
+                    android:text="@string/weight_2kg" />
+
+                <Button
+                    android:id="@+id/quickadd_weight3kg_button"
+                    style="@style/quickadd_weight_style_row_three"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_3kg_value"
+                    android:text="@string/weight_3kg" />
+
+                <Button
+                    android:id="@+id/quickadd_weight4kg_button"
+                    style="@style/quickadd_weight_style_row_three"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_4kg_value"
+                    android:text="@string/weight_4kg" />
+
+                <Button
+                    android:id="@+id/quickadd_weight5kg_button"
+                    style="@style/quickadd_weight_style_row_three"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_5kg_value"
+                    android:text="@string/weight_5kg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/quickadd_weight10kg_button"
+                    style="@style/quickadd_weight_style_row_four"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:tag="@string/weight_10kg_value"
+                    android:text="@string/weight_10kg" />
+
+                <Button
+                    android:id="@+id/quickadd_weight15kg_button"
+                    style="@style/quickadd_weight_style_row_four"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_15kg_value"
+                    android:text="@string/weight_15kg" />
+
+                <Button
+                    android:id="@+id/quickadd_weight20kg_button"
+                    style="@style/quickadd_weight_style_row_four"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_20kg_value"
+                    android:text="@string/weight_20kg" />
+
+                <Button
+                    android:id="@+id/quickadd_weight25kg_button"
+                    style="@style/quickadd_weight_style_row_four"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_25kg_value"
+                    android:text="@string/weight_25kg" />
+
+                <Button
+                    android:id="@+id/quickadd_weight50kg_button"
+                    style="@style/quickadd_weight_style_row_four"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_50kg_value"
+                    android:text="@string/weight_50kg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quickadd_volume_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/quickadd_volume_textview"
+                    style="@style/quickadd_weight_style"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:src="@drawable/icon_keypad_selector" />
+
+                <Button
+                    android:id="@+id/quickadd_weight10ml_button"
+                    style="@style/quickadd_weight_style_row_one"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_10g_value"
+                    android:text="@string/weight_10ml" />
+
+                <Button
+                    android:id="@+id/quickadd_weight20ml_button"
+                    style="@style/quickadd_weight_style_row_one"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_20g_value"
+                    android:text="@string/weight_20ml" />
+
+                <Button
+                    android:id="@+id/quickadd_weight25ml_button"
+                    style="@style/quickadd_weight_style_row_one"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_25g_value"
+                    android:text="@string/weight_25ml" />
+
+                <Button
+                    android:id="@+id/quickadd_weight50ml_button"
+                    style="@style/quickadd_weight_style_row_one"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_50g_value"
+                    android:text="@string/weight_50ml" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/quickadd_weight100ml_button"
+                    style="@style/quickadd_weight_style_row_two"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:tag="@string/weight_100g_value"
+                    android:text="@string/weight_100ml" />
+
+                <Button
+                    android:id="@+id/quickadd_weight200ml_button"
+                    style="@style/quickadd_weight_style_row_two"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_200g_value"
+                    android:text="@string/weight_200ml" />
+
+                <Button
+                    android:id="@+id/quickadd_weight250ml_button"
+                    style="@style/quickadd_weight_style_row_two"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_250g_value"
+                    android:text="@string/weight_250ml" />
+
+                <Button
+                    android:id="@+id/quickadd_weight500ml_button"
+                    style="@style/quickadd_weight_style_row_two"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_500g_value"
+                    android:text="@string/weight_500ml" />
+
+                <Button
+                    android:id="@+id/quickadd_weight750ml_button"
+                    style="@style/quickadd_weight_style_row_two"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_750g_value"
+                    android:text="@string/weight_750ml" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weight_Lt_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/quickadd_weight1lt_button"
+                    style="@style/quickadd_weight_style_row_three"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:tag="@string/weight_1kg_value"
+                    android:text="@string/weight_1l" />
+
+                <Button
+                    android:id="@+id/quickadd_weight2lt_button"
+                    style="@style/quickadd_weight_style_row_three"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_2kg_value"
+                    android:text="@string/weight_2l" />
+
+                <Button
+                    android:id="@+id/quickadd_weight3lt_button"
+                    style="@style/quickadd_weight_style_row_three"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_3kg_value"
+                    android:text="@string/weight_3l" />
+
+                <Button
+                    android:id="@+id/quickadd_weight4lt_button"
+                    style="@style/quickadd_weight_style_row_three"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_4kg_value"
+                    android:text="@string/weight_4l" />
+
+                <Button
+                    android:id="@+id/quickadd_weight5lt_button"
+                    style="@style/quickadd_weight_style_row_three"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_5kg_value"
+                    android:text="@string/weight_5l" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/quickadd_weight10lt_button"
+                    style="@style/quickadd_weight_style_row_four"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:tag="@string/weight_10kg_value"
+                    android:text="@string/weight_10l" />
+
+                <Button
+                    android:id="@+id/quickadd_weight15lt_button"
+                    style="@style/quickadd_weight_style_row_four"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_15kg_value"
+                    android:text="@string/weight_15l" />
+
+                <Button
+                    android:id="@+id/quickadd_weight20lt_button"
+                    style="@style/quickadd_weight_style_row_four"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_20kg_value"
+                    android:text="@string/weight_20l" />
+
+                <Button
+                    android:id="@+id/quickadd_weight25lt_button"
+                    style="@style/quickadd_weight_style_row_four"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_25kg_value"
+                    android:text="@string/weight_25l" />
+
+                <Button
+                    android:id="@+id/quickadd_weight50lt_button"
+                    style="@style/quickadd_weight_style_row_four"
+                    android:layout_width="@dimen/store_productimage_width"
+                    android:layout_height="@dimen/store_productimage_height"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:tag="@string/weight_50kg_value"
+                    android:text="@string/weight_50l" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

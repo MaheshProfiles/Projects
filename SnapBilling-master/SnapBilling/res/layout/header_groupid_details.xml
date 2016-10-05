@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/groupid_header"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <TextView
+        style="@style/groupId_header_name_textstyle"
+        android:layout_width="480dp"
+        android:layout_height="50dp"
+        android:text="Product Details" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:text="@string/mrp" />
+
+    <TextView
+        style="@style/groupId_header_textstyle"
+        android:layout_width="122dp"
+        android:layout_height="match_parent"
+        android:text="@string/purchase_price" />
+
+    <TextView
+        style="@style/groupId_header_textstyle"
+        android:layout_width="105dp"
+        android:layout_height="match_parent"
+        android:text="@string/stock_qty" />
+
+    <TextView
+        style="@style/groupId_header_textstyle"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:text="@string/vat_rate" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:text="@string/unit_type" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:text="@string/heading_category" />
+
+    <TextView
+        style="@style/groupId_header_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:text="@string/heading_sub_category" />
+
+</LinearLayout>

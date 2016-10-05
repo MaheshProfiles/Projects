@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/billlist_width"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/bill_productslno_textview"
+        style="@style/billitem_name_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bill_item_halfheight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical" />
+
+    <TextView
+        android:id="@+id/bill_productname_textview"
+        style="@style/billitem_name_textstyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bill_item_halfheight"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/bill_productslno_textview"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/medium_padding" />
+
+    <TextView
+        android:id="@+id/bill_productquantity_textview"
+        style="@style/billitem_price_textstyle"
+        android:layout_width="@dimen/checkoutbill_producqty_width"
+        android:layout_height="@dimen/bill_item_halfheight"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bill_productslno_textview"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/small_padding" />
+
+    <TextView
+        android:id="@+id/bill_productmrp_textview"
+        style="@style/billitem_price_textstyle"
+        android:layout_width="@dimen/checkoutbill_productprice_width"
+        android:layout_height="@dimen/bill_item_halfheight"
+        android:layout_below="@id/bill_productname_textview"
+        android:layout_toRightOf="@id/bill_productquantity_textview"
+        android:background="@android:color/transparent"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/bill_productrate_textview"
+        style="@style/billitem_price_textstyle"
+        android:layout_width="@dimen/checkoutbill_productprice_width"
+        android:layout_height="@dimen/bill_item_halfheight"
+        android:layout_below="@id/bill_productname_textview"
+        android:layout_toRightOf="@id/bill_productmrp_textview"
+        android:background="@android:color/transparent"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/bill_producttotal_textview"
+        style="@style/billitem_price_textstyle"
+        android:layout_width="@dimen/checkoutbill_producttotal_width"
+        android:layout_height="@dimen/bill_item_halfheight"
+        android:layout_below="@+id/bill_productname_textview"
+        android:layout_toRightOf="@+id/bill_productrate_textview"
+        android:background="@android:color/transparent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="@dimen/small_padding" />
+
+    <TextView
+        android:id="@+id/bill_discount_textview"
+        style="@style/billitem_discount_textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bill_producttotal_textview"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/billitem_mrp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bill_productname_textview"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/small_padding" >
+
+        <Button
+            android:id="@+id/select_mrp_button"
+            style="@style/billitem_price_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bill_border_shape" />
+
+        <Button
+            android:id="@+id/select_altmrp_button"
+            style="@style/billitem_price_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:background="@drawable/bill_border_shape" />
+    </LinearLayout>
+
+</RelativeLayout>

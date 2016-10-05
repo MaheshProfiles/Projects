@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/distributor_payment_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="never"
+        android:visible="false"
+        android:title="@string/distributor_payment"/>
+    <item
+        android:id="@+id/search_meuitem"
+        android:icon="@drawable/actionbar_search_drawable"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:visible="false"
+        android:title="@string/search"/>
+    <item
+        android:id="@+id/dashboard_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="never"
+        android:title="@string/dashboard"
+        android:visible="false"/>
+    <!-- <item
+        android:id="@+id/help_videos_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="Help Videos"/> -->
+    <item
+        android:id="@+id/sync_summary_menuitem"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="Sync Summary"/>
+    <item
+        android:id="@+id/build_version"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="collapseActionView"
+        android:title="@string/app_build_version"/>
+
+</menu>

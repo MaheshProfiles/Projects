@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/medium_padding"
+    android:paddingRight="@dimen/medium_padding" >
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/billing_monitor_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:columnWidth="@dimen/billlist_width"
+        app:horizontalSpacing="@dimen/medium_padding"
+        app:numColumns="4"
+        app:numRows="1"
+        app:rowHeight="@dimen/billmonitor_bill_height"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="vertical"
+        app:stretchMode="none" />
+
+    <include
+        android:id="@+id/add_customer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/addedit_customer_layout"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/customersearch_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_color"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/customersearch_listviewlayout"
+            android:layout_width="@dimen/billmonitor_bill_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/customer_search_height"
+            android:orientation="vertical" >
+
+            <View
+                style="@style/customer_dividerstyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <ListView
+                android:id="@+id/customer_search_result_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:divider="@color/bill_border_color"
+                android:dividerHeight="1dp" />
+
+            <View
+                style="@style/customer_dividerstyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

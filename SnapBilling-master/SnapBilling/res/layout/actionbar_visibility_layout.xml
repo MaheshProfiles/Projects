@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/actionbar_header"
+        style="@style/actionbar_headertextstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name" />
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/visibility_categories_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/store_category_height"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/medium_padding"
+        android:background="@android:color/white"
+        android:scrollbars="none"
+        android:visibility="gone"
+        app:columnWidth="@dimen/store_category_width"
+        app:gravity="center"
+        app:numColumns="auto_fit"
+        app:numRows="@integer/store_category_rows"
+        app:rowHeight="@dimen/store_category_height"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="vertical"
+        app:stretchMode="none" />
+
+</LinearLayout>

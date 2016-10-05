@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <CheckBox
+        android:id="@+id/cb_payment_method1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/credit_card"
+        android:textColor="@color/gra"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/cb_payment_method2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/debit_card"
+        android:textColor="@color/gra"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+</LinearLayout>
+

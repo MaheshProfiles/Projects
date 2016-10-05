@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:endColor="@color/red_for_clendar_day"
+        android:centerColor="@color/red_for_clendar_day"
+        android:startColor="@color/red_for_clendar_day"
+        android:angle="270" />
+    <corners
+        android:radius="3dp" />
+
+</shape>

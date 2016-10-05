@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <TextView
+        style="@style/product_pack_header_textstyle"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/product_pack_header_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:text="@string/quantity" />
+
+    <TextView
+        style="@style/product_pack_header_textstyle"
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:text="@string/sales_price_one" />
+
+    <TextView
+        style="@style/product_pack_header_textstyle"
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:text="@string/sales_price_two" />
+
+    <TextView
+        style="@style/product_pack_header_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:text="@string/sales_price_three" />
+</LinearLayout>

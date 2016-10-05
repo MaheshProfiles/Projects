@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/small_padding"
+    android:layout_marginRight="@dimen/small_padding"
+    android:background="@drawable/bill_border_shape"
+    android:padding="1dp" >
+
+    <RelativeLayout
+        android:id="@+id/customer_search_layout"
+        android:layout_width="@dimen/billmonitor_bill_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingLeft="@dimen/medium_padding"
+        android:paddingRight="@dimen/medium_padding"
+        android:paddingTop="@dimen/small_padding" >
+
+        <Button
+            android:id="@+id/add_customer_button"
+            android:layout_width="54dp"
+            android:layout_height="43dp"
+            android:background="@drawable/customer_add_imgselector" />
+
+        <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+            android:id="@+id/customer_search_edittext"
+            style="@style/customer_search_textstyle"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_toRightOf="@id/add_customer_button"
+            android:imeOptions="actionDone"
+            />
+
+        <ImageButton
+            android:id="@+id/clear_customer_button"
+            android:layout_width="52dp"
+            android:layout_height="43dp"
+            android:layout_alignRight="@+id/customer_search_edittext"
+            android:background="@null"
+            android:src="@drawable/cancel_imgselector" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bill_footer_layout"
+        android:layout_width="@dimen/billmonitor_bill_width"
+        android:layout_height="@dimen/billmonitor_billfooter_height"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer_bill" />
+
+    <LinearLayout
+        android:id="@+id/billoptions_linearlayout"
+        android:layout_width="@dimen/billmonitor_bill_width"
+        android:layout_height="65dp"
+        android:layout_above="@id/bill_footer_layout"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/quickadd_button"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/quickadd_navigation_selector" 
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/offers_button"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/offers_navigation_selector" 
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/search_navigation_selector"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bill_header_layout"
+        android:layout_width="@dimen/billmonitor_bill_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customer_search_layout"
+        layout="@layout/header_bill" />
+
+    <ListView
+        android:id="@+id/bill_listview"
+        android:layout_width="@dimen/billmonitor_bill_width"
+        android:layout_height="match_parent"
+        android:layout_above="@id/billoptions_linearlayout"
+        android:layout_below="@id/bill_header_layout"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/white"
+        android:transcriptMode="normal" >
+    </ListView>
+
+    <View
+        android:id="@+id/billoptions_divider"
+        android:layout_width="@dimen/billmonitor_bill_width"
+        android:layout_height="5dp"
+        android:layout_above="@id/billoptions_linearlayout"
+        android:background="@drawable/bill_list_shadow_gradient" />
+
+    <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+        android:id="@+id/product_search_edittext"
+        android:layout_width="@dimen/billmonitor_bill_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customer_search_layout"
+        android:layout_marginTop="@dimen/billmonitor_billheader_height"
+        android:background="@drawable/search_bar"
+        android:hint="@string/search_product_hint"
+        android:paddingLeft="60dp"
+        android:textColorHint="@color/search_hintcolor"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/clear_product_button"
+        android:layout_width="54dp"
+        android:layout_height="43dp"
+        android:layout_alignRight="@+id/product_search_edittext"
+        android:layout_marginTop="110dp"
+        android:background="@null"
+        android:src="@drawable/cancel_imgselector"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/customer_info_layout"
+        android:layout_width="@dimen/billmonitor_bill_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/overlay_customerdetails"
+        android:background="@android:color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

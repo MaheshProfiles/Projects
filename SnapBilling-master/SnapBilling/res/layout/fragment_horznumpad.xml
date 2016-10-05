@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/small_padding"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button1"
+        android:text="@string/keypad_1" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button2"
+        android:text="@string/keypad_2" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button3"
+        android:text="@string/keypad_3" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button4"
+        android:text="@string/keypad_4" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button5"
+        android:text="@string/keypad_5" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button6"
+        android:text="@string/keypad_6" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button7"
+        android:text="@string/keypad_7" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button8"
+        android:text="@string/keypad_8" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button9"
+        android:text="@string/keypad_9" />
+
+    <Button
+        android:id="@+id/button0"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button0"
+        android:text="@string/keypad_0" />
+
+    <Button
+        android:id="@+id/buttondot"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button_dot"
+        android:text="@string/keypad_dot" />
+
+    <ImageButton
+        android:id="@+id/buttonenter"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@integer/button_enter"
+        android:src="@drawable/tick_imgselector"
+        android:text="@string/done" />
+
+    <ImageButton
+        android:id="@+id/button_clear"
+        style="@style/horzkeypad_bttn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/large_padding"
+        android:src="@drawable/icon_cancelred_normal" />
+
+</LinearLayout>

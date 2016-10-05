@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1500dp"
+    android:layout_height="@dimen/inventory_update_item_height"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="horizontal"
+    tools:ignore="ContentDescription" >
+
+    <RelativeLayout
+        android:layout_width="104dp"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:background="@color/product_bgcolor_light" >
+
+        <ImageView
+            android:id="@+id/inventory_prod_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/update_global_prod_button_selected"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/product_checked_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_prodname_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_sku_name_width"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:textColor="@color/product_textcolor" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_prodcode_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="241dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:textColor="@color/product_textcolor" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_mrp_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/stock_mrp_header_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_purchaseprice_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_salesprice_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/stock_weekly_trend_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_prodquantity_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/update_inv_prod_light_selector"
+        android:textColor="@drawable/update_list_item_text_color_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_prodtax_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:background="@color/weekly_trend_bgcolor"
+        android:textColor="@color/product_textcolor" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_produnit_spinner"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:background="@color/highest_margin_bgcolor"
+        android:textColor="@color/product_textcolor" />
+
+    <!-- <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <ImageView
+        android:id="@+id/inventory_offer_select_image"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:background="@color/weekly_trend_bgcolor"
+        android:padding="25dp"
+        android:src="@drawable/product_checked_selector" />    -->
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <ImageView
+        android:id="@+id/inventory_store_select_image"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="@dimen/inventory_update_item_height"
+        android:background="@color/highest_margin_bgcolor"
+        android:padding="25dp"
+        android:src="@drawable/product_checked_selector" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_prod_cat_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:background="@color/weekly_trend_bgcolor"
+        android:maxLines="2"
+        android:textColor="@color/product_textcolor" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/inventory_prod_subcat_textview"
+        style="@style/generic_expandable_list_product_textstyle"
+        android:layout_width="@dimen/subList_distributor_orders_width"
+        android:layout_height="match_parent"
+        android:background="@color/highest_margin_bgcolor"
+        android:maxLines="2"
+        android:textColor="@color/product_textcolor" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+</LinearLayout>

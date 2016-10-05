@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/bill_complete_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bill_bg"
+        android:paddingBottom="@dimen/medium_padding"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="@dimen/small_padding" >
+
+        <TextView
+            android:id="@+id/billcomplete_date_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding" />
+
+        <View
+            android:id="@+id/date_divider"
+            android:layout_width="1dp"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/divider_color" />
+
+        <Button
+            android:id="@+id/cancel_bill_button"
+            android:layout_width="34dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:background="@drawable/bill_cancel_imgselector" />
+
+        <TextView
+            android:id="@+id/bill_id_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/small_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/billno"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/date_cancel_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/date_divider"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/amount_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/date_cancel_divider"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/gross_amount" />
+
+        <TextView
+            android:id="@+id/savings_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/amount_textview"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/savings" />
+
+        <TextView
+            android:id="@+id/vat_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/amount_textview"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="45dp"
+            android:text="@string/vat" />
+
+        <View
+            android:id="@+id/amount_savings_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/vat_textview"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/discount_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/amount_savings_divider"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="28dp"
+            android:text="@string/discount" />
+
+        <TextView
+            android:id="@+id/customer_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/discount_textview"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="14dp"
+            android:visibility="invisible"
+            android:text="@string/customer_pay" />
+        <TextView
+            android:id="@+id/total_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/customer_textview"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="6dp"
+            android:text="@string/net_amount" />
+
+        <View
+            android:id="@+id/discount_total_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/total_textview"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/cash_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/discount_total_divider"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_marginTop="20dp"
+            android:text="@string/cash" />
+
+        <TextView
+            android:id="@+id/change_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/return_value_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/return_value_textview"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:text="@string/change" />
+        
+        <TextView
+            android:id="@+id/credit_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/change_value_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/change_value_textview"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:text="@string/credit" />
+
+        <TextView
+            android:id="@+id/amount_value_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/date_cancel_divider"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding" />
+
+        <TextView
+            android:id="@+id/savings_value_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/amount_value_textview"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding" />
+
+        <TextView
+            android:id="@+id/vat_value_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/amount_value_textview"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="45dp" />
+
+        <Button
+            android:id="@+id/discount_value_button"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="@dimen/bttn_discount_width"
+            android:layout_height="@dimen/bttn_discount_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/amount_savings_divider"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@drawable/button_border_shape"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/large_padding"
+            android:src="@drawable/listitem_bg_selector"
+            android:text="@string/default_discount" />
+
+        <ImageButton
+            android:id="@+id/discount_clear_button"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bttn_discount_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/amount_savings_divider"
+            android:layout_marginRight="@dimen/small_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@null"
+            android:padding="@dimen/small_padding"
+            android:src="@drawable/cancel_imgselector" />
+        <CheckBox
+            android:id="@+id/customer_pay_check"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:layout_below="@id/discount_value_button"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/total_value_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/customer_pay_check"
+            android:layout_marginRight="@dimen/medium_padding"/>
+
+        <Button
+            android:id="@+id/cash_value_button"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="@dimen/bttn_discount_width"
+            android:layout_height="@dimen/bttn_discount_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/discount_total_divider"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@drawable/button_border_shape"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/large_padding"
+            android:text="@string/default_cash" />
+
+        <ImageButton
+            android:id="@+id/cash_clear_button"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bttn_discount_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/discount_total_divider"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="@dimen/small_padding"
+            android:background="@null"
+            android:src="@drawable/cancel_imgselector" />
+
+        <TextView
+            android:id="@+id/return_value_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/cash_value_button"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="5dp"
+            android:text="@string/default_cash" />
+        <TextView
+            android:id="@+id/change_value_textview"
+            style="@style/checkout_bill_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/return_value_textview"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_marginTop="5dp"
+            android:text="@string/default_cash" />
+    </RelativeLayout>
+    
+    
+
+    <include
+        android:id="@+id/bill_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_billcomplete_buttons" />
+    
+     <include
+        android:id="@+id/receive_complete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_receive_complete"
+        android:visibility="gone" />
+
+</LinearLayout>

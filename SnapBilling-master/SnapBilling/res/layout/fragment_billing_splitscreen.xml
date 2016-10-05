@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/visibility_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/billsplitscreen_footerheight"
+        android:rotation="180" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/splitscreen1_framelayout"
+        android:layout_width="@dimen/billsplitscreen_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:clickable="true" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/splitscreen2_framelayout"
+        android:layout_width="@dimen/billsplitscreen_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_toRightOf="@id/splitscreen1_framelayout"
+        android:clickable="true" >
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/actionbar_overflow_button"
+        style="@android:style/Widget.Holo.Light.ActionButton.Overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/billsplitscreen_footerheight"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/splitscreen2_framelayout" />
+
+    <FrameLayout
+        android:id="@+id/overlay_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/billsplitscreen_footerheight"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/customersearch_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/customer_search_height"
+        android:layout_above="@id/overlay_framelayout"
+        android:layout_marginBottom="@dimen/small_padding"
+        android:background="@color/transparent_color"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.snapbizz.snaptoolkit.customviews.HorizontalListView
+            android:id="@+id/customer_search_result_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/billsplitscreen_customersearch_bgcolor"
+            android:divider="@color/billsplitscreen_customersearch_dividercolor"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="@dimen/billsplitscreen_menuwidth"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/billsplitscreen_footerheight"
+            android:background="@drawable/abs__menu_dropdown_panel_holo_light"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/small_padding"
+            android:paddingTop="@dimen/small_padding" >
+
+            <TextView
+                android:id="@+id/customer_payment_menuitem"
+                style="@android:style/Widget.Holo.Light.DropDownItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/billsplitscreen_menuheight"
+                android:background="@drawable/listitem_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/medium_padding"
+                android:text="@string/customer_payment"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/billhistory_menuitem"
+                style="@android:style/Widget.Holo.Light.DropDownItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/billsplitscreen_menuheight"
+                android:background="@drawable/listitem_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/medium_padding"
+                android:text="@string/bills"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/dashboard_menuitem"
+                style="@android:style/Widget.Holo.Light.DropDownItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/billsplitscreen_menuheight"
+                android:background="@drawable/listitem_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/medium_padding"
+                android:text="@string/dashboard"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color" />
+            
+            <TextView
+                android:id="@+id/help_videos_menuitem"
+                style="@android:style/Widget.Holo.Light.DropDownItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/billsplitscreen_menuheight"
+                android:background="@drawable/listitem_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/medium_padding"
+                android:text="@string/help_videos"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color" />
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/customer_menuitem" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="35dp" -->
+            <!-- android:background="@drawable/listitem_bg_selector" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:paddingLeft="@dimen/medium_padding" -->
+            <!-- android:text="@string/customers" /> -->
+
+
+            <!-- <View -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="1dp" -->
+            <!-- android:background="@color/divider_color" /> -->
+
+            <TextView
+                android:id="@+id/dualdisplay_menuitem"
+                style="@android:style/Widget.Holo.Light.DropDownItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/billsplitscreen_menuheight"
+                android:background="@drawable/listitem_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/medium_padding"
+                android:text="@string/dualdisp_mode"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="pagerdatepicker-1.0.0">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/pl.rspective.pagerdatepicker/pagerdatepicker/1.0.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/pl.rspective.pagerdatepicker/pagerdatepicker/1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/pl.rspective.pagerdatepicker/pagerdatepicker/1.0.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.rspective.pagerdatepicker/pagerdatepicker/1.0.0/22ace71c809538c4a85b4968d53eb0427a1f96a6/pagerdatepicker-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

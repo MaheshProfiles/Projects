@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="45dp"
+    android:orientation="horizontal" 
+    android:layout_marginLeft="100dp"
+     android:layout_marginRight="100dp"
+    android:weightSum="100">
+
+    <TextView
+         android:id="@+id/resource_vmname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+       android:layout_gravity="center"
+        android:layout_weight="33"
+        android:text="@string/resource_type"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/resource_region"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="33"
+         android:layout_marginLeft="5dp"
+        android:text="@string/count"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size" />
+    
+    <TextView
+        android:id="@+id/resource_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+          android:gravity="center"
+        android:layout_weight="33"
+         android:layout_marginLeft="5dp"
+        android:text="@string/count"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size" />
+
+   
+
+</LinearLayout>

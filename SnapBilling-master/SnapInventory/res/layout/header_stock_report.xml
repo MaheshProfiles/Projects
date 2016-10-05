@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/inventory_header_height"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/filter_headername_textview"
+        style="@style/update_productheader_textstyle"
+        android:layout_width="210dp"
+        android:layout_height="match_parent"
+        android:text="@string/distributor"
+        android:textSize="28sp" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_report_item_width"
+        android:layout_height="match_parent"
+        android:text="@string/stock_value" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_report_item_width"
+        android:layout_height="match_parent"
+        android:text="@string/stock_sku" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_report_item_width"
+        android:layout_height="match_parent"
+        android:text="@string/days_of_stock" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_report_item_width"
+        android:layout_height="match_parent"
+        android:text="@string/revenue" />
+
+    <TextView
+        style="@style/update_productheader_textstyle"
+        android:layout_width="@dimen/stock_report_item_width"
+        android:layout_height="match_parent"
+        android:text="@string/profit" />
+
+</LinearLayout>

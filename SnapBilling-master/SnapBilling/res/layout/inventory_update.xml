@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/inventory_product_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/inventory_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inventoryheader_height"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:background="@drawable/stockupdate_headerbg_drawable"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/inventory_prod_add_button"
+                style="@style/stock_update_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/newitem_bg_selector"
+                android:paddingLeft="@dimen/large_padding"
+                android:text="@string/add_new"
+                android:textColor="@drawable/update_header_textcolor_selector" />
+
+            <Button
+                android:id="@+id/button_category"
+                style="@style/stock_update_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/inventory_prod_add_button"
+                android:paddingLeft="@dimen/medium_padding"
+                android:paddingRight="@dimen/medium_padding"
+                android:text="@string/category"
+                android:textColor="@drawable/update_header_textcolor_selector" />
+
+            <Button
+                android:id="@+id/button_search"
+                style="@style/stock_update_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/search"
+                android:textColor="@drawable/update_header_textcolor_selector" />
+
+            <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+                android:id="@+id/search_edittext12"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/button_search"
+                android:ems="10" />
+
+            <CheckBox
+                android:id="@+id/checkbox_barcode"
+                style="@style/stock_update_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/barcode" />
+
+            <CheckBox
+                android:id="@+id/checkbox_discription"
+                style="@style/stock_update_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/medium_padding"
+                android:layout_toRightOf="@+id/checkbox_barcode"
+                android:text="@string/description" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/category_overlay"
+                android:layout_width="292dp"
+                android:layout_height="match_parent"
+                android:background="@color/category_bgcolor"
+                android:visibility="gone" >
+
+                <ListView
+                    android:id="@+id/list_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/small_padding" />
+
+                <ImageView
+                    android:id="@+id/overlay_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/overlay_arrow_padding"
+                    android:src="@drawable/btn_overlay_arrow" />
+
+                <ImageView
+                    android:id="@+id/btn_hide_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/overlay_arrow"
+                    android:layout_marginTop="141dp"
+                    android:src="@drawable/btn_hide_category" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btn_show_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_overlay_category" />
+
+            <HorizontalScrollView
+                android:id="@+id/mystore_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/large_padding"
+                android:layout_toRightOf="@+id/category_overlay"
+                android:scrollbars="none" >
+
+                <ListView
+                    android:id="@+id/inventory_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+                </ListView>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/gdb_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/large_padding"
+                android:layout_toRightOf="@+id/category_overlay"
+                android:scrollbars="none" >
+
+                <ListView
+                    android:id="@+id/gdb_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+                </ListView>
+            </HorizontalScrollView>
+
+            <GridView
+                android:id="@+id/subcategory_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/large_padding"
+                android:layout_toRightOf="@+id/category_overlay"
+                android:columnWidth="170dp"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth" >
+            </GridView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/screen_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="200dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/new_prod_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="120dp"
+        android:src="@drawable/new_prod_add" />
+
+</RelativeLayout>

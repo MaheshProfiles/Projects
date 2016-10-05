@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/cart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/billsplitscreen_footerheight"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/cartoption_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/tag_customer_button"
+                android:layout_width="@dimen/billsplitscreen_billoptions_iconwidth"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ss_customer_tag_imgselector" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <ImageButton
+                android:id="@+id/quickadd_button"
+                android:layout_width="@dimen/billsplitscreen_billoptions_iconwidth"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ss_quickadd_navigation_selector" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/billsplitscreen_footerwidth"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/medium_padding"
+                android:paddingRight="@dimen/medium_padding"
+                android:paddingTop="@dimen/small_padding" >
+
+                <TextView
+                    android:id="@+id/bill_totalqty_textview"
+                    style="@style/ss_billfooter_number_textstyle"
+                    android:layout_width="@dimen/billsplitscreen_billoptions_textwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/bill_items_textview"
+                    style="@style/ss_billfooter_textstyle"
+                    android:layout_width="@dimen/billsplitscreen_billoptions_textwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/bill_totalqty_textview"
+                    android:gravity="center"
+                    android:text="@string/items" />
+
+                <TextView
+                    android:id="@+id/bill_totalprice_textview"
+                    style="@style/ss_billfooter_number_textstyle"
+                    android:layout_width="@dimen/billsplitscreen_billoptions_textwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/bill_total_textview"
+                    style="@style/ss_billfooter_textstyle"
+                    android:layout_width="@dimen/billsplitscreen_billoptions_textwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/bill_totalprice_textview"
+                    android:gravity="center"
+                    android:text="@string/total" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <ImageButton
+                android:id="@+id/showbill_button"
+                android:layout_width="@dimen/billsplitscreen_billoptions_iconwidth"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ss_showbill_imageselector" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <ImageButton
+                android:id="@+id/checkout_button"
+                android:layout_width="@dimen/billsplitscreen_billoptions_iconwidth"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ss_billcheckout_imageselector" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/customer_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/customer_back_button"
+                android:layout_width="@dimen/def_button_width"
+                android:layout_height="@dimen/def_button_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ss_backbutton_imgselector" />
+
+            <View
+                android:id="@+id/backbutton_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/customer_back_button"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <Button
+                android:id="@+id/customer_create_button"
+                android:layout_width="@dimen/def_button_width"
+                android:layout_height="@dimen/def_button_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/small_padding"
+                android:background="@drawable/ss_customer_add_imgselector" />
+
+            <View
+                android:id="@+id/create_customer_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/small_padding"
+                android:layout_toLeftOf="@id/customer_create_button"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <com.snapbizz.snaptoolkit.customviews.SoftInputEditText
+                android:id="@+id/customer_search_edittext"
+                style="@style/ss_textstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toLeftOf="@id/create_customer_divider"
+                android:layout_toRightOf="@id/backbutton_divider"
+                android:background="@null"
+                android:editable="false"
+                android:inputType="none"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/customersearch_backspace_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/small_padding"
+                android:layout_toLeftOf="@id/create_customer_divider"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ss_backspace_imgselector" />
+
+            <include
+                android:id="@+id/customer_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/customer_back_button"
+                layout="@layout/layout_customer_details"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/add_customer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/splitscreen_addedit_customer_layout"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/quickadd_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/quickadd_back_button"
+                android:layout_width="@dimen/def_button_width"
+                android:layout_height="@dimen/def_button_height"
+                android:background="@drawable/ss_backbutton_imgselector" />
+
+            <View
+                android:id="@+id/quickadd_backbutton_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <Button
+                android:id="@+id/quickadd_food_button"
+                style="@style/ss_quickadd_buttonstyle"
+                android:layout_width="@dimen/billsplitscreen_quickaddwidth"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ss_quickadd_food_selector"
+                android:tag="@string/quickadd_food_tag"
+                android:text="@string/food" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <Button
+                android:id="@+id/quickadd_homecare_button"
+                style="@style/ss_quickadd_buttonstyle"
+                android:layout_width="@dimen/billsplitscreen_quickaddwidth"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ss_quickadd_homecare_selector"
+                android:tag="@string/quickadd_homecare_tag"
+                android:text="@string/home_care" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <Button
+                android:id="@+id/quickadd_kitchen_button"
+                style="@style/ss_quickadd_buttonstyle"
+                android:layout_width="@dimen/billsplitscreen_quickaddwidth"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ss_quickadd_kitchen_selector"
+                android:tag="@string/quickadd_kitchen_tag"
+                android:text="@string/kitchen" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <Button
+                android:id="@+id/quickadd_bathroom_button"
+                style="@style/ss_quickadd_buttonstyle"
+                android:layout_width="@dimen/billsplitscreen_quickaddwidth"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ss_quickadd_bathroom_selector"
+                android:tag="@string/quickadd_bathroom_tag"
+                android:text="@string/bathroom" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <Button
+                android:id="@+id/quickadd_others_button"
+                style="@style/ss_quickadd_buttonstyle"
+                android:layout_width="@dimen/billsplitscreen_quickaddwidth"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ss_quickadd_food_selector"
+                android:tag="@string/quickadd_others_tag"
+                android:text="@string/others" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bill_complete_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/billcomplete_back_button"
+                android:layout_width="@dimen/def_button_width"
+                android:layout_height="@dimen/def_button_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ss_backbutton_imgselector" />
+
+            <View
+                android:id="@+id/billcomplete_backbutton_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/billcomplete_back_button"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <TextView
+                android:id="@+id/billqty_value_textview"
+                style="@style/ss_billfooter_number_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/small_padding"
+                android:layout_toRightOf="@id/billcomplete_backbutton_divider"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/billqty_textview"
+                style="@style/ss_billfooter_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/billqty_value_textview"
+                android:layout_toRightOf="@id/billcomplete_back_button"
+                android:gravity="center"
+                android:text="@string/items" />
+
+            <TextView
+                android:id="@+id/billdiscount_value_textview"
+                style="@style/ss_billfooter_number_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/small_padding"
+                android:layout_toRightOf="@id/billqty_value_textview"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/billdiscount_textview"
+                style="@style/ss_billfooter_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/billdiscount_value_textview"
+                android:layout_toRightOf="@id/billqty_value_textview"
+                android:gravity="center"
+                android:text="@string/discount" />
+
+            <TextView
+                android:id="@+id/billsavings_value_textview"
+                style="@style/ss_billfooter_number_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/small_padding"
+                android:layout_toRightOf="@id/billdiscount_value_textview"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/billsavings_textview"
+                style="@style/ss_billfooter_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/billsavings_value_textview"
+                android:layout_toRightOf="@id/billdiscount_value_textview"
+                android:gravity="center"
+                android:text="@string/savings" />
+
+            <TextView
+                android:id="@+id/billtotal_value_textview"
+                style="@style/ss_billfooter_number_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/small_padding"
+                android:layout_toRightOf="@id/billsavings_value_textview"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/billtotal_textview"
+                style="@style/ss_billfooter_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/billtotal_value_textview"
+                android:layout_toRightOf="@id/billsavings_value_textview"
+                android:gravity="center"
+                android:text="@string/total" />
+
+            <View
+                android:id="@+id/billtotal_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/billtotal_textview"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <ImageButton
+                android:id="@+id/billcomplete_print_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/billtotal_divider"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ss_print_selector" />
+
+            <View
+                android:id="@+id/billprint_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/billcomplete_print_button"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <ImageButton
+                android:id="@+id/billcomplete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/billprint_divider"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ss_cancelprint_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_product_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/editproduct_back_button"
+                android:layout_width="@dimen/def_button_width"
+                android:layout_height="@dimen/def_button_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ss_backbutton_imgselector" />
+
+            <View
+                android:id="@+id/edit_backbutton_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/editproduct_back_button"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <LinearLayout
+                android:id="@+id/editproduct_image_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/edit_backbutton_divider" >
+
+                <ImageView
+                    android:id="@+id/editproduct_imageview"
+                    android:layout_width="@dimen/billsplitscreen_quickaddwidth"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_launcher" />
+
+                <Button
+                    android:id="@+id/edit_quickaddproduct_button"
+                    style="@style/ss_quickadd_buttonstyle"
+                    android:layout_width="@dimen/billsplitscreen_quickaddwidth"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/editproduct_image_layout"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <TextView
+                android:id="@+id/editproduct_qty_textview"
+                style="@style/ss_billfooter_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/small_padding"              
+                android:layout_toRightOf="@id/editproduct_image_layout"
+                android:text="@string/qty" />
+
+            <TextView
+                android:id="@+id/editproduct_qtyvalue_textview"
+                style="@style/ss_billfooter_number_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/editproduct_image_layout"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="@dimen/tiny_padding" />
+
+            <TextView
+                android:id="@+id/product_x_textview"
+                style="@style/ss_billfooter_number_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/editproduct_qtyvalue_textview"
+                android:gravity="center"
+                android:text="X" />
+
+            <TextView
+                android:id="@+id/editproduct_price_textview1"
+                style="@style/ss_billfooter_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_toRightOf="@id/product_x_textview"
+                android:text="@string/price" />
+            
+            <TextView
+                android:id="@+id/editproduct_rate_textview"
+                style="@style/ss_billfooter_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_toRightOf="@id/product_x_textview"
+                android:text="@string/rate" />
+
+            <TextView
+                android:id="@+id/editproduct_pricevalue_textview"
+                style="@style/ss_billfooter_number_textstyle"
+                android:layout_width="@dimen/billsplitscreen_billcomplete_textwidth"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/product_x_textview"                
+                android:gravity="top|center_horizontal"
+                android:paddingTop="@dimen/tiny_padding" />
+
+            <View
+                android:id="@+id/edit_price_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/editproduct_pricevalue_textview"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <ImageButton
+                android:id="@+id/editproduct_discount_button"
+                style="@style/ss_billfooter_number_textstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/edit_price_divider"
+                android:background="@null"
+                android:gravity="center"
+                android:src="@drawable/ss_discount_selector" />
+
+            <View
+                android:id="@+id/edit_discount_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/editproduct_discount_button"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <TextView
+                android:id="@+id/editproduct_total_textview"
+                style="@style/ss_billfooter_number_textstyle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/edit_discount_divider"
+                android:gravity="center" />
+
+            <View
+                android:id="@+id/edit_total_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/billsplitscreen_divider_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/editproduct_total_textview"
+                android:background="@color/billsplitscreen_divider_color" />
+
+            <Button
+                android:id="@+id/editproduct_done_button"
+                android:layout_width="@dimen/def_button_width"
+                android:layout_height="@dimen/def_button_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@id/edit_total_divider"
+                android:background="@drawable/tick_imgselector" />
+
+            <LinearLayout
+                android:id="@+id/delete_return_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/editproduct_image_layout"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/return_product_button"
+                    style="@style/ss_light_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ss_return_selector"
+                    android:text="@string/return_product"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/delete_product_button"
+                    style="@style/ss_light_textstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:background="@drawable/ss_delete_selector"
+                    android:text="@string/delete"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/discount_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/editproduct_image_layout"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/billsplitscreen_divider_height"
+                    android:background="@color/billsplitscreen_divider_color" />
+
+                <TextView
+                    android:id="@+id/discount1_textview"
+                    style="@style/ss_billfooter_number_textstyle"
+                    android:layout_width="@dimen/billsplitscreen_discount_textwidth"
+                    android:layout_height="match_parent"
+                    android:tag="@integer/discount1"
+                    android:text="@string/discount1"
+                    android:textColor="@drawable/ss_quickadd_textcolor_selector" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/billsplitscreen_divider_height"
+                    android:background="@color/billsplitscreen_divider_color" />
+
+                <TextView
+                    android:id="@+id/discount2_textview"
+                    style="@style/ss_billfooter_number_textstyle"
+                    android:layout_width="@dimen/billsplitscreen_discount_textwidth"
+                    android:layout_height="match_parent"
+                    android:tag="@integer/discount2"
+                    android:text="@string/discount2"
+                    android:textColor="@drawable/ss_quickadd_textcolor_selector" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/billsplitscreen_divider_height"
+                    android:background="@color/billsplitscreen_divider_color" />
+
+                <TextView
+                    android:id="@+id/discount3_textview"
+                    style="@style/ss_billfooter_number_textstyle"
+                    android:layout_width="@dimen/billsplitscreen_discount_textwidth"
+                    android:layout_height="match_parent"
+                    android:tag="@integer/discount3"
+                    android:text="@string/discount3"
+                    android:textColor="@drawable/ss_quickadd_textcolor_selector" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/billsplitscreen_divider_height"
+                    android:background="@color/billsplitscreen_divider_color" />
+
+                <TextView
+                    android:id="@+id/discount4_textview"
+                    style="@style/ss_billfooter_number_textstyle"
+                    android:layout_width="@dimen/billsplitscreen_discount_textwidth"
+                    android:layout_height="match_parent"
+                    android:tag="@integer/discount4"
+                    android:text="@string/discount4"
+                    android:textColor="@drawable/ss_quickadd_textcolor_selector" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/billsplitscreen_divider_height"
+                    android:background="@color/billsplitscreen_divider_color" />
+
+                <TextView
+                    android:id="@+id/discount5_textview"
+                    style="@style/ss_billfooter_number_textstyle"
+                    android:layout_width="@dimen/billsplitscreen_discount_textwidth"
+                    android:layout_height="match_parent"
+                    android:tag="@integer/discount5"
+                    android:text="@string/discount5"
+                    android:textColor="@drawable/ss_quickadd_textcolor_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bill_layout"
+        android:layout_width="@dimen/billlist_width"
+        android:layout_height="@dimen/billmonitor_bill_height"
+        android:layout_above="@id/cart_layout"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"
+        android:background="@drawable/bill_border_shape"
+        android:padding="1dp"
+        android:visibility="invisible" >
+
+        <include
+            android:id="@+id/bill_footer_layout"
+            android:layout_width="@dimen/billlist_width"
+            android:layout_height="@dimen/billmonitor_billfooter_height"
+            android:layout_alignParentBottom="true"
+            layout="@layout/footer_bill" />
+
+        <ImageButton
+            android:id="@+id/flipbill_button"
+            android:layout_width="@dimen/billlist_width"
+            android:layout_height="@dimen/billsplitscreen_billflip_bttnheight"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:src="@drawable/ss_billflip_selector" />
+
+        <include
+            android:id="@+id/bill_header_layout"
+            android:layout_width="@dimen/billlist_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flipbill_button"
+            layout="@layout/header_bill" />
+
+        <ListView
+            android:id="@+id/bill_listview"
+            android:layout_width="@dimen/billlist_width"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bill_footer_layout"
+            android:layout_below="@id/bill_header_layout"
+            android:background="@android:color/white" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

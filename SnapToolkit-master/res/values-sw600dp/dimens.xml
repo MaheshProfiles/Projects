@@ -1,0 +1,25 @@
+<resources>
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+    
+    <dimen name="small_padding">10dp</dimen>
+    <dimen name="medium_padding">20dp</dimen>
+    <dimen name="large_padding">40dp</dimen>
+    <dimen name="actionbar_height">100dp</dimen>
+    
+    <dimen name="store_rowheight">143dp</dimen>
+    <dimen name="store_columnwidth">158dp</dimen>
+    <dimen name="store_category_height">40dp</dimen>
+    <dimen name="store_category_width">178dp</dimen>
+    
+    <dimen name="keypad_bttn_horizontalspacing">9dp</dimen>
+    <dimen name="keypad_bttn_verticalspacing">9dp</dimen>
+    <dimen name="keypad_display_height">70dp</dimen>
+    <dimen name="keypad_edititem_height">70dp</dimen>
+    <dimen name="keypad_qty_width">60dp</dimen>
+    <dimen name="keypad_price_width">135dp</dimen>
+    <dimen name="keypad_total_width">135dp</dimen>
+    <dimen name="keypad_width">340dp</dimen>
+</resources>

@@ -1,0 +1,130 @@
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+-printseeds seeds.txt
+-printusage unused.txt
+-printmapping mapping.txt
+-libraryjars libs/*.jar
+
+-dontwarn android.support.**
+-dontwarn com.google.common.**
+
+-keep class javax.** { *; }
+-keep class org.** { *; }
+-keep class com.j256.ormlite.** { *; }
+-keep class com.snapbizz.snaptoolkit.domains.** { *; }
+-keep class com.snapbizz.snaptoolkit.utils.** { *; }
+
+# Retrofit specific [Start]
+-dontwarn okio.**
+-dontwarn com.squareup.okhttp.**
+-dontwarn rx.**
+-dontwarn retrofit.**
+-dontwarn retrofit.appengine.UrlFetchClient
+
+-keep class com.squareup.okhttp.** { *; }
+-keep interface com.squareup.okhttp.** { *; }
+
+-keep class retrofit.** { *; }
+-keepclasseswithmembers class * {
+    @retrofit.http.* <methods>;
+}
+
+-keepattributes Signature
+-keepattributes *Annotation*
+
+-keep class javax.** { *; }
+-keep class org.** { *; }
+-keep class com.j256.ormlite.** { *; }
+-keep class com.snapbizz.snaptoolkit.domains.** { *; }
+-keep class com.snapbizz.snaptoolkit.utils.** { *; }
+-keep class retrofit.** { *; }
+-keep class okio.** { *; }
+
+# Retrofit specific [End]
+
+# GreenDAO specific [Start]
+-keepclassmembers class * extends de.greenrobot.dao.AbstractDao {
+    public static java.lang.String TABLENAME;
+}
+-keep class **$Properties
+# GreenDAO specifc [End]
+
+# API Classes [Start]
+-keep class com.snapbizz.snapbilling.domainsV2.ApkData$* { *; }
+-keep class com.snapbizz.snapbilling.domainsV2.SyncGDBData$* { *; }
+# API Classes [End]
+
+# Crittercism [Start]
+-keep public class com.crittercism.**
+-keepclassmembers public class com.crittercism.* { *; }
+# Crittercism [End]
+
+
+-keep class net.sqlcipher.** {
+    *;
+}
+
+-keep class net.sqlcipher.database.** {
+    *;
+}
+
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-optimizationpasses 5
+
+-allowaccessmodification
+-renamesourcefileattribute SourceFile
+-repackageclasses ''
+-keepattributes Exceptions,*Annotation*,InnerClasses,SourceFile,LineNumberTable,Deprecated, Signature
+-keepattributes EnclosingMethod
+
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.stream.** { *; }
+-keep class com.google.gson.FieldNamingStrategy { *; }
+ 
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.myapp.package.coreclasses { *; }
+-keep class com.myapp.package.AppFieldNamePolicy { *; }
+-keep class com.myapp.vo.** { *; }
+-keep class com.google.gson.examples.android.model.** { *; }
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+-keepattributes *Annotation*
+
+
+-keepclasseswithmembers class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+ -keepclassmembers public class * extends android.view.View {
+  void set*(***);
+  *** get*();
+ }
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+  public static <fields>;
+}

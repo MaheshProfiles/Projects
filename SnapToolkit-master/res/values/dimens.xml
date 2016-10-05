@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="store_category_verticalpadding">8dp</dimen>
+    <dimen name="store_category_horizontalpadding">8dp</dimen>
+    <dimen name="productsearch_image_width">70dp</dimen>
+    <dimen name="productsearch_image_height">70dp</dimen>
+    <dimen name="keypad_bttn_verticalspacing">1dp</dimen>
+    <dimen name="keypad_bttn_horizontalspacing">1dp</dimen>
+    <dimen name="keypad_display_height">70dp</dimen>
+    <dimen name="keypad_edititem_height">70dp</dimen>
+    <dimen name="keypad_qty_width">60dp</dimen>
+    <dimen name="keypad_price_width">135dp</dimen>
+    <dimen name="keypad_total_width">135dp</dimen>
+    <dimen name="keypad_width">340dp</dimen>
+    <dimen name="registration_edit_text_width">550dp</dimen>
+    <dimen name="registration_edit_text_height">40dp</dimen>
+    <dimen name="registration_edit_text_padding_left">10dp</dimen>
+    
+    <dimen name="dashboard_chart_fitler_bttnwidth">160dp</dimen>
+
+    <dimen name="def_button_height">44dp</dimen>
+    <dimen name="def_button_width">44dp</dimen>
+</resources>

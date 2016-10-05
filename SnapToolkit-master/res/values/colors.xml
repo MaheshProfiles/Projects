@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dark_transparent_color">#D9000000</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="keypad_number_textcolor">#ffffff</color>
+    <color name="horz_keypad_number_textcolor">#999999</color>
+    <color name="keypad_number_pressedtextcolor">#ffffff</color>
+    <color name="keypad_unselected_textcolor">#666666</color>
+    <color name="keypad_selected_textcolor">#50a6ff</color>
+    <color name="keypad_divider_color">#39a0ff</color>
+    <color name="selected_textcolor">#39a0ff</color>
+    <color name="unselected_textcolor">#484747</color>
+    <color name="divider_color">#e3e5e5</color>
+    <color name="default_background_color">#eaeef1</color>
+    <color name="product_border">#80cccccc</color>
+    <color name="product_selectedborder">#80c0defe</color>
+    <color name="category_border_color">#dbdbdf</color>
+    <color name="inventory_mainmenu_textcolor">#ffffff</color>
+    <color name="product_bgcolor_dark">#f9f9f9</color>
+    <color name="product_textcolor">#615f5f</color>
+    <color name="customer_mgmy_listheader_color">#5a98d1</color>
+    <color name="new_distributor_edittext_colour">#000000</color>
+    <color name="new_distributor_edittext_hint_colour">#696969</color>
+    <color name="toast_background_color">#35373c</color>
+    <color name="toast_error_boarder_color">#e25353</color>
+    <color name="toast_info_boarder_color">#4e91cf</color>
+    <color name="toast_success_boarder_color">#19cf51</color>
+    <color name="toast_warning_boarder_color">#fdc468</color>
+    <color name="store_nm_color_offer_display">#3A94E2</color>
+    <color name="bill1_hint_color">#3D8D57</color>
+    <color name="bill2_hint_color">#FFC000</color>
+    <color name="bill3_hint_color">#FF0000</color>
+    <color name="bill4_hint_color">#60a80b</color>
+</resources>
